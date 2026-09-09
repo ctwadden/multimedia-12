@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-v5-save]').forEach(field=>{const k=field.dataset.v5Save;field.value=localStorage.getItem(k)||'';field.addEventListener('input',()=>localStorage.setItem(k,field.value))});
