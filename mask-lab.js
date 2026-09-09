@@ -111,31 +111,29 @@
   }
 
   function buildSelectionVisuals(cutout) {
-    const previewWidth = subjectBox.width;
-    const previewHeight = subjectBox.height;
-    selectionOverlay.width = previewWidth;
-    selectionOverlay.height = previewHeight;
-    selectionEdge.width = previewWidth;
-    selectionEdge.height = previewHeight;
+    selectionOverlay.width = cutout.width;
+    selectionOverlay.height = cutout.height;
+    selectionEdge.width = cutout.width;
+    selectionEdge.height = cutout.height;
 
-    selectionCtx.clearRect(0, 0, previewWidth, previewHeight);
+    selectionCtx.clearRect(0, 0, cutout.width, cutout.height);
     selectionCtx.fillStyle = '#5ee7f2';
-    selectionCtx.fillRect(0, 0, previewWidth, previewHeight);
+    selectionCtx.fillRect(0, 0, cutout.width, cutout.height);
     selectionCtx.globalCompositeOperation = 'destination-in';
-    selectionCtx.drawImage(cutout, 0, 0, previewWidth, previewHeight);
+    selectionCtx.drawImage(cutout, 0, 0);
     selectionCtx.globalCompositeOperation = 'source-over';
 
     const alphaCanvas = document.createElement('canvas');
-    alphaCanvas.width = previewWidth;
-    alphaCanvas.height = previewHeight;
+    alphaCanvas.width = cutout.width;
+    alphaCanvas.height = cutout.height;
     const alphaCtx = alphaCanvas.getContext('2d', { willReadFrequently: true });
-    alphaCtx.drawImage(cutout, 0, 0, previewWidth, previewHeight);
-    const source = alphaCtx.getImageData(0, 0, previewWidth, previewHeight);
-    const edge = selectionEdgeCtx.createImageData(previewWidth, previewHeight);
-    const stride = previewWidth;
+    alphaCtx.drawImage(cutout, 0, 0);
+    const source = alphaCtx.getImageData(0, 0, cutout.width, cutout.height);
+    const edge = selectionEdgeCtx.createImageData(cutout.width, cutout.height);
+    const stride = cutout.width;
 
-    for (let y = 1; y < previewHeight - 1; y += 1) {
-      for (let x = 1; x < previewWidth - 1; x += 1) {
+    for (let y = 1; y < cutout.height - 1; y += 1) {
+      for (let x = 1; x < cutout.width - 1; x += 1) {
         const pixel = (y * stride + x) * 4;
         if (source.data[pixel + 3] < 90) continue;
         const neighbours = [pixel - 4, pixel + 4, pixel - stride * 4, pixel + stride * 4];
@@ -328,7 +326,7 @@
       state.butterflyOnTop = !state.butterflyOnTop;
       event.currentTarget.textContent = state.butterflyOnTop ? 'Move Butterfly below Base' : 'Move Butterfly back to top';
       const row = document.querySelector('#butterflyLayerRow');
-      const typeRow = document.querySelector('#labType').closest('.layer-row');
+      const typeRow = document.querySelector('#labType').closest('.lab-layer');
       const orderButton = document.querySelector('#changeLayerOrder');
       row.classList.toggle('below', !state.butterflyOnTop);
       row.querySelector('small').textContent = state.butterflyOnTop ? 'top' : 'below Base';

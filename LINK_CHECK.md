@@ -1,16 +1,22 @@
 # Link Check
 
-Checked during build: 2026-09-08. Core teaching remains local so an external service outage does not block the lesson.
+Checked: 2026-09-07. Required lesson assets are bundled locally; no external link is required to teach the core lesson.
 
-| Link | Purpose | Status |
+| URL / resource | Purpose | Result |
 |---|---|---|
-| https://helpx.adobe.com/photoshop/desktop/create-masks/layer-masks/add-layer-masks.html | Adobe layer masks | VERIFIED HTTP 200 · 2026-09-08 |
-| https://helpx.adobe.com/photoshop/desktop/create-manage-layers/get-started-layers/work-with-the-layers-panel.html | Adobe Layers panel | VERIFIED HTTP 200 · 2026-09-08 |
-| https://helpx.adobe.com/photoshop/using/select-mask.html | Adobe Select and Mask | VERIFIED HTTP 200 · 2026-09-08 |
-| https://helpx.adobe.com/photoshop/desktop/crop-resize-transform/transform-manipulate-reshape/adjust-scale-rotation-and-perspective.html | Adobe transform | VERIFIED HTTP 200 · 2026-09-08 |
-| https://helpx.adobe.com/photoshop/desktop/save-and-export/export-files-to-different-formats/fine-tune-your-export-settings-using-the-export-as-option.html | Adobe export | VERIFIED HTTP 200 · 2026-09-08 |
-| https://www.youtube.com/watch?v=mfJeFDrboKI&t=73s | Canvas, tools and panels | VERIFIED PUBLIC BY METADATA · 2026-09-08 |
-| https://helpx.adobe.com/photoshop/how-to/layer-mask.html | Make your first layer mask | VERIFIED PUBLIC BY METADATA · 2026-09-08 |
-| https://www.youtube.com/watch?v=4uqcF7d0hLM&t=48s | Background construction | VERIFIED PUBLIC BY METADATA · 2026-09-08 |
-| https://www.youtube.com/watch?v=i_oRDIsjzlU&t=2995s | Colour matching with Curves | VERIFIED PUBLIC BY METADATA · 2026-09-08 |
-| https://www.youtube.com/watch?v=NEbav2rfi4A&t=904s | Blending a subject | VERIFIED PUBLIC BY METADATA · 2026-09-08 |
+| `curriculum.novascotia.ca/english-programs/course/communications-technology-11` | Communication Technology 11 course page | VERIFIED LIVE |
+| `curriculum.novascotia.ca/english-programs/course/multimedia-12` | Multimedia 12 course page | VERIFIED LIVE |
+| `worldwildlife.org/support/psa/` | Current real-world PSA gallery | VERIFIED LIVE |
+| `unwomen.org/en/news/stories/2013/10/women-should-ads` | Autocomplete Truth campaign | VERIFIED LIVE in search; teacher preview advised |
+| `adobe.com/creativecloud/photography/discover/photo-manipulation.html` | Photo manipulation overview and artist examples | VERIFIED LIVE |
+| `adobe.com/creativecloud/photography/discover/make-complex-selection.html` | Temi Coker selection/composite example | VERIFIED LIVE |
+| `adobe.com/id_en/learn/photoshop/web/photo-retouching-basics` | Gabriel Isak / retouching tutorial | VERIFIED LIVE |
+| `erikjo.com/work` | Professional surreal composite gallery | VERIFIED LIVE |
+| `helpx.adobe.com/photoshop/desktop/get-started/learn-the-basics/workspace-overview.html` | Workspace help | VERIFIED LIVE through Adobe Help navigation |
+| `helpx.adobe.com/photoshop/desktop/create-manage-layers/get-started-layers/work-with-the-layers-panel.html` | Layers panel help | VERIFIED LIVE |
+| `helpx.adobe.com/photoshop/using/making-selections.html` | Selection help | VERIFIED LIVE |
+| `helpx.adobe.com/photoshop/desktop/create-masks/layer-masks/add-layer-masks.html` | Layer mask help | VERIFIED LIVE |
+| `helpx.adobe.com/photoshop/desktop/crop-resize-transform/transform-manipulate-reshape/adjust-scale-rotation-perspective.html` | Transform help | VERIFIED LIVE through Adobe Help navigation |
+| `helpx.adobe.com/photoshop/desktop/save-and-export/save-files/save-your-work.html` | Save help | VERIFIED LIVE |
+
+Adobe periodically redirects older Help URLs into its current desktop documentation structure. The package uses current canonical paths where confirmed. Preview external sites before student use under Nova Scotia network policy.
