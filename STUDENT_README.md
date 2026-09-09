@@ -1,10 +1,12 @@
 # MM12 Week 1 Student Files
 
-Start with `01-phone-base.png`, `02-forest-insert.png`, and `03-butterfly-source.png`.
+Your main build is **Moon as Balloon**, a new surreal composite campaign completed across three classes.
 
-- Keep one editable PSD with named layers and masks.
-- Use `target-exemplar.png` for Tier 1 and `target-exemplar-out-of-bounds.png` for Tier 2 visual targets.
-- The exemplar is a target, not a file to submit as your own work.
-- Submit the PSD, final JPG/PNG, layer-panel screenshot, mask close-up, and short decision note named on the assignment sheet.
+1. Start with `assets/01-chair-balloon-source.png` and `assets/02-moon-source.png`.
+2. Open `student/student_step_by_step_tutorial.html` for the illustrated 12-step build guide.
+3. Use `student/composite_believability_simulator.html` to diagnose scale, light, edge and shadow problems before revising.
+4. Use the phone, forest and butterfly files only for the short masking/out-of-bounds preflight.
+5. Keep one editable PSD with named layers, Smart Objects, masks and adjustment layers.
+6. Submit the final export plus all seven evidence items named on `assignment.pdf`.
 
-These classroom images may be edited for this course. Do not re-upload or sell them as a standalone asset pack.
+The exemplars show production targets; they are not files to submit as your own work. These original classroom images may be edited for this course. Do not re-upload or sell them as a standalone asset pack.

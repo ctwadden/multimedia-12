@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Composite Believability Simulator</title>
+<style>
+:root{--bg:#0a0d13;--panel:#151a23;--text:#f7f7f5;--muted:#aab2c0;--accent:#ffcc43}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:15px/1.4 system-ui,sans-serif}
+header{padding:28px 34px;border-bottom:1px solid #2c3441} h1{margin:0 0 8px;font-size:clamp(1.8rem,4vw,3.2rem)}
+main{display:grid;grid-template-columns:minmax(300px,1.6fr) minmax(280px,.8fr);gap:18px;padding:18px;max-width:1300px;margin:auto}
+.scene{position:relative;min-height:650px;border-radius:20px;overflow:hidden;background:linear-gradient(#22405a 0 55%,#4a4c4d 55%);box-shadow:inset 0 0 80px #0007}
+.scene:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 12%,#fff7,transparent 26%),linear-gradient(90deg,#0b183577,transparent 55%);pointer-events:none}
+.horizon{position:absolute;left:0;right:0;top:55%;height:2px;background:#ffffff2f}
+.subject{position:absolute;left:50%;top:49%;width:135px;height:210px;transform:translate(-50%,-50%);background:#d9ad7c;border-radius:58px 58px 32px 32px;filter:brightness(1) saturate(1);z-index:3;box-shadow:inset -25px 0 30px #0004}
+.subject:before{content:"";position:absolute;width:85px;height:85px;border-radius:50%;left:25px;top:-55px;background:inherit;box-shadow:inset -18px 0 20px #0004}
+.shadow{position:absolute;left:49%;top:68%;width:240px;height:55px;border-radius:50%;background:#000;opacity:.45;filter:blur(15px);transform-origin:12% 50%;transform:rotate(18deg) scaleX(1);z-index:1}
+.glow{position:absolute;left:50%;top:49%;width:220px;height:300px;transform:translate(-50%,-50%);background:radial-gradient(circle,#8ccfff55,transparent 70%);z-index:2;pointer-events:none}
+.panel{background:var(--panel);border:1px solid #2d3645;border-radius:20px;padding:20px;align-self:start;position:sticky;top:18px}
+.control{margin:15px 0}.control label{display:flex;justify-content:space-between;font-weight:700}.control input[type=range]{width:100%}
+.readout{color:var(--accent);font-variant-numeric:tabular-nums}.score{font-size:3rem;font-weight:900;color:var(--accent)}
+.feedback{padding:12px;background:#0e1219;border-radius:12px;margin-top:12px;color:#dce2ea}
+button{background:var(--accent);border:0;border-radius:10px;padding:10px 13px;font-weight:900;margin-right:8px;cursor:pointer}
+.legend{position:absolute;left:22px;bottom:22px;background:#0b0e13cc;padding:12px 14px;border-radius:12px;z-index:5}
+@media(max-width:800px){main{grid-template-columns:1fr}.panel{position:relative;top:auto}.scene{min-height:520px}}
+</style></head>
+<body>
+<header><h1>Composite Believability Simulator</h1><div style="color:#aab2c0">Change the inserted subject until it feels like it belongs in the scene. The score rewards consistency, not prettiness.</div></header>
+<main>
+<section class="scene"><div class="horizon"></div><div class="shadow" id="shadow"></div><div class="glow" id="glow"></div><div class="subject" id="subject"></div>
+<div class="legend"><strong>Target scene:</strong><br>cool environment · moderate contrast<br>light from upper-left · soft cast shadow</div></section>
+<aside class="panel">
+<div>Believability score</div><div class="score"><span id="score">0</span>%</div><div class="feedback" id="feedback">Start adjusting the subject.</div>
+<div class="control"><label>Exposure <span class="readout" id="rExposure"></span></label><input id="exposure" type="range" min="60" max="140" value="110"></div>
+<div class="control"><label>Warm ↔ Cool <span class="readout" id="rTemp"></span></label><input id="temp" type="range" min="-50" max="50" value="35"></div>
+<div class="control"><label>Saturation <span class="readout" id="rSat"></span></label><input id="sat" type="range" min="40" max="150" value="120"></div>
+<div class="control"><label>Shadow direction <span class="readout" id="rAngle"></span></label><input id="angle" type="range" min="-70" max="70" value="-35"></div>
+<div class="control"><label>Shadow softness <span class="readout" id="rSoft"></span></label><input id="soft" type="range" min="0" max="40" value="3"></div>
+<div class="control"><label>Shadow opacity <span class="readout" id="rOpacity"></span></label><input id="opacity" type="range" min="5" max="90" value="80"></div>
+<div class="control"><label>Environmental glow <span class="readout" id="rGlow"></span></label><input id="glowCtl" type="range" min="0" max="100" value="0"></div>
+<div style="margin-top:18px"><button id="hint">Hint</button><button id="reset">Reset</button></div>
+<p style="color:#aab2c0;font-size:.9rem">Conceptual teaching model: this demonstrates cue consistency. It is not a physically based renderer or a recreation of Photoshop.</p>
+</aside></main>
+<script>
+const target={exposure:92,temp:-18,sat:88,angle:22,soft:18,opacity:42,glow:28};
+const ids=['exposure','temp','sat','angle','soft','opacity','glowCtl'];
+const el=Object.fromEntries(ids.map(x=>[x,document.getElementById(x)]));
+const subject=document.getElementById('subject'),shadow=document.getElementById('shadow'),glow=document.getElementById('glow');
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+function tempColor(t){if(t<0){let x=Math.abs(t)/50;return `rgb(${Math.round(217-25*x)},${Math.round(173+30*x)},${Math.round(124+70*x)})`}let x=t/50;return `rgb(${Math.round(217+30*x)},${Math.round(173-35*x)},${Math.round(124-30*x)})`}
+function closeness(v,t,range){return clamp(1-Math.abs(v-t)/range,0,1)}
+function update(){
+ const v={exposure:+el.exposure.value,temp:+el.temp.value,sat:+el.sat.value,angle:+el.angle.value,soft:+el.soft.value,opacity:+el.opacity.value,glow:+el.glowCtl.value};
+ subject.style.background=tempColor(v.temp); subject.style.filter=`brightness(${v.exposure/100}) saturate(${v.sat/100})`;
+ shadow.style.transform=`rotate(${v.angle}deg) scaleX(1)`; shadow.style.filter=`blur(${v.soft}px)`; shadow.style.opacity=v.opacity/100; glow.style.opacity=v.glow/100;
+ rExposure.textContent=v.exposure+'%';rTemp.textContent=v.temp;rSat.textContent=v.sat+'%';rAngle.textContent=v.angle+'°';rSoft.textContent=v.soft+'px';rOpacity.textContent=v.opacity+'%';rGlow.textContent=v.glow+'%';
+ let parts=[['exposure',closeness(v.exposure,target.exposure,45)],['colour temperature',closeness(v.temp,target.temp,55)],['saturation',closeness(v.sat,target.sat,55)],['shadow direction',closeness(v.angle,target.angle,80)],['shadow softness',closeness(v.soft,target.soft,28)],['shadow opacity',closeness(v.opacity,target.opacity,55)],['environment interaction',closeness(v.glow,target.glow,70)]];
+ let score=Math.round(parts.reduce((a,b)=>a+b[1],0)/parts.length*100); document.getElementById('score').textContent=score; parts.sort((a,b)=>a[1]-b[1]);
+ let weak=parts[0][0],next=parts[1][0]; feedback.textContent=score>=92?'Studio ready: the main cues agree. In a real image, now inspect perspective, edge quality and texture.' : score>=80?`Close. Weakest cues: ${weak} and ${next}.` : score>=60?`The subject still feels inserted. Focus first on ${weak}.` : `Several cues conflict. Start with ${weak}, then ${next}.`;
+}
+ids.forEach(id=>el[id].addEventListener('input',update));
+hint.onclick=()=>{const vals={exposure:+el.exposure.value,temp:+el.temp.value,sat:+el.sat.value,angle:+el.angle.value,soft:+el.soft.value,opacity:+el.opacity.value,glow:+el.glowCtl.value};let d=Object.keys(target).map(k=>[k,Math.abs(vals[k]-target[k])]).sort((a,b)=>b[1]-a[1])[0][0];const names={exposure:'exposure',temp:'colour temperature',sat:'saturation',angle:'shadow direction',soft:'shadow softness',opacity:'shadow opacity',glow:'environmental interaction'};feedback.textContent='Hint: inspect '+names[d]+'. Ask what the background light implies before moving the slider.'}
+reset.onclick=()=>{const x={exposure:110,temp:35,sat:120,angle:-35,soft:3,opacity:80,glowCtl:0};Object.entries(x).forEach(([k,v])=>el[k].value=v);update()}
+update();
+</script></body></html>
