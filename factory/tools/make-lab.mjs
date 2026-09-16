@@ -111,7 +111,7 @@ const mc = (item) => {
 const checkpoints = (topic.checkpoints || []);
 const quizItems = [...(topic.assessment || []), ...(topic.retrievalPractice || [])];
 
-const vocab = (topic.vocabulary || []).map(v => `<div class="vrow"><b>${esc(v.term || v)}</b>${v.definition ? ` — ${esc(v.definition)}` : ''}</div>`).join('');
+const vocab = (topic.vocabulary || []).map(v => `<div class="vc"><b>${esc(v.term || v)}</b>${v.definition ? esc(v.definition) : ''}</div>`).join('');
 const trouble = (topic.troubleshooting || []).map(t => `
   <div class="trouble"><div class="tsc">⚠ ${esc(t.scenario || t.whatIsWrong || '')}</div>
     ${t.cause ? `<div class="tmeta"><b>Why:</b> ${esc(t.cause)}</div>` : ''}
@@ -144,7 +144,13 @@ const html = `<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans Arabic",sans-serif}
 [dir=rtl]{text-align:right}[dir=rtl] .path,[dir=rtl] kbd,[dir=rtl] .tstamp{direction:ltr;unicode-bidi:isolate}
 .wrap{max-width:820px;margin:0 auto;padding:22px 20px 120px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 28px;margin:18px 0;box-shadow:var(--shadow)}
+.card{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--acc,var(--line));border-radius:16px;padding:22px 28px 26px;margin:22px 0;box-shadow:var(--shadow)}
+.card.hero{background:linear-gradient(140deg,var(--brand-soft),var(--card) 60%);border-top-color:var(--brand)}
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--brand),var(--show));z-index:60;transition:width .12s ease}
+.vcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:11px;margin-top:10px}
+.vc{background:var(--bg);border:1px solid var(--line);border-radius:11px;padding:11px 13px;font-size:14.5px}
+.vc b{color:var(--brand);display:block;margin-bottom:3px;font-size:15px}
+h2::after{content:"";flex:1;height:2px;background:linear-gradient(90deg,var(--acc,var(--line)),transparent);border-radius:2px;opacity:.5}
 .langbar{position:sticky;top:0;z-index:20;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:12px;display:flex;gap:8px;align-items:center;box-shadow:var(--shadow);flex-wrap:wrap}
 .lbtn{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;color:var(--ink)}
 .lbtn[aria-pressed=true]{background:var(--brand);color:#fff;border-color:var(--brand)}
@@ -160,7 +166,7 @@ kbd{font-family:ui-monospace,Menlo,monospace;font-size:13px;background:var(--car
 ul{margin:.4em 0;padding-inline-start:1.3em}li{margin:.4em 0}
 .scale{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}.lvl{border:1px solid var(--line);border-radius:12px;padding:12px 13px;font-size:14px}.lvl b{display:block;font-size:12px;text-transform:uppercase;color:var(--muted);margin-bottom:3px}.lvl.here{border-color:var(--follow);background:var(--follow-soft)}.lvl.top{border-color:var(--try);background:var(--try-soft)}
 .step{border-top:1px solid var(--line);padding:22px 0}.step:first-of-type{border-top:0}.head{display:flex;gap:14px;align-items:center;margin-bottom:6px}.num{flex:0 0 36px;height:36px;border-radius:10px;background:var(--follow);color:#fff;font-weight:900;font-size:17px;display:flex;align-items:center;justify-content:center}
-.grid2{display:grid;grid-template-columns:230px 1fr;gap:20px;margin-top:8px}.shotwrap{align-self:start}.shot-img{width:100%;border:1px solid var(--line);border-radius:12px;display:block}.tstamp{font-size:12.5px;color:var(--muted);text-align:center;margin-top:5px;font-weight:700}.shot{border:1.5px dashed var(--line);border-radius:12px;min-height:120px;display:flex;align-items:center;justify-content:center;color:var(--muted);background:var(--bg)}
+.grid2{display:grid;grid-template-columns:290px 1fr;gap:22px;margin-top:8px}.shotwrap{align-self:start}.shot-img{width:100%;border:1px solid var(--line);border-radius:12px;display:block;box-shadow:0 4px 14px rgba(0,0,0,.12)}.tstamp{font-size:12.5px;color:var(--muted);text-align:center;margin-top:5px;font-weight:700}.shot{border:1.5px dashed var(--line);border-radius:12px;min-height:120px;display:flex;align-items:center;justify-content:center;color:var(--muted);background:var(--bg)}
 .watch{font:inherit;font-size:13px;font-weight:800;color:var(--brand);background:var(--brand-soft);border:0;border-radius:999px;padding:6px 12px;cursor:pointer}
 .ministep{padding:9px 0}.mstitle{font-weight:800;font-size:17px}.mstext{margin:.25em 0;font-size:16px}
 .note{border-radius:11px;padding:10px 14px;font-size:15.5px;margin-top:9px}.why{background:var(--follow-soft)}.why b{color:var(--follow)}.check{background:var(--brand-soft)}.check b{color:var(--brand)}
@@ -177,13 +183,14 @@ details{margin-top:8px;border:1px solid var(--line);border-radius:11px;padding:0
 .foot{color:var(--muted);font-size:13.5px;margin-top:24px;line-height:1.8}
 @media(max-width:620px){.grid2{grid-template-columns:1fr}.scale{grid-template-columns:1fr 1fr}h1{font-size:28px}.idwrap{width:100%}.idwrap input{flex:1}}
 </style></head><body>
+<div class="progress" id="prog"></div>
 <div class="wrap">
   <div class="langbar">
     ${LOCS.map(l => `<button class="lbtn" data-l="${l}" aria-pressed="${l === 'en'}" onclick="setLang('${l}')">${esc(UI[l].name)}</button>`).join('')}
     <div class="idwrap"><input id="sid" placeholder="Your name or student ID" data-k-ph="yourId" oninput="save();gate()"></div>
   </div>
 
-  <div class="card">
+  <div class="card hero">
     <div class="row" style="justify-content:space-between"><div class="kicker">${esc(mod.module.course)} · ${esc(mod.module.title)} · ${esc(lab.id)}</div>
       <div class="row">${lab.rollsUpTo.map(id => `<span class="tag" style="background:var(--brand-soft);color:var(--brand)">${esc(id)}</span>`).join('')}<span class="tag" style="background:${aiBadge[2]};color:${aiBadge[1]}">${aiBadge[0]}</span></div></div>
     <h1 data-c="title">${esc(enContent.title)}</h1><p class="lede"><span data-c="focus">${esc(enContent.focus)}</span></p>
@@ -193,39 +200,39 @@ details{margin-top:8px;border:1px solid var(--line);border-radius:11px;padding:0
 
   ${youtube ? `<div class="card"><div class="yt"><iframe id="ytf" src="https://www.youtube.com/embed/${esc(youtube)}?enablejsapi=1&rel=0&cc_load_policy=1&playsinline=1" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe></div><p class="lede" style="font-size:14px">Closed captions ▸ auto-translate via the YouTube CC menu.</p></div>` : ''}
 
-  <div class="card"><h2><span class="phase" style="background:#2563eb">👁</span> <span data-k="see">SEE</span></h2>
+  <div class="card" style="--acc:#2563eb"><h2><span class="phase" style="background:#2563eb">👁</span> <span data-k="see">SEE</span></h2>
     ${iCanLis ? `<div class="kicker" data-k="ican">I can…</div><ul>${iCanLis}</ul>` : ''}
     ${ideaLis ? `<div class="kicker" style="margin-top:12px" data-k="ideas">Key ideas</div><ul>${ideaLis}</ul>` : ''}
-    ${vocab ? `<div class="kicker" style="margin-top:12px" data-k="vocab">Vocabulary</div>${vocab}` : ''}
+    ${vocab ? `<div class="kicker" style="margin-top:14px" data-k="vocab">Vocabulary</div><div class="vcards">${vocab}</div>` : ''}
   </div>
 
-  <div class="card"><h2><span class="phase" style="background:var(--follow)">✋</span> <span data-k="follow">FOLLOW</span> <span class="evidence" data-k="fromRec">from your recording</span></h2>
+  <div class="card" style="--acc:var(--follow)"><h2><span class="phase" style="background:var(--follow)">✋</span> <span data-k="follow">FOLLOW</span> <span class="evidence" data-k="fromRec">from your recording</span></h2>
     ${followBanner}${followHtml}
   </div>
 
-  ${checkpoints.length ? `<div class="card"><h2><span class="phase" style="background:#0891b2">⏱</span> <span data-k="checkpoints">Quick checkpoints</span></h2><p class="lede" data-k="cpLede"></p>${checkpoints.map(mc).join('')}</div>` : ''}
+  ${checkpoints.length ? `<div class="card" style="--acc:#0891b2"><h2><span class="phase" style="background:#0891b2">⏱</span> <span data-k="checkpoints">Quick checkpoints</span></h2><p class="lede" data-k="cpLede"></p>${checkpoints.map(mc).join('')}</div>` : ''}
 
-  <div class="card"><h2><span class="phase" style="background:var(--try)">🎯</span> <span data-k="apply" style="display:none"></span><span data-k="tryH">TRY</span> <span class="evidence">P</span> <span class="scaffold" data-k="scaffold"></span></h2>
+  <div class="card" style="--acc:var(--try)"><h2><span class="phase" style="background:var(--try)">🎯</span> <span data-k="apply" style="display:none"></span><span data-k="tryH">TRY</span> <span class="evidence">P</span> <span class="scaffold" data-k="scaffold"></span></h2>
     ${tryItems ? `<ul>${tryItems}</ul>` : '<p data-k="tryLede"></p>'}
     <div class="note check" data-k="submitTry"></div>
   </div>
 
-  ${quizItems.length ? `<div class="card"><h2><span class="phase" style="background:#0891b2">🧠</span> <span data-k="check">CHECK</span></h2><p class="lede" data-k="tap"></p>${quizItems.map(mc).join('')}</div>` : ''}
+  ${quizItems.length ? `<div class="card" style="--acc:#0891b2"><h2><span class="phase" style="background:#0891b2">🧠</span> <span data-k="check">CHECK</span></h2><p class="lede" data-k="tap"></p>${quizItems.map(mc).join('')}</div>` : ''}
 
-  <div class="card"><h2><span class="phase" style="background:var(--show)">🎤</span> <span data-k="showReflect">SHOW & REFLECT</span> <span class="evidence">O / C</span> <span class="scaffold" data-k="scaffold"></span></h2>
+  <div class="card" style="--acc:var(--show)"><h2><span class="phase" style="background:var(--show)">🎤</span> <span data-k="showReflect">SHOW & REFLECT</span> <span class="evidence">O / C</span> <span class="scaffold" data-k="scaffold"></span></h2>
     <div class="kicker" data-k="explain">Explain to your teacher…</div><ul>${reflectHtml}</ul>
     <div class="note" style="background:var(--show-soft)" data-k="teacherRecords"></div>
   </div>
 
-  <div class="card"><h2><span class="phase" style="background:var(--apply)">🚀</span> <span data-k="apply">APPLY</span> <span class="evidence">P</span> <span class="scaffold" data-k="scaffold"></span></h2>
+  <div class="card" style="--acc:var(--apply)"><h2><span class="phase" style="background:var(--apply)">🚀</span> <span data-k="apply">APPLY</span> <span class="evidence">P</span> <span class="scaffold" data-k="scaffold"></span></h2>
     ${applyItems ? `<ul>${applyItems}</ul>` : ''}
   </div>
 
-  ${trouble ? `<div class="card"><h2><span class="phase" style="background:#64748b">🛠</span> <span data-k="breaks">When it breaks</span></h2><div class="pending" data-showif="noten" hidden><span data-k="pending"></span></div>${trouble}</div>` : ''}
+  ${trouble ? `<div class="card" style="--acc:#64748b"><h2><span class="phase" style="background:#64748b">🛠</span> <span data-k="breaks">When it breaks</span></h2><div class="pending" data-showif="noten" hidden><span data-k="pending"></span></div>${trouble}</div>` : ''}
 
   ${formEmbed ? `<div class="card"><h2><span class="phase" style="background:var(--show)">📝</span> Submit &amp; record your evidence</h2><p class="lede">Answer here — your responses save to your teacher automatically (signed in with your school email).</p><iframe src="${esc(formEmbed)}" style="width:100%;height:680px;border:1px solid var(--line);border-radius:12px;margin-top:10px" loading="lazy">Loading…</iframe></div>` : ''}
 
-  <div class="card"><h2><span class="phase" style="background:var(--brand)">📤</span> <span data-k="sends">Evidence</span></h2>
+  <div class="card" style="--acc:var(--brand)"><h2><span class="phase" style="background:var(--brand)">📤</span> <span data-k="sends">Evidence</span></h2>
     <div class="row">${lab.rollsUpTo.map(id => `<span class="pill">skill: <b>${esc(id)}</b></span>`).join('')}${(lab.evidence || []).map(e => `<span class="pill">${evChip(e)}</span>`).join('')}</div>
     <div style="margin:12px 0">
       <div class="kicker">Which skills did you use today? Rate yourself:</div>
@@ -292,7 +299,8 @@ function download(){
 }
 (function(){try{var s=JSON.parse(localStorage.getItem(KEY)||'{}');if(s.sid)document.getElementById('sid').value=s.sid;if(s.refl)document.querySelectorAll('.refl').forEach(function(t){if(s.refl[t.dataset.idx])t.value=s.refl[t.dataset.idx];});}catch(e){}
 document.querySelectorAll('.refl').forEach(function(t){t.addEventListener('input',function(){save();gate();});});
-setLang('en');gate();})();
+setLang('en');gate();
+var _p=document.getElementById('prog');window.addEventListener('scroll',function(){var h=document.documentElement;var r=h.scrollTop/((h.scrollHeight-h.clientHeight)||1);if(_p)_p.style.width=Math.min(100,r*100)+'%';},{passive:true});})();
 </script>${youtube ? '\n<script src="https://www.youtube.com/iframe_api"></script>' : ''}</body></html>`;
 
 const out = arg('out', join(companionDir, `workbook.lab.${lab.id}.html`));
