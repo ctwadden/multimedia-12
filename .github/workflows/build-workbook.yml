@@ -1,0 +1,56 @@
+name: Build workbook
+on:
+  workflow_dispatch:
+    inputs:
+      drive_id:
+        description: "Google Drive file ID of the recording (shared 'anyone with the link')"
+        required: true
+      youtube:
+        description: "YouTube video ID or URL (for the embedded player)"
+        required: true
+      lab:
+        description: "Lab ID"
+        required: true
+        default: "MM12-PS-LAB-08"
+      course:
+        description: "Course code"
+        required: true
+        default: "MM12"
+      dest_path:
+        description: "Publish path in this repo"
+        required: true
+        default: "photoshop/composite-realism/index.html"
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Install deps
+        working-directory: factory
+        run: npm install --no-audit --no-fund
+      - name: Build workbook
+        working-directory: factory
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          node tools/make-workbook.mjs \
+            --drive "${{ inputs.drive_id }}" \
+            --youtube "${{ inputs.youtube }}" \
+            --lab "${{ inputs.lab }}" \
+            --course "${{ inputs.course }}" \
+            --out "${{ runner.temp }}/companions" \
+            --wburl "https://ctwadden.github.io/multimedia-12/${{ inputs.dest_path }}" \
+            --dest "${{ github.workspace }}/${{ inputs.dest_path }}"
+      - name: Commit and publish
+        run: |
+          git config user.name "scribeit-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add "${{ inputs.dest_path }}"
+          git commit -m "Publish ${{ inputs.lab }} to ${{ inputs.dest_path }}" || { echo "no changes"; exit 0; }
+          git push
