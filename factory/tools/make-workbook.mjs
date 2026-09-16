@@ -74,6 +74,13 @@ const run = (script, args) => execFileSync('node', [join(here, script), ...args]
   log('② embed — inlining screenshots…');
   run('make-embed.mjs', [outDir]);
 
+  // 2b. Translate content (es/fr/ar sidecars, generate-and-store). Skippable.
+  if (!flag('no-translate')) {
+    log('②b translate — es/fr/ar (Gemini)…');
+    try { run('make-translate.mjs', ['--companion', outDir, '--lab', labId, '--module', modulePath]); }
+    catch (e) { log('   translate skipped: ' + String(e.message).slice(0, 60)); }
+  }
+
   // 3. Render the tagged SEE→APPLY workbook (+ YouTube video & per-step seeks).
   log('③ workbook — rendering tagged lab…');
   const wbPath = join(outDir, `workbook.${labId}.html`);

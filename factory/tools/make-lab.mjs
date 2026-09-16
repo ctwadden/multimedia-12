@@ -103,13 +103,17 @@ let qn = 0;
 const mc = (item) => {
   const id = 'q' + (++qn);
   const opts = (item.options || []).map((o, i) => `<button class="opt" data-c2="${i === item.correctAnswerIndex ? 1 : 0}" data-i="${i}" onclick="pick(this,'${id}')">${esc(o)}</button>`).join('');
-  return `<div class="quiz" id="${id}" data-q="${esc(item.question)}">
+  return `<div class="quiz" id="${id}" data-qi="${qn - 1}" data-q="${esc(item.question)}">
     <div class="qq">${esc(item.question)}</div><div class="opts">${opts}</div>
-    ${item.explanation ? `<div class="expl" hidden><b data-k="answer">Answer:</b> ${esc(item.explanation)}</div>` : ''}
+    ${item.explanation ? `<div class="expl" hidden><b data-k="answer">Answer:</b> <span class="exptext">${esc(item.explanation)}</span></div>` : ''}
   </div>`;
 };
 const checkpoints = (topic.checkpoints || []);
 const quizItems = [...(topic.assessment || []), ...(topic.retrievalPractice || [])];
+// per-locale quiz text (order must match mc() render order: checkpoints, then quizItems)
+const enQuiz = [...checkpoints, ...quizItems].map(x => ({ q: x.question, o: x.options || [], e: x.explanation || '' }));
+const QUIZ = { en: enQuiz };
+for (const loc of ['es', 'fr', 'ar']) { const q = CONTENT[loc] && CONTENT[loc].quiz; QUIZ[loc] = (Array.isArray(q) && q.length === enQuiz.length) ? q.map(x => ({ q: x.question, o: x.options || [], e: x.explanation || '' })) : enQuiz; }
 
 const vocab = (topic.vocabulary || []).map(v => `<div class="vc"><b>${esc(v.term || v)}</b>${v.definition ? esc(v.definition) : ''}</div>`).join('');
 const trouble = (topic.troubleshooting || []).map(t => `
@@ -248,7 +252,7 @@ details{margin-top:8px;border:1px solid var(--line);border-radius:11px;padding:0
   <div class="card" style="background:var(--bg)"><p class="foot"><b>Provenance:</b> FOLLOW, checkpoints and quiz come from your recording. TRY/SHOW/APPLY are scaffolds — teacher reviews before release. Non-English content marked "in review" is machine-draft or English fallback. Generator make-lab · ${esc(pkg.lessonId || '')}.</p></div>
 </div>
 <script>
-var UI=${j(UI)}, C=${j(cmap)}, COVERED=${j(covered)}, LESSON=${j({ lessonId: pkg.lessonId, labId: lab.id, labTitle: lab.title, course: mod.module.course, skills: lab.rollsUpTo, wburl })}, SKILLNEXT=${j(skillNext)}, COLLECTOR=${j(collector)};
+var UI=${j(UI)}, C=${j(cmap)}, COVERED=${j(covered)}, LESSON=${j({ lessonId: pkg.lessonId, labId: lab.id, labTitle: lab.title, course: mod.module.course, skills: lab.rollsUpTo, wburl })}, SKILLNEXT=${j(skillNext)}, COLLECTOR=${j(collector)}, QUIZ=${j(QUIZ)};
 var lang='en', KEY='sbwb:'+LESSON.lessonId;
 function t(k){return (UI[lang]&&UI[lang][k])||UI.en[k]||k;}
 function setLang(l){lang=l;var u=UI[l];document.documentElement.lang=l;document.documentElement.dir=u.dir;
@@ -257,6 +261,7 @@ function setLang(l){lang=l;var u=UI[l];document.documentElement.lang=l;document.
   document.querySelectorAll('[data-k-ph]').forEach(function(e){e.setAttribute('placeholder',t(e.dataset.kPh));});
   document.querySelectorAll('[data-c]').forEach(function(e){var m=C[l]||{};e.textContent=(m[e.dataset.c]!=null?m[e.dataset.c]:C.en[e.dataset.c]);});
   document.querySelectorAll('[data-showif]').forEach(function(e){e.hidden=(l==='en')||COVERED[l];});
+  document.querySelectorAll('.quiz').forEach(function(box){var qd=(QUIZ[l]&&QUIZ[l][+box.dataset.qi])||QUIZ.en[+box.dataset.qi];if(!qd)return;var qq=box.querySelector('.qq');if(qq)qq.textContent=qd.q;box.querySelectorAll('.opt').forEach(function(b){var oi=+b.dataset.i;if(qd.o[oi]!=null)b.textContent=qd.o[oi];});var ex=box.querySelector('.exptext');if(ex&&qd.e)ex.textContent=qd.e;});
   save();
 }
 var ytPlayer;function onYouTubeIframeAPIReady(){try{ytPlayer=new YT.Player('ytf');}catch(e){}}
