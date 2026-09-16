@@ -46,6 +46,7 @@ jobs:
             --course "${{ inputs.course }}" \
             --out "${{ runner.temp }}/companions" \
             --wburl "https://ctwadden.github.io/multimedia-12/${{ inputs.dest_path }}" \
+            --collector "${{ vars.COLLECTOR_URL }}" \
             --dest "${{ github.workspace }}/${{ inputs.dest_path }}"
       - name: Commit and publish
         run: |

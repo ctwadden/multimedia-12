@@ -77,7 +77,13 @@ const run = (script, args) => execFileSync('node', [join(here, script), ...args]
   // 3. Render the tagged SEE→APPLY workbook (+ YouTube video & per-step seeks).
   log('③ workbook — rendering tagged lab…');
   const wbPath = join(outDir, `workbook.${labId}.html`);
-  run('make-lab.mjs', ['--companion', outDir, '--module', modulePath, '--lab', labId, ...(youtube ? ['--youtube', youtube] : []), '--out', wbPath]);
+  const wburl = arg('wburl', '');
+  const collector = arg('collector', '');
+  run('make-lab.mjs', ['--companion', outDir, '--module', modulePath, '--lab', labId,
+    ...(youtube ? ['--youtube', youtube] : []),
+    ...(wburl ? ['--wburl', wburl] : []),
+    ...(collector ? ['--collector', collector] : []),
+    '--out', wbPath]);
 
   // 4. Publish to GitHub Pages (optional; needs GITHUB_TOKEN).
   if (repo) {

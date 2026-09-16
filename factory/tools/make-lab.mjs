@@ -44,6 +44,11 @@ const primarySkill = skillsDoc.skills[lab.rollsUpTo[0]] || {};
 const LOCS = ['en', 'es', 'fr', 'ar'];
 const skillNext = Object.fromEntries(lab.rollsUpTo.map(id => [id, (skillsDoc.skills[id] || {}).nextMove || '']));
 const wburl = arg('wburl', '');
+const formUrl = arg('form', '');
+const formEmbed = formUrl ? (formUrl + (formUrl.includes('?') ? '&' : '?') + 'embedded=true') : '';
+const collector = arg('collector', '');   // Google Apps Script web-app URL that appends claims to a Sheet
+const skillTitles = Object.fromEntries(lab.rollsUpTo.map(id => [id, (skillsDoc.skills[id] || {}).title || id]));
+const skillRateRows = lab.rollsUpTo.map(id => `<label style="font-size:14.5px;display:block;margin:8px 0"><b>${esc(skillTitles[id])}</b><br><select class="srate" data-skill="${esc(id)}" onchange="gate()" style="font:inherit;padding:9px 11px;border:1.5px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink);margin-top:4px;min-width:230px"><option value="">— didn't use this skill —</option><option value="1">1 · Beginning</option><option value="2">2 · Developing</option><option value="3">3 · Independent</option><option value="4">4 · Transfer</option></select></label>`).join('');
 
 // --- content translations (English base + optional sidecars) ---
 const enContent = {
@@ -218,11 +223,14 @@ details{margin-top:8px;border:1px solid var(--line);border-radius:11px;padding:0
 
   ${trouble ? `<div class="card"><h2><span class="phase" style="background:#64748b">🛠</span> <span data-k="breaks">When it breaks</span></h2><div class="pending" data-showif="noten" hidden><span data-k="pending"></span></div>${trouble}</div>` : ''}
 
+  ${formEmbed ? `<div class="card"><h2><span class="phase" style="background:var(--show)">📝</span> Submit &amp; record your evidence</h2><p class="lede">Answer here — your responses save to your teacher automatically (signed in with your school email).</p><iframe src="${esc(formEmbed)}" style="width:100%;height:680px;border:1px solid var(--line);border-radius:12px;margin-top:10px" loading="lazy">Loading…</iframe></div>` : ''}
+
   <div class="card"><h2><span class="phase" style="background:var(--brand)">📤</span> <span data-k="sends">Evidence</span></h2>
     <div class="row">${lab.rollsUpTo.map(id => `<span class="pill">skill: <b>${esc(id)}</b></span>`).join('')}${(lab.evidence || []).map(e => `<span class="pill">${evChip(e)}</span>`).join('')}</div>
-    <div class="row" style="margin:12px 0;gap:16px">
-      <label style="font-size:14px">How much help did you use?<br><select id="support" style="font:inherit;padding:8px 10px;border:1.5px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink);margin-top:4px"><option>None</option><option>Access supports only</option><option selected>Instructional hints</option><option>Modelled together</option></select></label>
-      <label style="font-size:14px">Rate yourself 1–4 (optional)<br><select id="selfrating" style="font:inherit;padding:8px 10px;border:1.5px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink);margin-top:4px"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+    <div style="margin:12px 0">
+      <div class="kicker">Which skills did you use today? Rate yourself:</div>
+      ${skillRateRows}
+      <label style="font-size:14.5px;display:block;margin-top:12px"><b>How much help did you use?</b><br><select id="support" style="font:inherit;padding:9px 11px;border:1.5px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink);margin-top:4px"><option>None</option><option>Access supports only</option><option selected>Instructional hints</option><option>Modelled together</option></select></label>
     </div>
     <p class="lede" id="gatemsg" data-k="needId" style="margin:12px 0"></p>
     <button class="dl" id="dl" disabled onclick="download()" data-k="download">Download my evidence</button>
@@ -233,7 +241,7 @@ details{margin-top:8px;border:1px solid var(--line);border-radius:11px;padding:0
   <div class="card" style="background:var(--bg)"><p class="foot"><b>Provenance:</b> FOLLOW, checkpoints and quiz come from your recording. TRY/SHOW/APPLY are scaffolds — teacher reviews before release. Non-English content marked "in review" is machine-draft or English fallback. Generator make-lab · ${esc(pkg.lessonId || '')}.</p></div>
 </div>
 <script>
-var UI=${j(UI)}, C=${j(cmap)}, COVERED=${j(covered)}, LESSON=${j({ lessonId: pkg.lessonId, labId: lab.id, labTitle: lab.title, course: mod.module.course, skills: lab.rollsUpTo, wburl })}, SKILLNEXT=${j(skillNext)};
+var UI=${j(UI)}, C=${j(cmap)}, COVERED=${j(covered)}, LESSON=${j({ lessonId: pkg.lessonId, labId: lab.id, labTitle: lab.title, course: mod.module.course, skills: lab.rollsUpTo, wburl })}, SKILLNEXT=${j(skillNext)}, COLLECTOR=${j(collector)};
 var lang='en', KEY='sbwb:'+LESSON.lessonId;
 function t(k){return (UI[lang]&&UI[lang][k])||UI.en[k]||k;}
 function setLang(l){lang=l;var u=UI[l];document.documentElement.lang=l;document.documentElement.dir=u.dir;
@@ -250,29 +258,37 @@ var answers={};
 function pick(btn,qid){var box=document.getElementById(qid);box.querySelectorAll('.opt').forEach(function(o){o.disabled=true;if(o.dataset.c2==='1')o.classList.add('right');});if(btn.dataset.c2!=='1')btn.classList.add('wrong');var e=box.querySelector('.expl');if(e)e.hidden=false;answers[qid]={q:box.dataset.q,chosen:+btn.dataset.i,text:btn.textContent,correct:btn.dataset.c2==='1'};save();gate();}
 function save(){try{localStorage.setItem(KEY,JSON.stringify({sid:(document.getElementById('sid')||{}).value||'',answers:answers,refl:refls(),lang:lang}));}catch(e){}}
 function refls(){var o={};document.querySelectorAll('.refl').forEach(function(t){o[t.dataset.idx]=t.value;});return o;}
-function gate(){var sid=(document.getElementById('sid')||{}).value||'';var nq=document.querySelectorAll('.quiz').length;var na=Object.keys(answers).length;var rok=true;document.querySelectorAll('.refl').forEach(function(t){if(!t.value.trim())rok=false;});var ok=sid.trim()&&na>=nq&&rok;document.getElementById('dl').disabled=!ok;}
-function download(){
+function ratedSkills(){var out=[];document.querySelectorAll('.srate').forEach(function(s){if(s.value)out.push({skill:s.dataset.skill,level:parseInt(s.value,10)});});return out;}
+function gate(){var sid=(document.getElementById('sid')||{}).value||'';var nq=document.querySelectorAll('.quiz').length;var na=Object.keys(answers).length;var rok=true;document.querySelectorAll('.refl').forEach(function(t){if(!t.value.trim())rok=false;});var ok=sid.trim()&&na>=nq&&rok&&ratedSkills().length>0;var b=document.getElementById('dl');if(b)b.disabled=!ok;}
+function uuid(){try{return crypto.randomUUID();}catch(e){return 'id-'+Date.now()+'-'+Math.random().toString(16).slice(2);}}
+function buildClaims(){
   var sid=document.getElementById('sid').value.trim();
-  var date=new Date().toISOString().slice(0,10);
+  var date=new Date().toLocaleDateString('en-CA'); // local YYYY-MM-DD (avoids UTC next-day)
   var total=document.querySelectorAll('.quiz').length, correct=Object.values(answers).filter(function(a){return a.correct;}).length;
   var refl=[];document.querySelectorAll('.refl').forEach(function(t){if(t.value.trim())refl.push(t.value.trim());});
   var note=('Quiz '+correct+'/'+total+(refl[0]?(' — '+refl[0]):'')).slice(0,600)||('Completed '+LESSON.labId);
   var support=(document.getElementById('support')||{}).value||'None';
-  var srv=(document.getElementById('selfrating')||{}).value; var selfRating=srv?parseInt(srv,10):null;
-  var learned=refl[refl.length-1];
-  var claims=LESSON.skills.map(function(skill){
-    var c={ id:(sid+'-'+LESSON.lessonId+'-'+skill+'-'+date).replace(/[^A-Za-z0-9._-]+/g,'-'),
-      student:sid, course:LESSON.course, skill:skill, date:date,
+  var learned=refl.length?refl[refl.length-1]:'';
+  var ids={};try{ids=JSON.parse(localStorage.getItem(KEY+':ids')||'{}');}catch(e){}
+  var claims=ratedSkills().map(function(r){
+    if(!ids[r.skill])ids[r.skill]=uuid();           // one stable UUID per skill, persisted for re-export
+    var c={ id:ids[r.skill], student:sid, course:LESSON.course, skill:r.skill, date:date,
       attempt:('Lab: '+(LESSON.labTitle||LESSON.labId)),
       artifact:(LESSON.wburl||('Workbook '+LESSON.labId)),
-      note:note, next:(SKILLNEXT[skill]||'Apply this skill in the next project.'),
-      support:support, selfRating:selfRating };
+      note:note, next:(SKILLNEXT[r.skill]||'Apply this skill in the next project.'),
+      support:support, selfRating:r.level };
     if(learned)c.learned=learned;
     return c;
   });
-  var payload={app:'evidence-map-student-passport',schema:1,claims:claims};
+  try{localStorage.setItem(KEY+':ids',JSON.stringify(ids));}catch(e){}
+  return {app:'evidence-map-student-passport',schema:1,claims:claims};
+}
+function download(){
+  var payload=buildClaims(); var sid=document.getElementById('sid').value.trim();
+  if(COLLECTOR){ try{ fetch(COLLECTOR,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)}); }catch(e){} }
   var blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
-  var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='passport_'+sid.replace(/[^a-z0-9]+/gi,'-')+'_'+LESSON.lessonId+'.json';a.click();
+  var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='claims_'+(sid||'student').replace(/[^a-z0-9]+/gi,'-')+'_'+LESSON.lessonId+'.json';a.click();
+  var g=document.getElementById('gatemsg');if(g)g.textContent=COLLECTOR?'Submitted to your teacher ✓ (a copy also downloaded).':'Downloaded ✓ — hand this file to your teacher.';
 }
 (function(){try{var s=JSON.parse(localStorage.getItem(KEY)||'{}');if(s.sid)document.getElementById('sid').value=s.sid;if(s.refl)document.querySelectorAll('.refl').forEach(function(t){if(s.refl[t.dataset.idx])t.value=s.refl[t.dataset.idx];});}catch(e){}
 document.querySelectorAll('.refl').forEach(function(t){t.addEventListener('input',function(){save();gate();});});
