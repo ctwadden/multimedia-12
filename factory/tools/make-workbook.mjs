@@ -86,10 +86,12 @@ const run = (script, args) => execFileSync('node', [join(here, script), ...args]
   const wbPath = join(outDir, `workbook.${labId}.html`);
   const wburl = arg('wburl', '');
   const collector = arg('collector', '');
+  const pass = (n) => { const v = arg(n, ''); return v ? [`--${n}`, v] : []; };
   run('make-lab.mjs', ['--companion', outDir, '--module', modulePath, '--lab', labId,
     ...(youtube ? ['--youtube', youtube] : []),
     ...(wburl ? ['--wburl', wburl] : []),
     ...(collector ? ['--collector', collector] : []),
+    ...pass('builds-on'), ...pass('new'), ...pass('prepares-for'),
     '--out', wbPath]);
 
   // 4. Publish to GitHub Pages (optional; needs GITHUB_TOKEN).

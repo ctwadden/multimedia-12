@@ -47,6 +47,10 @@ const wburl = arg('wburl', '');
 const formUrl = arg('form', '');
 const formEmbed = formUrl ? (formUrl + (formUrl.includes('?') ? '&' : '?') + 'embedded=true') : '';
 const collector = arg('collector', '');   // Google Apps Script web-app URL that appends claims to a Sheet
+// Day-to-day flow (from the day-by-day plan card): builds-on → today → prepares-for
+const flow = { builds: arg('builds-on', ''), now: arg('new', ''), prep: arg('prepares-for', '') };
+const flowHtml = (flow.builds || flow.now || flow.prep)
+  ? `<div class="flow">${flow.builds ? `<span><b>Builds on</b> ${esc(flow.builds)}</span>` : ''}${flow.now ? `<span><b>Today</b> ${esc(flow.now)}</span>` : ''}${flow.prep ? `<span><b>Next</b> ${esc(flow.prep)}</span>` : ''}</div>` : '';
 const skillTitles = Object.fromEntries(lab.rollsUpTo.map(id => [id, (skillsDoc.skills[id] || {}).title || id]));
 const skillRateRows = lab.rollsUpTo.map(id => `<label style="font-size:14.5px;display:block;margin:8px 0"><b>${esc(skillTitles[id])}</b><br><select class="srate" data-skill="${esc(id)}" onchange="gate()" style="font:inherit;padding:9px 11px;border:1.5px solid var(--line);border-radius:9px;background:var(--bg);color:var(--ink);margin-top:4px;min-width:230px"><option value="">— didn't use this skill —</option><option value="1">1 · Beginning</option><option value="2">2 · Developing</option><option value="3">3 · Independent</option><option value="4">4 · Transfer</option></select></label>`).join('');
 
@@ -186,6 +190,7 @@ details{margin-top:8px;border:1px solid var(--line);border-radius:11px;padding:0
 .dl{font:inherit;font-size:16px;font-weight:800;color:#fff;background:var(--brand);border:0;border-radius:12px;padding:13px 20px;cursor:pointer}.dl[disabled]{opacity:.5;cursor:not-allowed}
 .foot{color:var(--muted);font-size:13.5px;margin-top:24px;line-height:1.8}
 @media(max-width:620px){.grid2{grid-template-columns:1fr}.scale{grid-template-columns:1fr 1fr}h1{font-size:28px}.idwrap{width:100%}.idwrap input{flex:1}}
+.flow{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.flow span{background:var(--chip);border-radius:999px;padding:6px 13px;font-size:13.5px}.flow b{color:var(--brand);font-weight:800;margin-right:5px}
 @media print{:root{--bg:#fff;--card:#fff;--ink:#111;--muted:#555;--line:#ccc}.langbar,.progress,.yt,.watch,.dl,#gatemsg,.opt{display:none!important}.card{break-inside:avoid;box-shadow:none;border:1px solid #ddd}.expl{display:block!important}body{background:#fff}}
 </style></head><body>
 <div class="progress" id="prog"></div>
@@ -199,6 +204,7 @@ details{margin-top:8px;border:1px solid var(--line);border-radius:11px;padding:0
     <div class="row" style="justify-content:space-between"><div class="kicker">${esc(mod.module.course)} · ${esc(mod.module.title)} · ${esc(lab.id)}</div>
       <div class="row">${lab.rollsUpTo.map(id => `<span class="tag" style="background:var(--brand-soft);color:var(--brand)">${esc(id)}</span>`).join('')}<span class="tag" style="background:${aiBadge[2]};color:${aiBadge[1]}">${aiBadge[0]}</span></div></div>
     <h1 data-c="title">${esc(enContent.title)}</h1><p class="lede"><span data-c="focus">${esc(enContent.focus)}</span></p>
+    ${flowHtml}
     ${primarySkill.canDo ? `<div class="note check" style="margin-top:16px;font-size:16px"><b><span data-k="competency">Competency assessed</span> — <span data-c="compTitle">${esc(enContent.compTitle)}</span>:</b> <span data-c="compCanDo">${esc(enContent.compCanDo)}</span></div>
     <div class="scale"><div class="lvl"><b data-k="l1">Beginning</b></div><div class="lvl"><b data-k="l2">Developing</b></div><div class="lvl here"><b data-k="l3">Independent</b> ★<div data-c="compCanDo">${esc(enContent.compCanDo)}</div></div><div class="lvl top"><b data-k="l4">Transfer</b><div data-c="compL4">${esc(enContent.compL4)}</div></div></div>` : ''}
   </div>
