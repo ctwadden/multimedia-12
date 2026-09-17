@@ -1,0 +1,15 @@
+{
+  "course": "MM12",
+  "title": "Multimedia 12",
+  "subtitle": "Build believable images and media — one skill at a time. Watch the demo, follow along, check your understanding, and rate your own skills.",
+  "accent": "#db2777",
+  "lessons": [
+    {
+      "title": "Composite Realism",
+      "url": "photoshop/composite-realism/",
+      "time": "~10 min",
+      "desc": "Combine multiple photos believably — selection, masking, layer order, and Soft Light blending.",
+      "skills": ["Image integration & lighting", "Editable layers & masks"]
+    }
+  ]
+}

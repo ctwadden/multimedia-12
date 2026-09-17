@@ -1,0 +1,60 @@
+#!/usr/bin/env node
+/**
+ * make-splash.mjs — build a bright course landing page that inventories a course's
+ * lessons (links to each published workbook). Deterministic, no Gemini.
+ *
+ *   node tools/make-splash.mjs --course courses/mm12.json --out <file.html>
+ *
+ * Course JSON: { course, title, subtitle, accent, lessons:[{title,url,skills[],time,desc}] }
+ */
+import { readFileSync, writeFileSync } from 'node:fs';
+const arg = (n, d = null) => { const i = process.argv.indexOf(`--${n}`); return i >= 0 ? process.argv[i + 1] : d; };
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const c = JSON.parse(readFileSync(arg('course'), 'utf8'));
+const accent = c.accent || '#2f6df6';
+
+const card = (l) => `
+  <a class="lesson" href="${esc(l.url)}">
+    <div class="ltop"><h3>${esc(l.title)}</h3>${l.time ? `<span class="time">${esc(l.time)}</span>` : ''}</div>
+    ${l.desc ? `<p class="ldesc">${esc(l.desc)}</p>` : ''}
+    <div class="chips">${(l.skills || []).map(s => `<span class="chip">${esc(s)}</span>`).join('')}</div>
+    <span class="go">Open lesson →</span>
+  </a>`;
+
+const html = `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${esc(c.title)}</title><style>
+:root{--bg:#eef1f6;--card:#fff;--ink:#12161b;--muted:#5a6572;--line:#e2e7ee;--accent:${accent};--accent-soft:${accent}22;--chip:#eef1f6;--shadow:0 1px 2px rgba(20,30,50,.05),0 14px 40px rgba(20,30,50,.08)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1116;--card:#161b22;--ink:#e8edf3;--muted:#9aa6b3;--line:#242c36;--accent-soft:${accent}33;--chip:#212934;--shadow:0 1px 2px rgba(0,0,0,.3),0 16px 44px rgba(0,0,0,.5)}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:32px 20px 90px}
+.hero{background:linear-gradient(140deg,var(--accent-soft),var(--card) 65%);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:20px;padding:34px 32px;box-shadow:var(--shadow)}
+.kicker{font-size:13px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:40px;letter-spacing:-.02em;margin:.15em 0 .1em;line-height:1.08}
+.sub{color:var(--muted);font-size:18px;margin:0;max-width:60ch}
+.count{margin-top:16px;font-size:14px;color:var(--muted);font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin-top:26px}
+.lesson{display:flex;flex-direction:column;gap:10px;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);text-decoration:none;color:inherit;transition:transform .12s,box-shadow .12s}
+.lesson:hover{transform:translateY(-3px);box-shadow:0 20px 48px rgba(20,30,50,.14)}
+.ltop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+h3{font-size:20px;margin:0;line-height:1.2}
+.time{font-size:12px;font-weight:700;color:var(--muted);background:var(--chip);border-radius:999px;padding:3px 9px;white-space:nowrap}
+.ldesc{color:var(--muted);font-size:15px;margin:0;flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:12px;font-weight:700;background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:3px 10px}
+.go{font-weight:800;color:var(--accent);font-size:15px;margin-top:2px}
+.foot{color:var(--muted);font-size:13px;margin-top:34px;text-align:center}
+@media(max-width:560px){h1{font-size:30px}}
+</style></head><body>
+<div class="wrap">
+  <div class="hero">
+    <div class="kicker">${esc(c.course)} · Course Library</div>
+    <h1>${esc(c.title)}</h1>
+    <p class="sub">${esc(c.subtitle || '')}</p>
+    <div class="count">${(c.lessons || []).length} lesson${(c.lessons || []).length === 1 ? '' : 's'}</div>
+  </div>
+  <div class="grid">${(c.lessons || []).map(card).join('')}</div>
+  <p class="foot">Each lesson is a bilingual, video-linked workbook. Pick one to begin.</p>
+</div></body></html>`;
+
+writeFileSync(arg('out', 'splash.html'), html);
+console.log(`✓ ${arg('out', 'splash.html')} · ${(c.lessons || []).length} lessons`);
