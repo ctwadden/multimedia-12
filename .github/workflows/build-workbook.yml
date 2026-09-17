@@ -9,17 +9,40 @@ on:
         description: "YouTube video ID or URL (for the embedded player)"
         required: true
       lab:
-        description: "Lab ID"
+        description: "Lab (pick one)"
         required: true
+        type: choice
         default: "MM12-PS-LAB-08"
+        options:
+          - MM12-PS-LAB-01
+          - MM12-PS-LAB-02
+          - MM12-PS-LAB-03
+          - MM12-PS-LAB-04
+          - MM12-PS-LAB-05
+          - MM12-PS-LAB-06
+          - MM12-PS-LAB-07
+          - MM12-PS-LAB-08
+          - MM12-PS-LAB-09
+          - MM12-PS-LAB-10
+          - MM12-PS-LAB-11
+          - MM12-PS-LAB-12
+          - MM12-PS-LAB-13
+          - MM12-PS-LAB-14
       course:
-        description: "Course code"
+        description: "Course"
         required: true
+        type: choice
         default: "MM12"
+        options: [MM12, COM11, IBDS, CP12]
       dest_path:
-        description: "Publish path in this repo"
+        description: "Publish path in this repo (folder/name/index.html)"
         required: true
         default: "photoshop/composite-realism/index.html"
+      make_pdf:
+        description: "Also render step-by-step PDFs (all languages)?"
+        required: false
+        type: boolean
+        default: false
 permissions:
   contents: write
 jobs:
@@ -54,4 +77,23 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add "${{ inputs.dest_path }}"
           git commit -m "Publish ${{ inputs.lab }} to ${{ inputs.dest_path }}" || { echo "no changes"; exit 0; }
+          git push
+      - name: Set up Chrome (for PDFs)
+        if: ${{ inputs.make_pdf }}
+        id: chrome
+        uses: browser-actions/setup-chrome@v1
+      - name: Render and publish PDFs
+        if: ${{ inputs.make_pdf }}
+        working-directory: factory
+        env:
+          SCRIBE_CHROME: ${{ steps.chrome.outputs.chrome-path }}
+        run: |
+          WB="${{ github.workspace }}/${{ inputs.dest_path }}"
+          PDFDIR="$(dirname "${{ github.workspace }}/${{ inputs.dest_path }}")/pdf"
+          node tools/make-pdf.mjs --workbook "$WB" --out-dir "$PDFDIR"
+          cd "${{ github.workspace }}"
+          git config user.name "scribeit-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add "$(dirname "${{ inputs.dest_path }}")/pdf"
+          git commit -m "PDFs (all languages) for ${{ inputs.lab }}" || { echo "no pdf changes"; exit 0; }
           git push

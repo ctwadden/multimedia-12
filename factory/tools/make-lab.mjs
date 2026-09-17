@@ -186,6 +186,7 @@ details{margin-top:8px;border:1px solid var(--line);border-radius:11px;padding:0
 .dl{font:inherit;font-size:16px;font-weight:800;color:#fff;background:var(--brand);border:0;border-radius:12px;padding:13px 20px;cursor:pointer}.dl[disabled]{opacity:.5;cursor:not-allowed}
 .foot{color:var(--muted);font-size:13.5px;margin-top:24px;line-height:1.8}
 @media(max-width:620px){.grid2{grid-template-columns:1fr}.scale{grid-template-columns:1fr 1fr}h1{font-size:28px}.idwrap{width:100%}.idwrap input{flex:1}}
+@media print{:root{--bg:#fff;--card:#fff;--ink:#111;--muted:#555;--line:#ccc}.langbar,.progress,.yt,.watch,.dl,#gatemsg,.opt{display:none!important}.card{break-inside:avoid;box-shadow:none;border:1px solid #ddd}.expl{display:block!important}body{background:#fff}}
 </style></head><body>
 <div class="progress" id="prog"></div>
 <div class="wrap">
@@ -304,7 +305,7 @@ function download(){
 }
 (function(){try{var s=JSON.parse(localStorage.getItem(KEY)||'{}');if(s.sid)document.getElementById('sid').value=s.sid;if(s.refl)document.querySelectorAll('.refl').forEach(function(t){if(s.refl[t.dataset.idx])t.value=s.refl[t.dataset.idx];});}catch(e){}
 document.querySelectorAll('.refl').forEach(function(t){t.addEventListener('input',function(){save();gate();});});
-setLang('en');gate();
+setLang('en');var _l=new URLSearchParams(location.search).get('lang');if(_l&&UI[_l])setLang(_l);gate();
 var _p=document.getElementById('prog');window.addEventListener('scroll',function(){var h=document.documentElement;var r=h.scrollTop/((h.scrollHeight-h.clientHeight)||1);if(_p)_p.style.width=Math.min(100,r*100)+'%';},{passive:true});})();
 </script>${youtube ? '\n<script src="https://www.youtube.com/iframe_api"></script>' : ''}</body></html>`;
 
