@@ -34,12 +34,20 @@ on:
         type: choice
         default: "MM12"
         options: [MM12, COM11, IBDS, CP12]
+      standard:
+        description: "Workbook format"
+        required: true
+        type: choice
+        default: "v6"
+        options:
+          - v6
+          - classic
       dest_path:
         description: "Publish path in this repo (folder/name/index.html)"
         required: true
         default: "photoshop/composite-realism/index.html"
       make_pdf:
-        description: "Also render step-by-step PDFs (all languages)?"
+        description: "Also render step-by-step PDFs (classic = all languages; v6 = English)?"
         required: false
         type: boolean
         default: false
@@ -79,6 +87,7 @@ jobs:
             --youtube "${{ inputs.youtube }}" \
             --lab "${{ inputs.lab }}" \
             --course "${{ inputs.course }}" \
+            --standard "${{ inputs.standard }}" \
             --out "${{ runner.temp }}/companions" \
             --wburl "https://ctwadden.github.io/multimedia-12/${{ inputs.dest_path }}" \
             --collector "${{ vars.COLLECTOR_URL }}" \
@@ -91,7 +100,7 @@ jobs:
           git config user.name "scribeit-bot"
           git config user.email "actions@users.noreply.github.com"
           git add "${{ inputs.dest_path }}"
-          git commit -m "Publish ${{ inputs.lab }} to ${{ inputs.dest_path }}" || { echo "no changes"; exit 0; }
+          git commit -m "Publish ${{ inputs.lab }} (${{ inputs.standard }}) to ${{ inputs.dest_path }}" || { echo "no changes"; exit 0; }
           git push
       - name: Set up Chrome (for PDFs)
         if: ${{ inputs.make_pdf }}
@@ -110,5 +119,5 @@ jobs:
           git config user.name "scribeit-bot"
           git config user.email "actions@users.noreply.github.com"
           git add "$(dirname "${{ inputs.dest_path }}")/pdf"
-          git commit -m "PDFs (all languages) for ${{ inputs.lab }}" || { echo "no pdf changes"; exit 0; }
+          git commit -m "PDFs for ${{ inputs.lab }}" || { echo "no pdf changes"; exit 0; }
           git push
