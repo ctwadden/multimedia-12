@@ -75,25 +75,29 @@ const run = (script, args) => execFileSync('node', [join(here, script), ...args]
   run('make-embed.mjs', [outDir]);
 
   // 2b. Translate content (es/fr/ar sidecars, generate-and-store). Skippable.
-  //     v6 / Drop Day output is English-only, so skip translation there.
-  const wantV6 = ['v6', 'dropday'].includes((arg('standard', 'classic') || '').toLowerCase());
-  if (!flag('no-translate') && !wantV6) {
+  //     v6 / v7 output is English-only, so skip translation there.
+  const stdEarly = (arg('standard', 'classic') || '').toLowerCase();
+  const englishOnly = ['v6', 'dropday', 'v7', 'supported'].includes(stdEarly);
+  if (!flag('no-translate') && !englishOnly) {
     log('②b translate — es/fr/ar (Gemini)…');
     try { run('make-translate.mjs', ['--companion', outDir, '--lab', labId, '--module', modulePath]); }
     catch (e) { log('   translate skipped: ' + String(e.message).slice(0, 60)); }
   }
 
   // 3. Render the workbook (+ YouTube video & per-step seeks).
-  //    --standard v6  → Drop Day / Learning Studio layout (make-lab-v6, English, no i18n step)
-  //    default        → the multilingual SEE→APPLY layout (make-lab)
+  //    --standard v7|supported → Supported Studio hybrid (chapters + WHY/LOOK FOR/support ladder)
+  //    --standard v6|dropday   → Drop Day / Learning Studio layout
+  //    default (classic)       → the multilingual SEE→APPLY layout
   const standard = (arg('standard', 'classic') || 'classic').toLowerCase();
+  const v7 = standard === 'v7' || standard === 'supported';
   const v6 = standard === 'v6' || standard === 'dropday';
-  log(`③ workbook — rendering ${v6 ? 'Drop Day v6' : 'tagged classic'} lab…`);
+  const renderer = v7 ? 'make-lab-v7.mjs' : v6 ? 'make-lab-v6.mjs' : 'make-lab.mjs';
+  log(`③ workbook — rendering ${v7 ? 'Supported Studio v7' : v6 ? 'Drop Day v6' : 'tagged classic'} lab…`);
   const wbPath = join(outDir, `workbook.${labId}.html`);
   const wburl = arg('wburl', '');
   const collector = arg('collector', '');
   const pass = (n) => { const v = arg(n, ''); return v ? [`--${n}`, v] : []; };
-  run(v6 ? 'make-lab-v6.mjs' : 'make-lab.mjs', ['--companion', outDir, '--module', modulePath, '--lab', labId,
+  run(renderer, ['--companion', outDir, '--module', modulePath, '--lab', labId,
     ...(youtube ? ['--youtube', youtube] : []),
     ...(wburl ? ['--wburl', wburl] : []),
     ...(collector ? ['--collector', collector] : []),
