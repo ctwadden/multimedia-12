@@ -38,8 +38,9 @@ on:
         description: "Workbook format"
         required: true
         type: choice
-        default: "v6"
+        default: "v7"
         options:
+          - v7
           - v6
           - classic
       dest_path:
@@ -47,7 +48,7 @@ on:
         required: true
         default: "photoshop/composite-realism/index.html"
       make_pdf:
-        description: "Also render step-by-step PDFs (classic = all languages; v6 = English)?"
+        description: "Also render step-by-step PDFs (classic = all languages; v6/v7 = English)?"
         required: false
         type: boolean
         default: false
