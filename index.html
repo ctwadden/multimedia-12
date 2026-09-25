@@ -1,46 +1,115 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Multimedia 12</title><style>
-:root{--bg:#eef1f6;--card:#fff;--ink:#12161b;--muted:#5a6572;--line:#e2e7ee;--accent:#db2777;--accent-soft:#db277722;--chip:#eef1f6;--shadow:0 1px 2px rgba(20,30,50,.05),0 14px 40px rgba(20,30,50,.08)}
-@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1116;--card:#161b22;--ink:#e8edf3;--muted:#9aa6b3;--line:#242c36;--accent-soft:#db277733;--chip:#212934;--shadow:0 1px 2px rgba(0,0,0,.3),0 16px 44px rgba(0,0,0,.5)}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-.wrap{max-width:960px;margin:0 auto;padding:32px 20px 90px}
-.hero{background:linear-gradient(140deg,var(--accent-soft),var(--card) 65%);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:20px;padding:34px 32px;box-shadow:var(--shadow)}
-.kicker{font-size:13px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
-h1{font-size:40px;letter-spacing:-.02em;margin:.15em 0 .1em;line-height:1.08}
-.sub{color:var(--muted);font-size:18px;margin:0;max-width:60ch}
-.count{margin-top:16px;font-size:14px;color:var(--muted);font-weight:600}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin-top:26px}
-.lesson{display:flex;flex-direction:column;gap:10px;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);text-decoration:none;color:inherit;transition:transform .12s,box-shadow .12s}
-.lesson:hover{transform:translateY(-3px);box-shadow:0 20px 48px rgba(20,30,50,.14)}
-.ltop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
-h3{font-size:20px;margin:0;line-height:1.2}
-.time{font-size:12px;font-weight:700;color:var(--muted);background:var(--chip);border-radius:999px;padding:3px 9px;white-space:nowrap}
-.ldesc{color:var(--muted);font-size:15px;margin:0;flex:1}
-.chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{font-size:12px;font-weight:700;background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:3px 10px}
-.go{font-weight:800;color:var(--accent);font-size:15px;margin-top:2px}
-.foot{color:var(--muted);font-size:13px;margin-top:34px;text-align:center}
-@media(max-width:560px){h1{font-size:30px}}
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Make purposeful media. Build your skills, explain your choices, and improve through feedback."><title>Multimedia 12 · Learning Studio</title>
+<style>
+:root{color-scheme:light;--paper:#f7f5f0;--card:#fff;--ink:#182b33;--muted:#53636b;--line:#d8dddb;--accent:#a61e58;--soft:#f8eaf0;--green:#245849}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--accent);text-underline-offset:4px}a:focus-visible,summary:focus-visible{outline:3px solid #216ba5;outline-offset:5px;border-radius:3px}h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{line-height:1.18;text-wrap:balance}h1{font-size:clamp(2rem,7vw,5rem);letter-spacing:-.055em;margin-bottom:22px}h2{font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:-.035em;margin-bottom:0}h3{font-size:1.35rem;margin-bottom:5px}h4{font-size:1.45rem;letter-spacing:-.02em;margin-bottom:9px}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.skip{position:absolute;left:16px;top:-80px;background:white;padding:12px;z-index:2}.skip:focus{top:10px}.topbar{border-bottom:1px solid var(--line)}.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0}.brand{font-size:13px;letter-spacing:.13em;text-transform:uppercase;font-weight:800}.course-code{font-size:13px;color:var(--muted)}.hero{padding:60px 0 42px;display:grid;grid-template-columns:1.5fr 1fr;gap:60px;align-items:end}.eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--accent);margin-bottom:12px}.intro{font-size:1.18rem;color:var(--muted);max-width:49ch;margin-bottom:0}.support{border-left:2px solid var(--accent);padding-left:25px}.support h2{font-size:1.2rem;letter-spacing:0;margin-bottom:12px}.support p{font-size:.93rem;color:var(--muted)}.button{display:inline-flex;gap:24px;align-items:center;background:var(--ink);color:#fff;padding:11px 18px;text-decoration:none;font-weight:700;border-radius:5px}.button:hover{background:#29434f}.module-nav{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#fff;margin-bottom:56px}.module-link{padding:20px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--ink);border-right:1px solid var(--line);font-weight:700;line-height:1.35}.module-link:last-child{border-right:0}.module-link:first-child{background:var(--ink);color:#fff}.module-link:hover{box-shadow:inset 0 -4px var(--accent)}.module-number{font-size:11px;letter-spacing:.12em;font-weight:700;opacity:.75}.module{margin:0 0 58px}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:24px}.section-tag{color:var(--muted);font-size:12px;white-space:nowrap;padding:6px 0}.module-description{max-width:80ch;color:var(--muted);margin-top:20px}.availability{background:#fff;border-left:3px solid var(--green);padding:13px 18px;font-size:.9rem;color:var(--muted);margin-bottom:32px}.group{margin-top:34px}.group-heading{display:flex;gap:15px;align-items:baseline;margin-bottom:16px}.group-marker{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}.group-heading p{color:var(--muted);font-size:.91rem;margin:0}.lesson-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.lesson{padding:26px;background:var(--card);border:1px solid var(--line);border-radius:8px;display:flex;flex-direction:column}.lesson .eyebrow{color:var(--muted);font-size:10px;margin-bottom:12px}.assessment{border-left:4px solid var(--accent)}.assessment .eyebrow{color:var(--accent)}.label{font-size:.85rem;font-weight:650;color:var(--muted);margin-bottom:14px}.description{color:var(--muted);font-size:.95rem;margin-bottom:18px;max-width:58ch}.skills{list-style:none;display:flex;flex-wrap:wrap;gap:7px;padding:0;margin:0 0 23px}.skills li{font-size:11px;background:#eef3f1;color:#365348;border-radius:3px;padding:4px 8px}.actions{margin-top:auto;padding-top:17px;border-top:1px solid #edf0ee;display:flex;flex-wrap:wrap;gap:13px 22px;align-items:center}.open{font-size:.9rem;font-weight:750}.reflection{font-size:.81rem}.pending{font-size:.82rem;color:var(--muted)}.supplemental{border:1px solid var(--line);border-radius:8px;padding:18px 22px;margin-top:26px}.supplemental summary{cursor:pointer;font-weight:700}.supplemental summary span{font-size:.8rem;font-weight:400;color:var(--muted);margin-left:12px}.supplemental .lesson-grid{margin-top:22px}.upcoming{border-top:1px solid var(--line);padding-top:30px;margin-bottom:30px}.upcoming h2{font-size:1.5rem}.upcoming .eyebrow{color:var(--muted)}.upcoming .module-description{margin-bottom:0}.footer{margin-top:52px;border-top:1px solid var(--line);padding:24px 0 35px;font-size:.82rem;color:var(--muted);display:flex;justify-content:space-between;gap:20px}.footer p{margin:0}
+@media(max-width:800px){.hero{grid-template-columns:1fr;gap:30px;padding-top:38px}.support{max-width:60ch}.module-nav{grid-template-columns:repeat(2,1fr)}.module-link:nth-child(2){border-right:0}.module-link:nth-child(-n+2){border-bottom:1px solid var(--line)}.section-heading{display:block}.section-tag{display:inline-block;margin-top:12px}}
+@media(max-width:560px){.wrap{width:calc(100% - 32px)}.lesson-grid{grid-template-columns:1fr}.lesson{padding:22px}.module-link{font-size:.85rem;padding:16px}.hero{padding-bottom:30px}.footer{display:block}.footer a{display:inline-block;margin-top:15px}.topbar .brand{font-size:11px}.course-code{font-size:11px}.module-nav{margin-bottom:40px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{.support,.module-nav,.skip{display:none}.wrap{width:100%}.hero{display:block;padding:12px 0}.lesson{break-inside:avoid}.lesson-grid{grid-template-columns:1fr 1fr}.module{margin-bottom:24px}.footer{display:none}}
 </style></head><body>
-<div class="wrap">
-  <div class="hero">
-    <div class="kicker">MM12 · Course Library</div>
-    <h1>Multimedia 12</h1>
-    <p class="sub">Build believable images and media — one skill at a time. Watch the demo, follow along, check your understanding, and rate your own skills.</p>
-    <div class="count">2 lessons</div>
+<a href="#course-modules" class="skip">Skip to course modules</a>
+<header class="topbar"><div class="wrap"><span class="brand">Learning Studio</span><span class="course-code">MM12 · Course home</span></div></header>
+<main class="wrap"><section class="hero" aria-labelledby="course-title"><div><p class="eyebrow">Create with purpose</p><h1 id="course-title">Multimedia 12</h1><p class="intro">Make purposeful media. Build your skills, explain your choices, and improve through feedback.</p></div>
+<aside class="support" aria-label="Learning support"><h2>A little help, a next step.</h2><p>Try the task first. Use the shared Coach to unpack a step, troubleshoot a problem or reflect on your choices. Follow your teacher’s directions during assessments.</p><a class="button" href="https://gemini.google.com/gem/1ySXJPfNy0hCfESu8EzsD3vuexPiuKQKo?usp=sharing">Open the Coach <span aria-hidden="true">↗</span></a></aside></section>
+<nav class="module-nav" aria-label="Course modules"><a class="module-link" href="#module-1"><span class="module-number">MODULE 01</span><span>Graphic Design &amp; Photography</span></a><a class="module-link" href="#module-2"><span class="module-number">MODULE 02</span><span>Motion Graphics</span></a><a class="module-link" href="#module-3"><span class="module-number">MODULE 03</span><span>Sound</span></a><a class="module-link" href="#module-4"><span class="module-number">MODULE 04</span><span>Collaborative Project &amp; Portfolio</span></a></nav>
+<div id="course-modules"><p class="availability">Open the available workbooks below. More workbook links will appear here as they are published. Practical assessments are labelled separately.</p><section id="module-1" class="module" aria-labelledby="module-1-title">
+  <div class="section-heading"><div><p class="eyebrow">Module 01</p><h2 id="module-1-title">Graphic Design &amp; Photography</h2></div><span class="section-tag">Create · Explain · Refine</span></div>
+  <p class="module-description">Move from editable photo composites to editorial design, advertising and cinematic lighting. Use the route your teacher assigns; keep your working files and show how your decisions develop.</p>
+  <section class="group" aria-labelledby="module-1-group-0"><div class="group-heading"><span class="group-marker" aria-hidden="true">01</span><div><h3 id="module-1-group-0">Foundation</h3><p>An introduction to layers, masks and believable depth.</p></div></div><div class="lesson-grid"><article class="lesson">
+  <div class="eyebrow">Tutorial + extension</div>
+  <h4>Phone Portal / Out-of-Bounds</h4><p class="label">Decode the Impossible</p>
+  <p class="description">Build an editable phone portal, then bring a butterfly beyond the frame with masks and deliberate layer order.</p>
+  <ul class="skills" aria-label="Skills practised"><li>Layers &amp; masks</li><li>Depth &amp; edges</li></ul>
+  <div class="actions"><a class="open" href="https://ctwadden.github.io/ps-01-photoshop-foundations/" aria-label="Open Phone Portal / Out-of-Bounds workbook">Open workbook <span aria-hidden="true">↗</span></a>
   </div>
-  <div class="grid">
-  <a class="lesson" href="photoshop/studio/drop-day/?course=MM12">
-    <div class="ltop"><h3>Drop Day · Photoshop Bootcamp</h3><span class="time">3 classes</span></div>
-    <p class="ldesc">Repair a sneaker source, build recoverable masks, create a product display, control colour and typography, then answer a changed client brief.</p>
-    <div class="chips"><span class="chip">Retouching + masking</span><span class="chip">Colour + typography</span><span class="chip">Assistant Coach</span></div>
-    <span class="go">Open Drop Day →</span>
-  </a>
-  <a class="lesson" href="photoshop/composite-realism/">
-    <div class="ltop"><h3>Composite Realism</h3><span class="time">~10 min</span></div>
-    <p class="ldesc">Combine multiple photos believably — selection, masking, layer order, and Soft Light blending.</p>
-    <div class="chips"><span class="chip">Image integration &amp; lighting</span><span class="chip">Editable layers &amp; masks</span></div>
-    <span class="go">Open lesson →</span>
-  </a></div>
-  <p class="foot">Each lesson is a bilingual, video-linked workbook. Pick one to begin.</p>
-</div></body></html>
+</article></div></section><section class="group" aria-labelledby="module-1-group-1"><div class="group-heading"><span class="group-marker" aria-hidden="true">02</span><div><h3 id="module-1-group-1">Shared bootcamp</h3><p>Build your workflow, then respond to a changed brief.</p></div></div><div class="lesson-grid"><article class="lesson">
+  <div class="eyebrow">Tutorial</div>
+  <h4>Below the Surface</h4>
+  <p class="description">Create a documentary opener with a layered still, a short motion version and a practical revision.</p>
+  <ul class="skills" aria-label="Skills practised"><li>Compositing</li><li>Still to motion</li></ul>
+  <div class="actions"><span class="pending">Online workbook coming soon</span>
+  </div>
+</article><article class="lesson">
+  <div class="eyebrow">Tutorial</div>
+  <h4>Drop Day</h4>
+  <p class="description">Repair a sneaker source, build recoverable masks, and control colour and typography for a product display.</p>
+  <ul class="skills" aria-label="Skills practised"><li>Retouching &amp; masking</li><li>Colour &amp; typography</li></ul>
+  <div class="actions"><a class="open" href="photoshop/studio/drop-day/?course=MM12" aria-label="Open Drop Day workbook">Open workbook <span aria-hidden="true">↗</span></a>
+  <a class="reflection" href="https://script.google.com/a/macros/gnspes.ca/s/AKfycbxqHbAwEwbvdMrOGY4eP4Yu-z8PXqMsA-MfMGBFoTA5CoDbOA4sUv1LsXbYfFMWmrcP/exec?project=PS-DROP-DAY&amp;type=student" aria-label="Drop Day knowledge and skill reflection">Knowledge &amp; skill reflection <span aria-hidden="true">↗</span></a></div>
+</article><article class="lesson">
+  <div class="eyebrow">Tutorial</div>
+  <h4>On the Cover</h4>
+  <p class="description">Design an editorial cover with readable hierarchy, careful portrait masking and purposeful typography.</p>
+  <ul class="skills" aria-label="Skills practised"><li>Editorial hierarchy</li><li>Portrait masking</li></ul>
+  <div class="actions"><span class="pending">Online workbook coming soon</span>
+  </div>
+</article><article class="lesson assessment">
+  <div class="eyebrow">Practical assessment</div>
+  <h4>The Brief Has Changed</h4><p class="label">Class 10</p>
+  <p class="description">Apply your bootcamp learning to a changed brief and explain the choices behind your response.</p>
+  <ul class="skills" aria-label="Skills practised"><li>Adaptation</li><li>Explain your decisions</li></ul>
+  <div class="actions"><span class="pending">Online workbook coming soon</span>
+  </div>
+</article></div></section><section class="group" aria-labelledby="module-1-group-2"><div class="group-heading"><span class="group-marker" aria-hidden="true">03</span><div><h3 id="module-1-group-2">Design exploration &amp; purpose</h3><p>Connect technique to audience, meaning and design choices.</p></div></div><div class="lesson-grid"><article class="lesson">
+  <div class="eyebrow">Exploration</div>
+  <h4>Design Studio Explorer</h4>
+  <p class="description">Explore the design studio route before moving into more advanced projects.</p>
+  <ul class="skills" aria-label="Skills practised"><li>Design exploration</li></ul>
+  <div class="actions"><span class="pending">Online workbook coming soon</span>
+  </div>
+</article><article class="lesson">
+  <div class="eyebrow">Tutorial + extension</div>
+  <h4>Make It Matter</h4>
+  <p class="description">Connect design theory to a cause-advertising project, with an extension for Multimedia 12.</p>
+  <ul class="skills" aria-label="Skills practised"><li>Audience &amp; purpose</li><li>Cause advertising</li></ul>
+  <div class="actions"><span class="pending">Online workbook coming soon</span>
+  </div>
+</article></div></section><section class="group" aria-labelledby="module-1-group-3"><div class="group-heading"><span class="group-marker" aria-hidden="true">04</span><div><h3 id="module-1-group-3">Advanced studio</h3><p>Develop control, polish and a defensible creative direction.</p></div></div><div class="lesson-grid"><article class="lesson">
+  <div class="eyebrow">Tutorial</div>
+  <h4>Truck Ad</h4><p class="label">Built for the Wild</p>
+  <p class="description">Build an advertising composite with deliberate visual hierarchy, image integration and production decisions.</p>
+  <ul class="skills" aria-label="Skills practised"><li>Advertising design</li><li>Image integration</li></ul>
+  <div class="actions"><span class="pending">Online workbook coming soon</span>
+  <a class="reflection" href="https://docs.google.com/forms/d/e/1FAIpQLSfnm2tVKK_795ELevF44ywk1DxYCLlZad03ANGpsdSTWtxH4g/viewform" aria-label="Truck Ad knowledge and skill reflection">Knowledge &amp; skill reflection <span aria-hidden="true">↗</span></a></div>
+</article><article class="lesson">
+  <div class="eyebrow">Tutorial + extension</div>
+  <h4>Fresh Impact</h4>
+  <p class="description">Develop a product campaign through label construction, surface appearance, depth and typography.</p>
+  <ul class="skills" aria-label="Skills practised"><li>Product advertising</li><li>Surface &amp; depth</li></ul>
+  <div class="actions"><span class="pending">Online workbook coming soon</span>
+  </div>
+</article><article class="lesson">
+  <div class="eyebrow">Tutorial</div>
+  <h4>Last Light REDO</h4>
+  <p class="description">Develop a cinematic composite with motivated lighting and a coherent atmosphere.</p>
+  <ul class="skills" aria-label="Skills practised"><li>Motivated lighting</li><li>Cinematic compositing</li></ul>
+  <div class="actions"><span class="pending">Online workbook coming soon</span>
+  </div>
+</article></div></section>
+  <details class="supplemental"><summary>Extra skill practice <span>1 resource</span></summary><div class="lesson-grid"><article class="lesson">
+  <div class="eyebrow">Focused skill practice · ~10 min</div>
+  <h4>Composite Realism</h4>
+  <p class="description">Revisit selection, masking, layer order and Soft Light blending.</p>
+  <ul class="skills" aria-label="Skills practised"><li>Image integration</li><li>Editable layers</li></ul>
+  <div class="actions"><a class="open" href="photoshop/composite-realism/" aria-label="Open Composite Realism workbook">Open workbook <span aria-hidden="true">↗</span></a>
+  </div>
+</article></div></details>
+</section><section id="module-2" class="module upcoming" aria-labelledby="module-2-title">
+  <div class="section-heading"><div><p class="eyebrow">Module 02</p><h2 id="module-2-title">Motion Graphics</h2></div><span class="section-tag">Materials coming later</span></div>
+  <p class="module-description">Make images move with intention.</p>
+  
+  
+</section><section id="module-3" class="module upcoming" aria-labelledby="module-3-title">
+  <div class="section-heading"><div><p class="eyebrow">Module 03</p><h2 id="module-3-title">Sound</h2></div><span class="section-tag">Materials coming later</span></div>
+  <p class="module-description">Shape an experience through audio.</p>
+  
+  
+</section><section id="module-4" class="module upcoming" aria-labelledby="module-4-title">
+  <div class="section-heading"><div><p class="eyebrow">Module 04</p><h2 id="module-4-title">Collaborative Project &amp; Portfolio</h2></div><span class="section-tag">Materials coming later</span></div>
+  <p class="module-description">Bring your media skills together and show your growth.</p>
+  
+  
+</section></div>
+<footer class="footer"><p>Keep your working files. Explain your choices. Use feedback to revise.</p><a href="#course-title">Back to top ↑</a></footer></main>
+</body></html>
