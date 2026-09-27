@@ -16,43 +16,159 @@
           "title": "Foundation",
           "description": "An introduction to layers, masks and believable depth.",
           "lessons": [
-            {"title": "Phone Portal / Out-of-Bounds", "label": "Decode the Impossible", "kind": "Tutorial + extension", "url": "https://ctwadden.github.io/ps-01-photoshop-foundations/", "desc": "Build an editable phone portal, then bring a butterfly beyond the frame with masks and deliberate layer order.", "skills": ["Layers & masks", "Depth & edges"]}
+            {
+              "title": "Phone Portal / Out-of-Bounds",
+              "label": "Decode the Impossible",
+              "kind": "Tutorial + extension",
+              "url": "https://ctwadden.github.io/ps-01-photoshop-foundations/",
+              "desc": "Build an editable phone portal, then bring a butterfly beyond the frame with masks and deliberate layer order.",
+              "skills": [
+                "Layers & masks",
+                "Depth & edges"
+              ]
+            }
           ]
         },
         {
           "title": "Shared bootcamp",
           "description": "Build your workflow, then respond to a changed brief.",
           "lessons": [
-            {"title": "Below the Surface", "kind": "Tutorial", "desc": "Create a documentary opener with a layered still, a short motion version and a practical revision.", "skills": ["Compositing", "Still to motion"]},
-            {"title": "Drop Day", "kind": "Tutorial", "projectId": "PS-DROP-DAY", "url": "photoshop/studio/drop-day/?course=MM12", "desc": "Repair a sneaker source, build recoverable masks, and control colour and typography for a product display.", "skills": ["Retouching & masking", "Colour & typography"], "reflectionUrl": "https://script.google.com/a/macros/gnspes.ca/s/AKfycbxqHbAwEwbvdMrOGY4eP4Yu-z8PXqMsA-MfMGBFoTA5CoDbOA4sUv1LsXbYfFMWmrcP/exec?project=PS-DROP-DAY&type=student"},
-            {"title": "On the Cover", "kind": "Tutorial", "desc": "Design an editorial cover with readable hierarchy, careful portrait masking and purposeful typography.", "skills": ["Editorial hierarchy", "Portrait masking"]},
-            {"title": "The Brief Has Changed", "label": "Class 10", "kind": "Practical assessment", "desc": "Apply your bootcamp learning to a changed brief and explain the choices behind your response.", "skills": ["Adaptation", "Explain your decisions"]}
+            {
+              "title": "Below the Surface",
+              "kind": "Tutorial",
+              "desc": "Create a documentary opener with a layered still, a short motion version and a practical revision.",
+              "skills": [
+                "Compositing",
+                "Still to motion"
+              ],
+              "url": "https://outcome-evidence-map.netlify.app/outputs/recovered-teaching-materials-2026-09-23/guides/Below_the_Surface_Student_Guide.html"
+            },
+            {
+              "title": "Drop Day",
+              "kind": "Tutorial",
+              "projectId": "PS-DROP-DAY",
+              "url": "photoshop/studio/drop-day/?course=MM12",
+              "desc": "Repair a sneaker source, build recoverable masks, and control colour and typography for a product display.",
+              "skills": [
+                "Retouching & masking",
+                "Colour & typography"
+              ],
+              "reflectionUrl": "https://script.google.com/a/macros/gnspes.ca/s/AKfycbxqHbAwEwbvdMrOGY4eP4Yu-z8PXqMsA-MfMGBFoTA5CoDbOA4sUv1LsXbYfFMWmrcP/exec?project=PS-DROP-DAY&type=student"
+            },
+            {
+              "title": "On the Cover",
+              "kind": "Tutorial",
+              "desc": "Design an editorial cover with readable hierarchy, careful portrait masking and purposeful typography.",
+              "skills": [
+                "Editorial hierarchy",
+                "Portrait masking"
+              ],
+              "url": "https://outcome-evidence-map.netlify.app/outputs/recovered-teaching-materials-2026-09-23/guides/On_the_Cover_Student_Guide.html"
+            },
+            {
+              "title": "The Brief Has Changed",
+              "label": "Class 10",
+              "kind": "Practical assessment",
+              "desc": "Apply your bootcamp learning to a changed brief and explain the choices behind your response.",
+              "skills": [
+                "Adaptation",
+                "Explain your decisions"
+              ]
+            }
           ]
         },
         {
           "title": "Design exploration & purpose",
           "description": "Connect technique to audience, meaning and design choices.",
           "lessons": [
-            {"title": "Design Studio Explorer", "kind": "Exploration", "desc": "Explore the design studio route before moving into more advanced projects.", "skills": ["Design exploration"]},
-            {"title": "Make It Matter", "kind": "Tutorial + extension", "desc": "Connect design theory to a cause-advertising project, with an extension for Multimedia 12.", "skills": ["Audience & purpose", "Cause advertising"]}
+            {
+              "title": "Design Studio Explorer",
+              "kind": "Exploration",
+              "desc": "Explore the design studio route before moving into more advanced projects.",
+              "skills": [
+                "Design exploration"
+              ]
+            },
+            {
+              "title": "Make It Matter",
+              "kind": "Tutorial + extension",
+              "desc": "Connect design theory to a cause-advertising project, with an extension for Multimedia 12.",
+              "skills": [
+                "Audience & purpose",
+                "Cause advertising"
+              ]
+            }
           ]
         },
         {
           "title": "Advanced studio",
           "description": "Develop control, polish and a defensible creative direction.",
           "lessons": [
-            {"title": "Truck Ad", "label": "Built for the Wild", "kind": "Tutorial", "projectId": "PS-TRUCK-AD", "desc": "Build an advertising composite with deliberate visual hierarchy, image integration and production decisions.", "skills": ["Advertising design", "Image integration"], "reflectionUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfnm2tVKK_795ELevF44ywk1DxYCLlZad03ANGpsdSTWtxH4g/viewform"},
-            {"title": "Fresh Impact", "kind": "Tutorial + extension", "desc": "Develop a product campaign through label construction, surface appearance, depth and typography.", "skills": ["Product advertising", "Surface & depth"]},
-            {"title": "Last Light REDO", "kind": "Tutorial", "desc": "Develop a cinematic composite with motivated lighting and a coherent atmosphere.", "skills": ["Motivated lighting", "Cinematic compositing"]}
+            {
+              "title": "Truck Ad",
+              "label": "Built for the Wild",
+              "kind": "Tutorial",
+              "projectId": "PS-TRUCK-AD",
+              "desc": "Build an advertising composite with deliberate visual hierarchy, image integration and production decisions.",
+              "skills": [
+                "Advertising design",
+                "Image integration"
+              ],
+              "reflectionUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfnm2tVKK_795ELevF44ywk1DxYCLlZad03ANGpsdSTWtxH4g/viewform",
+              "url": "https://outcome-evidence-map.netlify.app/outputs/recovered-teaching-materials-2026-09-23/guides/Truck_Ad_Complete_Guide_v2_RC2.html"
+            },
+            {
+              "title": "Fresh Impact",
+              "kind": "Tutorial + extension",
+              "desc": "Develop a product campaign through label construction, surface appearance, depth and typography.",
+              "skills": [
+                "Product advertising",
+                "Surface & depth"
+              ]
+            },
+            {
+              "title": "Last Light REDO",
+              "kind": "Tutorial",
+              "desc": "Develop a cinematic composite with motivated lighting and a coherent atmosphere.",
+              "skills": [
+                "Motivated lighting",
+                "Cinematic compositing"
+              ]
+            }
           ]
         }
       ],
       "supplemental": [
-        {"title": "Composite Realism", "url": "photoshop/composite-realism/", "kind": "Focused skill practice", "time": "~10 min", "desc": "Revisit selection, masking, layer order and Soft Light blending.", "skills": ["Image integration", "Editable layers"]}
+        {
+          "title": "Composite Realism",
+          "url": "photoshop/composite-realism/",
+          "kind": "Focused skill practice",
+          "time": "~10 min",
+          "desc": "Revisit selection, masking, layer order and Soft Light blending.",
+          "skills": [
+            "Image integration",
+            "Editable layers"
+          ]
+        }
       ]
     },
-    {"anchor": "module-2", "number": "02", "title": "Motion Graphics", "summary": "Make images move with intention."},
-    {"anchor": "module-3", "number": "03", "title": "Sound", "summary": "Shape an experience through audio."},
-    {"anchor": "module-4", "number": "04", "title": "Collaborative Project & Portfolio", "summary": "Bring your media skills together and show your growth."}
+    {
+      "anchor": "module-2",
+      "number": "02",
+      "title": "Motion Graphics",
+      "summary": "Make images move with intention."
+    },
+    {
+      "anchor": "module-3",
+      "number": "03",
+      "title": "Sound",
+      "summary": "Shape an experience through audio."
+    },
+    {
+      "anchor": "module-4",
+      "number": "04",
+      "title": "Collaborative Project & Portfolio",
+      "summary": "Bring your media skills together and show your growth."
+    }
   ]
 }

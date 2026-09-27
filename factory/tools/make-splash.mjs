@@ -30,7 +30,7 @@ const card = (l) => `<article class="lesson${l.kind === 'Practical assessment' ?
   <h4>${esc(l.title)}</h4>${l.label ? `<p class="label">${esc(l.label)}</p>` : ''}
   <p class="description">${esc(l.desc)}</p>
   <ul class="skills" aria-label="Skills practised">${(l.skills || []).map(s => `<li>${esc(s)}</li>`).join('')}</ul>
-  <div class="actions">${l.url ? `<a class="open" href="${href(l.url)}" aria-label="Open ${esc(l.title)} workbook">Open workbook <span aria-hidden="true">↗</span></a>` : '<span class="pending">Online workbook coming soon</span>'}
+  <div class="actions">${l.url ? `<a class="open" href="${href(l.url)}" aria-label="Open ${esc(l.title)} workbook">Open workbook <span aria-hidden="true">↗</span></a>` : '<span class="pending">Not yet released</span>'}
   ${l.reflectionUrl ? `<a class="reflection" href="${href(l.reflectionUrl)}" aria-label="${esc(l.title)} knowledge and skill reflection">Knowledge &amp; skill reflection <span aria-hidden="true">↗</span></a>` : ''}</div>
 </article>`;
 const moduleSection = (m) => `<section id="${m.anchor}" class="module${m.groups ? '' : ' upcoming'}" aria-labelledby="${m.anchor}-title">
@@ -55,7 +55,7 @@ const html = `<!DOCTYPE html>
 ${c.coachUrl ? `<aside class="support" aria-label="Learning support"><h2>A little help, a next step.</h2><p>Try the task first. Use the shared Coach to unpack a step, troubleshoot a problem or reflect on your choices. Follow your teacher’s directions during assessments.</p><a class="button" href="${href(c.coachUrl)}">Open the Coach <span aria-hidden="true">↗</span></a></aside>` : ''}</section>
 <nav class="module-nav" aria-label="Course modules">${modules.map(m => `<a class="module-link" href="#${m.anchor}"><span class="module-number">${esc(m.navigationLabel || `MODULE ${m.number}`)}</span><span>${esc(m.title)}</span></a>`).join('')}</nav>
 <div id="course-modules"><p class="availability">Open the available workbooks below. More workbook links will appear here as they are published. Practical assessments are labelled separately.</p>${modules.map(moduleSection).join('')}</div>
-<footer class="footer"><p>Keep your working files. Explain your choices. Use feedback to revise.</p><a href="#course-title">Back to top ↑</a></footer></main>
+<nav aria-label="Learning Studio course sites" style="display:flex;flex-wrap:wrap;gap:18px;padding:20px 0"><a href="https://ctwadden.github.io/communication-technology-11/">Communication 11</a><a href="https://ctwadden.github.io/multimedia-12/">Multimedia 12</a><a href="https://ctwadden.github.io/digital-society-sl/">Digital Society</a><a href="https://outcome-evidence-map.netlify.app/teacher.html">Teacher OS</a></nav><footer class="footer"><p>Keep your working files. Explain your choices. Use feedback to revise.</p><a href="#course-title">Back to top ↑</a></footer></main>
 </body></html>`;
 writeFileSync(arg('out', 'splash.html'), html);
 console.log(`Built ${arg('out', 'splash.html')} · ${modules.length} modules · ${resourceCount} core resources`);
