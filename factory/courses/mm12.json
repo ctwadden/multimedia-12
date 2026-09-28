@@ -74,6 +74,27 @@
                 "Adaptation",
                 "Explain your decisions"
               ]
+            },
+            {
+              "title": "Press Your Stripes",
+              "label": "Zebra Ironing",
+              "kind": "Tutorial",
+              "url": "photoshop/press-your-stripes/",
+              "desc": "Build a believable zebra-striped ironing scene with editable masks, purposeful warp and grounded shadows.",
+              "skills": [
+                "Masks & transform",
+                "Contact shadows"
+              ]
+            },
+            {
+              "title": "Turtle Kingdom",
+              "kind": "Tutorial",
+              "url": "photoshop/turtle-kingdom/",
+              "desc": "Build a fantasy turtle kingdom while controlling edges, material joins, scale, light and depth.",
+              "skills": [
+                "Compositing & masks",
+                "Light & spatial depth"
+              ]
             }
           ]
         },
@@ -96,6 +117,17 @@
               "skills": [
                 "Audience & purpose",
                 "Cause advertising"
+              ]
+            },
+            {
+              "title": "DINO LOOPS",
+              "label": "Cereal Box",
+              "kind": "Design studio",
+              "url": "photoshop/dino-loops/",
+              "desc": "Construct an editable cereal package with depth, typography, hierarchy and a deliberate brand message.",
+              "skills": [
+                "Packaging design",
+                "Typography & hierarchy"
               ]
             }
           ]
@@ -124,7 +156,8 @@
               "skills": [
                 "Product advertising",
                 "Surface & depth"
-              ]
+              ],
+              "url": "photoshop/fresh-impact/"
             },
             {
               "title": "Last Light REDO",
@@ -133,6 +166,26 @@
               "skills": [
                 "Motivated lighting",
                 "Cinematic compositing"
+              ]
+            },
+            {
+              "title": "Stormbound · Snakefinger",
+              "kind": "Advanced studio",
+              "url": "photoshop/stormbound-snakefinger/",
+              "desc": "Create a cinematic hybrid composite with a repaired join, directional lightning and layered rain.",
+              "skills": [
+                "Retouching & hybrid joins",
+                "Atmosphere & lighting"
+              ]
+            },
+            {
+              "title": "Skybound · First 3D",
+              "kind": "3D studio",
+              "url": "photoshop/skybound-first-3d/",
+              "desc": "Move a balloon asset through Blender materials, camera and lighting, then integrate transparent renders in Photoshop.",
+              "skills": [
+                "Blender render workflow",
+                "3D-to-2D compositing"
               ]
             }
           ]
