@@ -1,0 +1,6 @@
+shot_no,purpose(lead/alt/detail),what_is_in_frame,text_space(where),light_plan,people_or_objects,permission_checked(y/n),done(y/n)
+1,lead,,,,,,
+2,alt,,,,,,
+3,alt,,,,,,
+4,detail,,,,,,
+5,detail,,,,,,

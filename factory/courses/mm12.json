@@ -13,6 +13,23 @@
       "description": "Move from editable photo composites to editorial design, advertising and cinematic lighting. Use the route your teacher assigns; keep your working files and show how your decisions develop.",
       "groups": [
         {
+          "title": "Current sprint",
+          "description": "Start here this week.",
+          "lessons": [
+            {
+              "title": "Original photography and a campaign image",
+              "kind": "Sprint 3 workbook",
+              "label": "5–16 Oct",
+              "desc": "Plan, shoot and edit your own photographs, then build a campaign image and change its format on your own.",
+              "skills": [
+                "DSLR capture & light",
+                "Honest editing & layout"
+              ],
+              "url": "sprints/original-photography/"
+            }
+          ]
+        },
+        {
           "title": "Foundation",
           "description": "An introduction to layers, masks and believable depth.",
           "lessons": [
