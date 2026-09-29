@@ -1,0 +1,306 @@
+{
+  "spec_version": "2026-09-28.1",
+  "project_id": "PS-PRESS-YOUR-STRIPES",
+  "project_title": "Press Your Stripes",
+  "course_configs": [
+    {
+      "course_id": "MM12",
+      "module_id": "M1",
+      "outcome_codes": [
+        "MM12-1.1",
+        "MM12-1.3",
+        "MM12-1.4",
+        "MM12-1.5"
+      ]
+    }
+  ],
+  "student_form": {
+    "description": "Complete the Press Your Stripes knowledge check, identify evidence in your editable file, and explain transfer. Guided tutorial completion is practice; teacher-reviewed evidence determines achievement."
+  },
+  "knowledge_check": {
+    "items": [
+      {
+        "id": "PYS-KC-01",
+        "type": "multiple_choice",
+        "prompt": "Why convert the isolated zebra to a Smart Object before major transforms?",
+        "choices": [
+          "To preserve a recoverable source while transforming instances",
+          "To remove its mask",
+          "To flatten the scene",
+          "To create type"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-TRN-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-07"
+      },
+      {
+        "id": "PYS-KC-02",
+        "type": "multiple_choice",
+        "prompt": "What does a layer mask preserve compared with deleting pixels?",
+        "choices": [
+          "The hidden source can be revealed or refined later",
+          "The image is automatically sharper",
+          "The canvas becomes larger",
+          "The layer becomes text"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-TRN-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-06"
+      },
+      {
+        "id": "PYS-KC-03",
+        "type": "multiple_choice",
+        "prompt": "When is Puppet Warp preferable to a simple scale transform?",
+        "choices": [
+          "When selected body areas need controlled reshaping around pins",
+          "When changing a filename",
+          "When exporting a PNG",
+          "When adding guides"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-TRN-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-15"
+      },
+      {
+        "id": "PYS-KC-04",
+        "type": "multiple_choice",
+        "prompt": "Why should the iron and board share the scene\u2019s perspective?",
+        "choices": [
+          "Their angles and scale need to describe the same space",
+          "It creates a selection automatically",
+          "It prevents shadows",
+          "It changes the zebra pattern"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-TRN-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-10"
+      },
+      {
+        "id": "PYS-KC-05",
+        "type": "multiple_choice",
+        "prompt": "What makes a contact shadow convincing?",
+        "choices": [
+          "It is darkest and tightest where forms touch, then softens away",
+          "It is equally dark across the canvas",
+          "It sits above the subject",
+          "It uses pure white"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-TRN-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-23"
+      },
+      {
+        "id": "PYS-KC-06",
+        "type": "multiple_choice",
+        "prompt": "What best demonstrates independent transfer?",
+        "choices": [
+          "A changed source or action using the same editable techniques with a justified decision",
+          "A duplicate of the example",
+          "A screenshot of the guide",
+          "A flattened file with no explanation"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-TRN-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-34"
+      }
+    ]
+  },
+  "skill_reflection": {
+    "technical_skills": [
+      {
+        "id": "PS-SEL-01",
+        "label": "PS-SEL-01"
+      },
+      {
+        "id": "PS-LAY-01",
+        "label": "PS-LAY-01"
+      },
+      {
+        "id": "PS-TRN-01",
+        "label": "PS-TRN-01"
+      },
+      {
+        "id": "PS-TRN-02",
+        "label": "PS-TRN-02"
+      },
+      {
+        "id": "PS-SMO-01",
+        "label": "PS-SMO-01"
+      },
+      {
+        "id": "PS-LGT-01",
+        "label": "PS-LGT-01"
+      },
+      {
+        "id": "PS-LGT-02",
+        "label": "PS-LGT-02"
+      }
+    ],
+    "design_skills": [
+      {
+        "id": "GD-CRIT-01",
+        "label": "Critique and revision"
+      },
+      {
+        "id": "GD-AUD-01",
+        "label": "Audience and purpose"
+      }
+    ],
+    "independence_options": [
+      "Followed the example closely",
+      "Needed some prompts/checkpoints",
+      "Worked independently",
+      "Adapted or extended the skill"
+    ]
+  },
+  "transfer": {
+    "id": "PYS-TRANSFER",
+    "prompt": "Choose one technique from this project. Explain how you would adapt it for a different source, audience or production condition, what would stay editable, and what evidence would show the change worked.",
+    "skill_ids": [
+      "PS-SEL-01",
+      "PS-LAY-01",
+      "PS-TRN-01",
+      "PS-TRN-02",
+      "PS-SMO-01",
+      "PS-LGT-01",
+      "PS-LGT-02"
+    ],
+    "outcome_codes": [
+      "MM12-1.1",
+      "MM12-1.3",
+      "MM12-1.4",
+      "MM12-1.5"
+    ],
+    "teacher_verification_required": true
+  },
+  "teacher_evidence": {
+    "checkpoints": [
+      {
+        "evidence_id": "PYS-OBS-01",
+        "evidence_type": "Observation",
+        "title": "Editable technical control",
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-TRN-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3"
+        ]
+      },
+      {
+        "evidence_id": "PYS-CON-01",
+        "evidence_type": "Conversation",
+        "title": "Tool and design reasoning",
+        "skill_ids": [
+          "PS-LAY-01",
+          "PS-TRN-01",
+          "PS-TRN-02",
+          "PS-SMO-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.3",
+          "MM12-1.4",
+          "MM12-1.5"
+        ]
+      },
+      {
+        "evidence_id": "PYS-PRO-01",
+        "evidence_type": "Product",
+        "title": "Layered master and checked output",
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-TRN-01",
+          "PS-TRN-02",
+          "PS-SMO-01",
+          "PS-LGT-01",
+          "PS-LGT-02"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4",
+          "MM12-1.5"
+        ]
+      },
+      {
+        "evidence_id": "PYS-TRF-01",
+        "evidence_type": "Observation+Conversation",
+        "title": "Independent changed-condition revision",
+        "skill_ids": [
+          "PS-TRN-02",
+          "PS-SMO-01",
+          "PS-LGT-01",
+          "PS-LGT-02"
+        ],
+        "outcome_codes": [
+          "MM12-1.3",
+          "MM12-1.4",
+          "MM12-1.5"
+        ]
+      }
+    ]
+  }
+}

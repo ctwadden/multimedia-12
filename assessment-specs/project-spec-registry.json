@@ -1,0 +1,45 @@
+{
+  "registry_version": "2026-09-28.1",
+  "projects": [
+    {
+      "project_id": "PS-FRESH-IMPACT",
+      "active": true,
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/fresh-impact/forms-spec.json"
+    },
+    {
+      "project_id": "PS-BELOW-SURFACE",
+      "active": true,
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/below-the-surface/forms-spec.json"
+    },
+    {
+      "project_id": "PS-ON-COVER",
+      "active": true,
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/on-the-cover/forms-spec.json"
+    },
+    {
+      "project_id": "PS-PRESS-YOUR-STRIPES",
+      "active": true,
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/press-your-stripes/forms-spec.json"
+    },
+    {
+      "project_id": "PS-DINO-LOOPS",
+      "active": true,
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/dino-loops/forms-spec.json"
+    },
+    {
+      "project_id": "PS-TURTLE-KINGDOM",
+      "active": true,
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/turtle-kingdom/forms-spec.json"
+    },
+    {
+      "project_id": "PS-STORMBOUND",
+      "active": true,
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/stormbound/forms-spec.json"
+    },
+    {
+      "project_id": "PS-SKYBOUND-3D",
+      "active": true,
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/skybound-first-3d/forms-spec.json"
+    }
+  ]
+}

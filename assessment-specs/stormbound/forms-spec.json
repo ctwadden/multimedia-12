@@ -1,0 +1,306 @@
+{
+  "spec_version": "2026-09-28.1",
+  "project_id": "PS-STORMBOUND",
+  "project_title": "Stormbound \u00b7 Snakefinger",
+  "course_configs": [
+    {
+      "course_id": "MM12",
+      "module_id": "M1",
+      "outcome_codes": [
+        "MM12-1.1",
+        "MM12-1.3",
+        "MM12-1.4",
+        "MM12-1.5"
+      ]
+    }
+  ],
+  "student_form": {
+    "description": "Complete the Stormbound \u00b7 Snakefinger knowledge check, identify evidence in your editable file, and explain transfer. Guided tutorial completion is practice; teacher-reviewed evidence determines achievement."
+  },
+  "knowledge_check": {
+    "items": [
+      {
+        "id": "SB-KC-01",
+        "type": "multiple_choice",
+        "prompt": "What is the difference between a layer mask and a filter mask?",
+        "choices": [
+          "One controls layer visibility; the other controls where a Smart Filter appears",
+          "They always do the same job",
+          "A filter mask changes file names",
+          "A layer mask changes canvas size"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-BRS-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-5"
+      },
+      {
+        "id": "SB-KC-02",
+        "type": "multiple_choice",
+        "prompt": "Why keep the snake and hand as protected editable sources?",
+        "choices": [
+          "The hybrid join can be repositioned and repaired without losing source pixels",
+          "It guarantees correct lighting",
+          "It writes the project brief",
+          "It removes the need for masks"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-BRS-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-8"
+      },
+      {
+        "id": "SB-KC-03",
+        "type": "multiple_choice",
+        "prompt": "When is Clone Stamp useful at the finger/snake join?",
+        "choices": [
+          "When you need a chosen pixel source to rebuild a specific texture or contour",
+          "When setting paragraph type",
+          "When exporting",
+          "When changing canvas size"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-BRS-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-15"
+      },
+      {
+        "id": "SB-KC-04",
+        "type": "multiple_choice",
+        "prompt": "What should a lightning treatment affect besides the bolt itself?",
+        "choices": [
+          "Nearby clouds, subject edges and rain according to the light direction",
+          "Only the filename",
+          "Only hidden layers",
+          "Nothing else in the scene"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-BRS-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-31"
+      },
+      {
+        "id": "SB-KC-05",
+        "type": "multiple_choice",
+        "prompt": "Why use multiple rain/depth layers?",
+        "choices": [
+          "Different size, blur and contrast create distance",
+          "It makes every drop identical",
+          "It flattens the hand",
+          "It creates a vector logo"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-BRS-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-35"
+      },
+      {
+        "id": "SB-KC-06",
+        "type": "multiple_choice",
+        "prompt": "Which evidence best proves the hybrid is convincing?",
+        "choices": [
+          "Close inspection of the editable join plus a changed-condition revision and explanation",
+          "A screenshot at thumbnail size",
+          "A list of layer names",
+          "A flattened copy only"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-BRS-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-40"
+      }
+    ]
+  },
+  "skill_reflection": {
+    "technical_skills": [
+      {
+        "id": "PS-SEL-01",
+        "label": "PS-SEL-01"
+      },
+      {
+        "id": "PS-LAY-01",
+        "label": "PS-LAY-01"
+      },
+      {
+        "id": "PS-BRS-01",
+        "label": "PS-BRS-01"
+      },
+      {
+        "id": "PS-RET-01",
+        "label": "PS-RET-01"
+      },
+      {
+        "id": "PS-BLD-02",
+        "label": "PS-BLD-02"
+      },
+      {
+        "id": "PS-LGT-01",
+        "label": "PS-LGT-01"
+      },
+      {
+        "id": "PS-LGT-02",
+        "label": "PS-LGT-02"
+      }
+    ],
+    "design_skills": [
+      {
+        "id": "GD-CRIT-01",
+        "label": "Critique and revision"
+      },
+      {
+        "id": "GD-AUD-01",
+        "label": "Audience and purpose"
+      }
+    ],
+    "independence_options": [
+      "Followed the example closely",
+      "Needed some prompts/checkpoints",
+      "Worked independently",
+      "Adapted or extended the skill"
+    ]
+  },
+  "transfer": {
+    "id": "SB-TRANSFER",
+    "prompt": "Choose one technique from this project. Explain how you would adapt it for a different source, audience or production condition, what would stay editable, and what evidence would show the change worked.",
+    "skill_ids": [
+      "PS-SEL-01",
+      "PS-LAY-01",
+      "PS-BRS-01",
+      "PS-RET-01",
+      "PS-BLD-02",
+      "PS-LGT-01",
+      "PS-LGT-02"
+    ],
+    "outcome_codes": [
+      "MM12-1.1",
+      "MM12-1.3",
+      "MM12-1.4",
+      "MM12-1.5"
+    ],
+    "teacher_verification_required": true
+  },
+  "teacher_evidence": {
+    "checkpoints": [
+      {
+        "evidence_id": "SB-OBS-01",
+        "evidence_type": "Observation",
+        "title": "Editable technical control",
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-BRS-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3"
+        ]
+      },
+      {
+        "evidence_id": "SB-CON-01",
+        "evidence_type": "Conversation",
+        "title": "Tool and design reasoning",
+        "skill_ids": [
+          "PS-LAY-01",
+          "PS-BRS-01",
+          "PS-RET-01",
+          "PS-BLD-02"
+        ],
+        "outcome_codes": [
+          "MM12-1.3",
+          "MM12-1.4",
+          "MM12-1.5"
+        ]
+      },
+      {
+        "evidence_id": "SB-PRO-01",
+        "evidence_type": "Product",
+        "title": "Layered master and checked output",
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-LAY-01",
+          "PS-BRS-01",
+          "PS-RET-01",
+          "PS-BLD-02",
+          "PS-LGT-01",
+          "PS-LGT-02"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4",
+          "MM12-1.5"
+        ]
+      },
+      {
+        "evidence_id": "SB-TRF-01",
+        "evidence_type": "Observation+Conversation",
+        "title": "Independent changed-condition revision",
+        "skill_ids": [
+          "PS-RET-01",
+          "PS-BLD-02",
+          "PS-LGT-01",
+          "PS-LGT-02"
+        ],
+        "outcome_codes": [
+          "MM12-1.3",
+          "MM12-1.4",
+          "MM12-1.5"
+        ]
+      }
+    ]
+  }
+}

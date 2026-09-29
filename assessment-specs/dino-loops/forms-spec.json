@@ -1,0 +1,292 @@
+{
+  "spec_version": "2026-09-28.1",
+  "project_id": "PS-DINO-LOOPS",
+  "project_title": "DINO LOOPS",
+  "course_configs": [
+    {
+      "course_id": "MM12",
+      "module_id": "M1",
+      "outcome_codes": [
+        "MM12-1.1",
+        "MM12-1.3",
+        "MM12-1.4",
+        "MM12-1.5"
+      ]
+    }
+  ],
+  "student_form": {
+    "description": "Complete the DINO LOOPS knowledge check, identify evidence in your editable file, and explain transfer. Guided tutorial completion is practice; teacher-reviewed evidence determines achievement."
+  },
+  "knowledge_check": {
+    "items": [
+      {
+        "id": "DL-KC-01",
+        "type": "multiple_choice",
+        "prompt": "Why use editable shape layers for package panels and motifs?",
+        "choices": [
+          "Their colour, size and geometry remain adjustable",
+          "They automatically write copy",
+          "They flatten the document",
+          "They remove guides"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-LAY-01",
+          "PS-SEL-01",
+          "PS-SMO-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-05"
+      },
+      {
+        "id": "DL-KC-02",
+        "type": "multiple_choice",
+        "prompt": "What controls the visible direction of a gradient?",
+        "choices": [
+          "Its start/end points and colour stops",
+          "The file name",
+          "The layer panel width",
+          "The export format"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-LAY-01",
+          "PS-SEL-01",
+          "PS-SMO-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-07"
+      },
+      {
+        "id": "DL-KC-03",
+        "type": "multiple_choice",
+        "prompt": "Why use Smart Object instances for repeated brand elements?",
+        "choices": [
+          "The source can be edited once while instances stay consistent",
+          "Each copy must be rasterized",
+          "It removes perspective",
+          "It creates a mask automatically"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-LAY-01",
+          "PS-SEL-01",
+          "PS-SMO-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-17"
+      },
+      {
+        "id": "DL-KC-04",
+        "type": "multiple_choice",
+        "prompt": "What is the purpose of a mask in the package mock-up?",
+        "choices": [
+          "To control where artwork appears without deleting its source",
+          "To change spelling",
+          "To create the document",
+          "To increase resolution"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-LAY-01",
+          "PS-SEL-01",
+          "PS-SMO-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-24"
+      },
+      {
+        "id": "DL-KC-05",
+        "type": "multiple_choice",
+        "prompt": "What creates clear package hierarchy?",
+        "choices": [
+          "Deliberate scale, contrast and spacing among brand, product and supporting copy",
+          "Giving every item equal weight",
+          "Using every available font",
+          "Placing all text in one corner"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-LAY-01",
+          "PS-SEL-01",
+          "PS-SMO-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-29"
+      },
+      {
+        "id": "DL-KC-06",
+        "type": "multiple_choice",
+        "prompt": "Which handover proves the design is editable and usable?",
+        "choices": [
+          "Layered master, checked export and a clear revision explanation",
+          "Only a phone photo",
+          "Only a flattened image",
+          "Only a list of colours"
+        ],
+        "correct_index": 0,
+        "points": 1,
+        "skill_ids": [
+          "PS-LAY-01",
+          "PS-SEL-01",
+          "PS-SMO-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4"
+        ],
+        "step_id": "step-40"
+      }
+    ]
+  },
+  "skill_reflection": {
+    "technical_skills": [
+      {
+        "id": "PS-LAY-01",
+        "label": "PS-LAY-01"
+      },
+      {
+        "id": "PS-SEL-01",
+        "label": "PS-SEL-01"
+      },
+      {
+        "id": "PS-SMO-01",
+        "label": "PS-SMO-01"
+      },
+      {
+        "id": "PS-TRN-01",
+        "label": "PS-TRN-01"
+      },
+      {
+        "id": "PS-TYP-01",
+        "label": "PS-TYP-01"
+      }
+    ],
+    "design_skills": [
+      {
+        "id": "GD-HIE-01",
+        "label": "GD-HIE-01"
+      }
+    ],
+    "independence_options": [
+      "Followed the example closely",
+      "Needed some prompts/checkpoints",
+      "Worked independently",
+      "Adapted or extended the skill"
+    ]
+  },
+  "transfer": {
+    "id": "DL-TRANSFER",
+    "prompt": "Choose one technique from this project. Explain how you would adapt it for a different source, audience or production condition, what would stay editable, and what evidence would show the change worked.",
+    "skill_ids": [
+      "PS-LAY-01",
+      "PS-SEL-01",
+      "PS-SMO-01",
+      "PS-TRN-01",
+      "PS-TYP-01",
+      "GD-HIE-01"
+    ],
+    "outcome_codes": [
+      "MM12-1.1",
+      "MM12-1.3",
+      "MM12-1.4",
+      "MM12-1.5"
+    ],
+    "teacher_verification_required": true
+  },
+  "teacher_evidence": {
+    "checkpoints": [
+      {
+        "evidence_id": "DL-OBS-01",
+        "evidence_type": "Observation",
+        "title": "Editable technical control",
+        "skill_ids": [
+          "PS-LAY-01",
+          "PS-SEL-01",
+          "PS-SMO-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3"
+        ]
+      },
+      {
+        "evidence_id": "DL-CON-01",
+        "evidence_type": "Conversation",
+        "title": "Tool and design reasoning",
+        "skill_ids": [
+          "PS-SEL-01",
+          "PS-SMO-01",
+          "PS-TRN-01",
+          "PS-TYP-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.3",
+          "MM12-1.4",
+          "MM12-1.5"
+        ]
+      },
+      {
+        "evidence_id": "DL-PRO-01",
+        "evidence_type": "Product",
+        "title": "Layered master and checked output",
+        "skill_ids": [
+          "PS-LAY-01",
+          "PS-SEL-01",
+          "PS-SMO-01",
+          "PS-TRN-01",
+          "PS-TYP-01",
+          "GD-HIE-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.1",
+          "MM12-1.3",
+          "MM12-1.4",
+          "MM12-1.5"
+        ]
+      },
+      {
+        "evidence_id": "DL-TRF-01",
+        "evidence_type": "Observation+Conversation",
+        "title": "Independent changed-condition revision",
+        "skill_ids": [
+          "PS-SMO-01",
+          "PS-TRN-01",
+          "PS-TYP-01",
+          "GD-HIE-01"
+        ],
+        "outcome_codes": [
+          "MM12-1.3",
+          "MM12-1.4",
+          "MM12-1.5"
+        ]
+      }
+    ]
+  }
+}

@@ -41,7 +41,9 @@
                 "Compositing",
                 "Still to motion"
               ],
-              "url": "https://outcome-evidence-map.netlify.app/outputs/recovered-teaching-materials-2026-09-23/guides/Below_the_Surface_Student_Guide.html"
+              "url": "https://outcome-evidence-map.netlify.app/outputs/recovered-teaching-materials-2026-09-23/guides/Below_the_Surface_Student_Guide.html?course=MM12",
+              "projectId": "PS-BELOW-SURFACE",
+              "reflectionUrl": "https://script.google.com/a/macros/gnspes.ca/s/AKfycbxqHbAwEwbvdMrOGY4eP4Yu-z8PXqMsA-MfMGBFoTA5CoDbOA4sUv1LsXbYfFMWmrcP/exec?project=PS-BELOW-SURFACE&type=student"
             },
             {
               "title": "Drop Day",
@@ -63,7 +65,9 @@
                 "Editorial hierarchy",
                 "Portrait masking"
               ],
-              "url": "https://outcome-evidence-map.netlify.app/outputs/recovered-teaching-materials-2026-09-23/guides/On_the_Cover_Student_Guide.html"
+              "url": "https://outcome-evidence-map.netlify.app/outputs/recovered-teaching-materials-2026-09-23/guides/On_the_Cover_Student_Guide.html?course=MM12",
+              "projectId": "PS-ON-COVER",
+              "reflectionUrl": "https://script.google.com/a/macros/gnspes.ca/s/AKfycbxqHbAwEwbvdMrOGY4eP4Yu-z8PXqMsA-MfMGBFoTA5CoDbOA4sUv1LsXbYfFMWmrcP/exec?project=PS-ON-COVER&type=student"
             },
             {
               "title": "The Brief Has Changed",
@@ -84,7 +88,9 @@
               "skills": [
                 "Masks & transform",
                 "Contact shadows"
-              ]
+              ],
+              "projectId": "PS-PRESS-YOUR-STRIPES",
+              "reflectionUrl": "https://script.google.com/a/macros/gnspes.ca/s/AKfycbxqHbAwEwbvdMrOGY4eP4Yu-z8PXqMsA-MfMGBFoTA5CoDbOA4sUv1LsXbYfFMWmrcP/exec?project=PS-PRESS-YOUR-STRIPES&type=student"
             },
             {
               "title": "Turtle Kingdom",
@@ -94,7 +100,9 @@
               "skills": [
                 "Compositing & masks",
                 "Light & spatial depth"
-              ]
+              ],
+              "projectId": "PS-TURTLE-KINGDOM",
+              "reflectionUrl": "https://script.google.com/a/macros/gnspes.ca/s/AKfycbxqHbAwEwbvdMrOGY4eP4Yu-z8PXqMsA-MfMGBFoTA5CoDbOA4sUv1LsXbYfFMWmrcP/exec?project=PS-TURTLE-KINGDOM&type=student"
             }
           ]
         },
@@ -128,7 +136,9 @@
               "skills": [
                 "Packaging design",
                 "Typography & hierarchy"
-              ]
+              ],
+              "projectId": "PS-DINO-LOOPS",
+              "reflectionUrl": "https://script.google.com/a/macros/gnspes.ca/s/AKfycbxqHbAwEwbvdMrOGY4eP4Yu-z8PXqMsA-MfMGBFoTA5CoDbOA4sUv1LsXbYfFMWmrcP/exec?project=PS-DINO-LOOPS&type=student"
             }
           ]
         },
@@ -157,7 +167,9 @@
                 "Product advertising",
                 "Surface & depth"
               ],
-              "url": "photoshop/fresh-impact/"
+              "url": "photoshop/fresh-impact/",
+              "projectId": "PS-FRESH-IMPACT",
+              "reflectionUrl": "https://script.google.com/a/macros/gnspes.ca/s/AKfycbxqHbAwEwbvdMrOGY4eP4Yu-z8PXqMsA-MfMGBFoTA5CoDbOA4sUv1LsXbYfFMWmrcP/exec?project=PS-FRESH-IMPACT&type=student"
             },
             {
               "title": "Last Light REDO",
@@ -176,7 +188,9 @@
               "skills": [
                 "Retouching & hybrid joins",
                 "Atmosphere & lighting"
-              ]
+              ],
+              "projectId": "PS-STORMBOUND",
+              "reflectionUrl": "https://script.google.com/a/macros/gnspes.ca/s/AKfycbxqHbAwEwbvdMrOGY4eP4Yu-z8PXqMsA-MfMGBFoTA5CoDbOA4sUv1LsXbYfFMWmrcP/exec?project=PS-STORMBOUND&type=student"
             },
             {
               "title": "Skybound · First 3D",
@@ -186,7 +200,9 @@
               "skills": [
                 "Blender render workflow",
                 "3D-to-2D compositing"
-              ]
+              ],
+              "projectId": "PS-SKYBOUND-3D",
+              "reflectionUrl": "https://script.google.com/a/macros/gnspes.ca/s/AKfycbxqHbAwEwbvdMrOGY4eP4Yu-z8PXqMsA-MfMGBFoTA5CoDbOA4sUv1LsXbYfFMWmrcP/exec?project=PS-SKYBOUND-3D&type=student"
             }
           ]
         }

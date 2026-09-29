@@ -13,4 +13,9 @@ $('#search').addEventListener('input',filter);$('#clearSearch').onclick=()=>{$('
 $('#menuToggle').onclick=()=>{const rail=$('.rail');const open=rail.classList.toggle('nav-open');$('#menuToggle').setAttribute('aria-expanded',String(open));$('#menuToggle').textContent=open?'Hide navigation':'Show navigation';};
 const dialog=$('#figureDialog'),wrap=$('.dialog-image-wrap');document.querySelectorAll('.open-figure').forEach(b=>b.addEventListener('click',()=>{const img=b.querySelector('img');$('#dialogImage').src=img.src;$('#dialogImage').alt=img.alt;$('#dialogCaption').textContent=img.alt;wrap.classList.remove('actual');$('#actualSize').textContent='Actual size';dialog.showModal();}));$('#closeDialog').onclick=()=>dialog.close();$('#actualSize').onclick=()=>{const on=wrap.classList.toggle('actual');$('#actualSize').textContent=on?'Fit image':'Actual size';};dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
 window.addEventListener('beforeprint',()=>document.querySelectorAll('.trouble details').forEach(x=>x.open=true));})();
-</script></body></html>
+</script>
+<!-- Learning Studio support overlay -->
+<link rel="stylesheet" href="/multimedia-12/supports/learning-studio-supports.css" data-learning-studio-support-overlay="1">
+<script src="/multimedia-12/supports/learning-studio-supports.js" data-project="PS-DINO-LOOPS" data-course="MM12" data-sprint="" data-com-sprint="" data-learning-studio-support-overlay="1"></script>
+<!-- /Learning Studio support overlay -->
+</body></html>
