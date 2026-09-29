@@ -36,14 +36,14 @@ var glossary={
 var profiles={
  'PS-DROP-DAY':{alternate:'a hiking boot launch image',purpose:'a retail product launch'},
  'PS-TRUCK-AD':{alternate:'an electric utility vehicle campaign',purpose:'a rugged audience-focused advertisement'},
- 'PS-FRESH-IMPACT':{alternate:'a sparkling-water can with a berry label',purpose:'a product advertising image'},
+ 'PS-LEMON-BURST':{alternate:'a sparkling-water can with a berry label',purpose:'a product advertising image'},
  'PS-BELOW-SURFACE':{alternate:'a sea-turtle documentary title image',purpose:'a documentary opening identity'},
  'PS-ON-COVER':{alternate:'a science magazine portrait cover',purpose:'an editorial cover'},
- 'PS-PRESS-YOUR-STRIPES':{alternate:'a giraffe tailoring its patterned jacket',purpose:'a surreal visual narrative'},
- 'PS-DINO-LOOPS':{alternate:'an OCEAN OATS cereal package',purpose:'a dimensional brand illustration'},
+ 'PS-ZEBRA-IRONING':{alternate:'a giraffe tailoring its patterned jacket',purpose:'a surreal visual narrative'},
+ 'PS-CEREAL-BOX':{alternate:'an OCEAN OATS cereal package',purpose:'a dimensional brand illustration'},
  'PS-TURTLE-KINGDOM':{alternate:'a whale carrying a floating research station',purpose:'a believable fantasy composite'},
  'PS-STORMBOUND':{alternate:'an icy arm transforming into an arctic fox',purpose:'a surreal weather composite'},
- 'PS-SKYBOUND-3D':{alternate:'a low-poly observatory rendered into a night poster',purpose:'a 3D-to-Photoshop composite'}
+ 'BL-SKYBOUND':{alternate:'a low-poly observatory rendered into a night poster',purpose:'a 3D-to-Photoshop composite'}
 };
 var cfg={project:script.dataset.project||'WORKBOOK',course:(new URLSearchParams(location.search).get('course')||script.dataset.course||'MM12').toUpperCase(),sprint:script.dataset.sprint||'',studentOs:script.dataset.studentOs||'https://script.google.com/a/macros/gnspes.ca/s/AKfycby3lAqgW184t9EnOZg2XHDh6C8jYGZUBFpXeLICFZnAu0Yrkab3hcw6QFboHR7FWVTo/exec'};
 if(cfg.course==='CT11')cfg.course='COM11';if(cfg.course==='COM11'&&script.dataset.comSprint)cfg.sprint=script.dataset.comSprint; var profile=profiles[cfg.project]||{alternate:'a different source asset',purpose:'the same communication goal'};

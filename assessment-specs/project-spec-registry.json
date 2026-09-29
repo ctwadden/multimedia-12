@@ -1,45 +1,46 @@
 {
-  "registry_version": "2026-09-28.1",
+  "registry_version": "2026-09-28.2",
+  "source": "Canonical guide-assessment mirror; authoritative registry is ctwadden/classroom-tools:technology-learning-system-v3",
   "projects": [
     {
-      "project_id": "PS-FRESH-IMPACT",
+      "project_id": "PS-LEMON-BURST",
       "active": true,
-      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/fresh-impact/forms-spec.json"
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/classroom-tools/technology-learning-system-v3/system/projects/photoshop/lemon-burst/assessment/forms-spec.json"
     },
     {
       "project_id": "PS-BELOW-SURFACE",
       "active": true,
-      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/below-the-surface/forms-spec.json"
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/classroom-tools/technology-learning-system-v3/system/projects/photoshop/below-the-surface/assessment/forms-spec.json"
     },
     {
       "project_id": "PS-ON-COVER",
       "active": true,
-      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/on-the-cover/forms-spec.json"
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/classroom-tools/technology-learning-system-v3/system/projects/photoshop/on-the-cover/assessment/forms-spec.json"
     },
     {
-      "project_id": "PS-PRESS-YOUR-STRIPES",
+      "project_id": "PS-ZEBRA-IRONING",
       "active": true,
-      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/press-your-stripes/forms-spec.json"
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/classroom-tools/technology-learning-system-v3/system/projects/photoshop/zebra-ironing/assessment/forms-spec.json"
     },
     {
-      "project_id": "PS-DINO-LOOPS",
+      "project_id": "PS-CEREAL-BOX",
       "active": true,
-      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/dino-loops/forms-spec.json"
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/classroom-tools/technology-learning-system-v3/system/projects/photoshop/cereal-box/assessment/forms-spec.json"
     },
     {
       "project_id": "PS-TURTLE-KINGDOM",
       "active": true,
-      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/turtle-kingdom/forms-spec.json"
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/classroom-tools/technology-learning-system-v3/system/projects/photoshop/turtle-kingdom/assessment/forms-spec.json"
     },
     {
       "project_id": "PS-STORMBOUND",
       "active": true,
-      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/stormbound/forms-spec.json"
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/classroom-tools/technology-learning-system-v3/system/projects/photoshop/stormbound/assessment/forms-spec.json"
     },
     {
-      "project_id": "PS-SKYBOUND-3D",
+      "project_id": "BL-SKYBOUND",
       "active": true,
-      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/multimedia-12/main/assessment-specs/skybound-first-3d/forms-spec.json"
+      "forms_spec_url": "https://raw.githubusercontent.com/ctwadden/classroom-tools/technology-learning-system-v3/system/projects/blender/skybound/assessment/forms-spec.json"
     }
   ]
 }

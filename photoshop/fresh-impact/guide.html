@@ -43,8 +43,9 @@ function downloadText(){let txt='FRESH IMPACT — EVIDENCE\n\n';document.querySe
 const dlg=qs('#lightbox'),zi=qs('#zoom-image'),zc=qs('#zoom-caption');function showImg(im){zi.src=im.src;zc.textContent=im.alt;dlg.showModal();}
 document.querySelectorAll('.zoomable').forEach(im=>{im.addEventListener('click',()=>showImg(im));im.addEventListener('keydown',e=>{if(e.key==='Enter'){showImg(im)}})});qs('#close-zoom').addEventListener('click',()=>dlg.close());dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
 </script>
+
 <!-- Learning Studio support overlay -->
 <link rel="stylesheet" href="/multimedia-12/supports/learning-studio-supports.css" data-learning-studio-support-overlay="1">
-<script src="/multimedia-12/supports/learning-studio-supports.js" data-project="PS-FRESH-IMPACT" data-course="MM12" data-sprint="" data-com-sprint="" data-learning-studio-support-overlay="1"></script>
+<script src="/multimedia-12/supports/learning-studio-supports.js" data-project="PS-LEMON-BURST" data-course="MM12" data-sprint="" data-com-sprint="" data-learning-studio-support-overlay="1"></script>
 <!-- /Learning Studio support overlay -->
 </body></html>
