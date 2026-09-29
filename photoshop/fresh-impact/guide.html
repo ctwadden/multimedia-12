@@ -44,6 +44,7 @@ const dlg=qs('#lightbox'),zi=qs('#zoom-image'),zc=qs('#zoom-caption');function s
 document.querySelectorAll('.zoomable').forEach(im=>{im.addEventListener('click',()=>showImg(im));im.addEventListener('keydown',e=>{if(e.key==='Enter'){showImg(im)}})});qs('#close-zoom').addEventListener('click',()=>dlg.close());dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
 </script>
 
+
 <!-- Learning Studio support overlay -->
 <link rel="stylesheet" href="/multimedia-12/supports/learning-studio-supports.css" data-learning-studio-support-overlay="1">
 <script src="/multimedia-12/supports/learning-studio-supports.js" data-project="PS-LEMON-BURST" data-course="MM12" data-sprint="" data-com-sprint="" data-learning-studio-support-overlay="1"></script>

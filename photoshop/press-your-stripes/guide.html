@@ -20,6 +20,7 @@ document.getElementById('reset').addEventListener('click',()=>{if(!confirm('Clea
 const modal=document.getElementById('zoomDialog'),zoomImage=document.getElementById('zoomImage');document.querySelectorAll('.zoom').forEach(b=>b.addEventListener('click',()=>{const i=b.querySelector('img');zoomImage.src=i.src;zoomImage.alt=i.alt;modal.showModal();}));document.getElementById('closeZoom').addEventListener('click',()=>modal.close());modal.addEventListener('click',e=>{if(e.target===modal)modal.close();});document.getElementById('jump').addEventListener('change',e=>{if(e.target.value)location.hash=e.target.value;});update();save();
 </script>
 
+
 <!-- Learning Studio support overlay -->
 <link rel="stylesheet" href="/multimedia-12/supports/learning-studio-supports.css" data-learning-studio-support-overlay="1">
 <script src="/multimedia-12/supports/learning-studio-supports.js" data-project="PS-ZEBRA-IRONING" data-course="MM12" data-sprint="" data-com-sprint="" data-learning-studio-support-overlay="1"></script>
