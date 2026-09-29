@@ -13,6 +13,23 @@
       "description": "Move from editable photo composites to editorial design, advertising and cinematic lighting. Use the route your teacher assigns; keep your working files and show how your decisions develop.",
       "groups": [
         {
+          "title": "Current sprint",
+          "description": "Start here this week.",
+          "lessons": [
+            {
+              "title": "Shot on Purpose",
+              "kind": "Sprint 3 guide",
+              "label": "5–16 Oct",
+              "desc": "Control the DSLR, shape the light, edit honestly and build a campaign from your own photographs, then prove it survives a new format.",
+              "skills": [
+                "DSLR capture & light",
+                "Honest editing & layout"
+              ],
+              "url": "sprints/shot-on-purpose/guide.html"
+            }
+          ]
+        },
+        {
           "title": "Foundation",
           "description": "An introduction to layers, masks and believable depth.",
           "lessons": [
