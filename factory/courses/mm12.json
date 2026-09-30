@@ -14,8 +14,19 @@
       "groups": [
         {
           "title": "Current sprint",
-          "description": "Start with Photo Desk, then your Sprint 3 project.",
+          "description": "This week: finish Sprint 2 with The Brief Has Changed. Next: Photo Desk, then your Sprint 3 project.",
           "lessons": [
+            {
+              "title": "The Brief Has Changed",
+              "kind": "Sprint 2 finish",
+              "label": "1–2 Oct",
+              "desc": "Build a label once as a Smart Object, put it on a real box and mug, then answer the client who changes the brief — with one edit.",
+              "skills": [
+                "Smart Objects & mock-ups",
+                "Colour, type & brand"
+              ],
+              "url": "sprints/brief-has-changed/guide.html"
+            },
             {
               "title": "Photo Desk",
               "kind": "Camera Lab (first)",
