@@ -14,8 +14,19 @@
       "groups": [
         {
           "title": "Current sprint",
-          "description": "Start here this week.",
+          "description": "Start with Photo Desk, then your Sprint 3 project.",
           "lessons": [
+            {
+              "title": "Photo Desk",
+              "kind": "Camera Lab (first)",
+              "label": "Start here",
+              "desc": "Assignments from The Torch editors: earn your Camera Licence, then shoot a real story for the newsletter.",
+              "skills": [
+                "DSLR controls",
+                "Photojournalism"
+              ],
+              "url": "sprints/photo-desk/guide.html"
+            },
             {
               "title": "Shot on Purpose",
               "kind": "Sprint 3 guide",
