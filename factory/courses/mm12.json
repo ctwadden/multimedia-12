@@ -52,6 +52,34 @@
           ]
         },
         {
+          "title": "Coming up · Sprint 4",
+          "description": "Opens 19 October. Look ahead if you finish early.",
+          "lessons": [
+            {
+              "title": "Last Light",
+              "kind": "Sprint 4 guide",
+              "label": "19–22 Oct",
+              "desc": "Light a film poster with adjustment layers and masks, then level up: relight a portrait, add a glowing object that lights the face, light wrap and embers, and a moving teaser.",
+              "skills": [
+                "Motivated light & relighting",
+                "Poster type & motion"
+              ],
+              "url": "sprints/last-light/guide.html"
+            },
+            {
+              "title": "Make It Matter",
+              "kind": "Sprint 4 guide",
+              "label": "26 Oct–2 Nov",
+              "desc": "Make a moving PSA the way an agency does: insight, one big idea, pro compositing, parallax motion, and a real next step for your audience.",
+              "skills": [
+                "Insight & visual metaphor",
+                "Compositing & parallax"
+              ],
+              "url": "sprints/make-it-matter/guide.html"
+            }
+          ]
+        },
+        {
           "title": "Foundation",
           "description": "An introduction to layers, masks and believable depth.",
           "lessons": [
