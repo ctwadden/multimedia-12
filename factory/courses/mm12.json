@@ -292,7 +292,27 @@
       "anchor": "module-2",
       "number": "02",
       "title": "Motion Graphics",
-      "summary": "Make images move with intention."
+      "summary": "Make images move with intention.",
+      "description": "Bring images to life in 3D and 2D animation, then put yourself into a 3D world with green screen and virtual production.",
+      "groups": [
+        {
+          "title": "Coming up · Sprint 6",
+          "description": "Opens 18 November. Look ahead if you finish early.",
+          "lessons": [
+            {
+              "title": "Blender Bootcamp",
+              "kind": "Sprint 6 guide",
+              "label": "18–30 Nov",
+              "desc": "Build one winter scene from an empty file: a textured cottage with chimney smoke, falling snow, footprints to a snowman, glowing lanterns and an appended car. Then animate it, composite it and render it.",
+              "skills": [
+                "3D modelling & texturing",
+                "Particles, smoke & keyframes"
+              ],
+              "url": "sprints/blender-bootcamp/guide.html"
+            }
+          ]
+        }
+      ]
     },
     {
       "anchor": "module-3",
