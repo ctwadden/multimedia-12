@@ -311,6 +311,23 @@
               "url": "sprints/blender-bootcamp/guide.html"
             }
           ]
+        },
+        {
+          "title": "Coming up · Sprint 7",
+          "description": "Opens 1 December. Look ahead if you finish early.",
+          "lessons": [
+            {
+              "title": "2D Animation Studio",
+              "kind": "Sprint 7 guide",
+              "label": "1–15 Dec",
+              "desc": "Animate the way TV studios do, in Blender Grease Pencil: a bouncing ball, your own character, a walk cycle and lip sync with a mouth chart, finished as a shot with sound and a multiplane camera move.",
+              "skills": [
+                "Timing & spacing",
+                "Walk cycle & lip sync"
+              ],
+              "url": "sprints/2d-animation-studio/guide.html"
+            }
+          ]
         }
       ]
     },
