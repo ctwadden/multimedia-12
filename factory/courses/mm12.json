@@ -328,6 +328,23 @@
               "url": "sprints/2d-animation-studio/guide.html"
             }
           ]
+        },
+        {
+          "title": "Coming up · Sprint 8",
+          "description": "Opens 16 December. Look ahead if you finish early.",
+          "lessons": [
+            {
+              "title": "Pilot in an X-wing",
+              "kind": "Sprint 8 VFX tutorial",
+              "label": "From 16 Dec",
+              "desc": "Track a real camera move, key a pilot off a green screen, and build a 3D fighter around her seat so she flies it above the clouds at golden hour.",
+              "skills": [
+                "Camera tracking & keying",
+                "Drivers, materials & bloom"
+              ],
+              "url": "sprints/vfx-xwing-pilot/guide.html"
+            }
+          ]
         }
       ]
     },
