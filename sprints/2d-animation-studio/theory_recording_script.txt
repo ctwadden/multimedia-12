@@ -1,0 +1,22 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
+Over ten lessons you make one short piece of drawn animation. You draw it in Blender, with a tool called Grease Pencil, which lets you draw two-D pictures inside a three-D space. You start with a bouncing ball, because every principle of animation is hiding in it. Then a character, a walk, a line of dialogue, and finally a shot with real depth.
+
+SLIDE 02 — Timing and spacing  (save your recording as audio/theory/slide-02.mp3)
+Two words do most of the work in animation. Timing is how many frames an action takes. Spacing is how far the drawing moves from one frame to the next. Drawings close together look slow. Drawings far apart look fast. A ball at the top of its bounce has drawings bunched together, because it is nearly hanging in the air. Near the ground the gaps are wide, because it is moving fastest.
+
+SLIDE 03 — Squash, stretch and weight  (save your recording as audio/theory/slide-03.mp3)
+A shape that never changes looks like a rock. To give it life and weight, stretch it along its path when it is moving fast, and squash it when it hits. The one rule is volume. If the ball gets wider it must get flatter by the same amount. If it just grows, it looks like it is inflating.
+
+SLIDE 04 — Keys first, then breakdowns  (save your recording as audio/theory/slide-04.mp3)
+Do not draw frame one, then frame two, then frame three. Draw the important poses first. Those are the keys. Then add the drawings in between that decide how the body travels from one key to the next. Those are breakdowns. A walk has four poses that repeat: contact, where the foot lands; down, where the weight drops; passing, where one leg passes the other; and up, the highest point.
+
+SLIDE 05 — Lip sync is listening  (save your recording as audio/theory/slide-05.mp3)
+Lip sync is about listening. You animate the sounds you hear, not the letters in the word. A small chart of mouth shapes, perhaps eight, covers everything a person can say. In Blender you draw each shape once and then swap between them. And put the mouth shape a frame or two before the sound, because we see a mouth open before we hear the voice.
+
+SLIDE 06 — Depth from flat drawings  (save your recording as audio/theory/slide-06.mp3)
+This is the part only Grease Pencil can do. Your drawings are flat, but they live in three-D space. Put the foreground close to the camera, the character in the middle, the hills far away. Now move the camera. The near layers slide quickly, the far ones barely move. That is parallax, and it gives a drawn shot real depth.
+
+SLIDE 07 — Before you open Blender  (save your recording as audio/theory/slide-07.mp3)
+Before you open Blender, answer three questions from memory. What is the difference between timing and spacing? What must stay the same when you squash a shape? And what are the four poses of a walk? Then open the workbook.
