@@ -1,0 +1,25 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to build  (save your recording as audio/theory/slide-01.mp3)
+This is the scene you are going to build from an empty file. A cottage at dusk. Warm windows. A walkway shovelled out of the snow with lanterns beside it, and a car on the drive. Snow falling, smoke curling from the chimney, and the camera pushing slowly in. You build it in layers, one layer each lesson. That is how studios build every shot, so that each layer can be changed without starting again.
+
+SLIDE 02 — Block out first, detail second  (save your recording as audio/theory/slide-02.mp3)
+Everything in Blender sits in three-D space, with a location, a rotation and a scale on three axes: X is red, Y is green, Z is blue and points up. You will type real sizes in metres. The cottage is six metres wide, four and a half deep and three high. Start with big simple shapes. This is called a block-out. If the sizes and the composition are wrong at this stage, no amount of detail will fix the shot later.
+
+SLIDE 03 — Two moves make most models  (save your recording as audio/theory/slide-03.mp3)
+Two moves make most hard-surface models. Inset draws a smaller face inside a face. Extrude pulls a face in or out. Inset the top of the chimney, extrude it down, and you have a hollow chimney. Inset a window, push the middle in, and you have a frame. Modifiers add detail without destroying the simple shape underneath. A Bevel modifier rounds every edge slightly, and you can change the amount or turn it off at any time.
+
+SLIDE 04 — A surface is three pictures  (save your recording as audio/theory/slide-04.mp3)
+A believable surface is usually three pictures working together. The colour map is what it looks like. The roughness map says where it is shiny and where it is dull. The normal map fakes small bumps and grooves. The U V map tells Blender how to wrap those flat pictures around your model. And emission turns a surface into a light: that is how the windows glow.
+
+SLIDE 05 — Warm against cool  (save your recording as audio/theory/slide-05.mp3)
+Light decides where people look. The eye goes to the brightest, warmest thing in the frame, so that should be the windows. An emissive window alone looks like a sticker. Put a real light inside the cottage and the glow spills out onto the snow, and now it is believable. Then add a weak blue moon from behind. Warm against cool is the classic winter evening look.
+
+SLIDE 06 — Paint where things happen  (save your recording as audio/theory/slide-06.mp3)
+Real snow is never flat. A Displace modifier pushes the surface up and down using a picture. A cloudy picture gives soft drifts. Then you paint your own picture: black where the snow has been cleared. One band is the walkway to the door. A wider band is the drive under the car. Small grey ovals are footprints. Weight painting is the same idea for the forest. You paint red where trees should grow and blue where they should not, and a particle system plants hundreds of trees only in the red.
+
+SLIDE 07 — Particles, smoke and keyframes  (save your recording as audio/theory/slide-07.mp3)
+Three things bring the scene to life. A particle system makes nine thousand snowflakes from one setting; lower the gravity and add wind and it feels like snow, not rain. Smoke is a simulation. It happens inside a box called the domain, and you bake it, which means Blender calculates it once and saves it. And keyframes. A keyframe stores a value at a moment in time. Key the camera at frame one and again at frame ninety-six, and Blender moves it smoothly between the two.
+
+SLIDE 08 — Before you open Blender  (save your recording as audio/theory/slide-08.mp3)
+Before you open Blender, answer three questions from memory. What is a block-out? What are the three pictures that make a surface? And in a painted displacement image, what does black do? Then open the workbook and build the demo exactly. In lesson eight the producer changes the brief, and that is where you show what you can do on your own.
