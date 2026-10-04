@@ -1,0 +1,16 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
+In the footage an actor swings a stick with white balls taped to it. In the finished shot the stick has gone and a glowing blade is in his hand. To do that, Blender has to follow the stick in three dimensions, so the blade can turn, tilt and come toward the camera exactly as the stick did.
+
+SLIDE 02 — A rigid prop keeps its shape  (save your recording as audio/theory/slide-02.mp3)
+Object tracking works because the prop is rigid. It never changes shape, so the distance between any two balls on it stays the same in the real world. From how those balls move in the picture, Blender can work out how the prop turns and tilts in three dimensions. That only works if the balls point in different directions, and if every marker stays on its own ball. If a marker jumps to the ball next door, you have told Blender the prop changed shape, and the result falls apart.
+
+SLIDE 03 — One number tells you if it worked  (save your recording as audio/theory/slide-03.mp3)
+To solve, you choose two keyframes where the prop has clearly turned between them, and press Solve Object Motion. Blender answers with one number, the solve error, in pixels. Under one pixel is the target. If it is higher, use Clean Up to find the worst tracks, fix or delete them, and solve again.
+
+SLIDE 04 — Clean plate, passes, glow  (save your recording as audio/theory/slide-04.mp3)
+The camera in this shot is locked off, so you can build a clean plate: a picture of the scene with nothing in front of it. A matte pass, rendered from Blender, marks where the stick is, and the compositor swaps in the clean plate there. So the stick disappears. Then the blade pass goes over the top, and blurred, tinted copies of it make the glow.
+
+SLIDE 05 — Before you open Blender  (save your recording as audio/theory/slide-05.mp3)
+Before you open Blender, answer three questions from memory. What does rigid mean, and why does it matter? What solve error are you aiming for? And what is a clean plate? Then open the workbook.
