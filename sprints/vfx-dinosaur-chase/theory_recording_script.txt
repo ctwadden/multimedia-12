@@ -1,0 +1,16 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
+You are given two things: real footage of a forest, and a computer-generated creature that was rendered to match that camera. Your job is the composite, which means putting them together so the audience believes it was filmed that way. One lesson, one node tree, three ideas.
+
+SLIDE 02 — Alpha decides what you see through  (save your recording as audio/theory/slide-02.mp3)
+Every pixel of the creature render carries a fourth value called alpha. White alpha means solid. Black means see-through. The Alpha Over node uses it to lay the creature on top of the forest. Order matters. If you plug them in the wrong way round, the forest covers the creature.
+
+SLIDE 03 — A shadow glues it to the ground  (save your recording as audio/theory/slide-03.mp3)
+A creature with no shadow floats. You can make a shadow from the alpha you already have. Shift it down and along the ground, blur it, and multiply it onto the forest so the ground gets darker underneath. Nothing else you do in this lesson makes as much difference as that one dark patch where feet meet ground.
+
+SLIDE 04 — Match three things  (save your recording as audio/theory/slide-04.mp3)
+A render is cleaner than any camera. Three matches close the gap. Black level: look at the darkest shadow in the forest and lift the creature’s blacks until they are no darker. Colour temperature: give the creature the same warm or cool cast as the footage. Sharpness: the footage is soft, so blur the creature a little. Each change is small. Together they are the difference between pasted on and filmed there.
+
+SLIDE 05 — Before you open Blender  (save your recording as audio/theory/slide-05.mp3)
+Before you open Blender, answer three questions from memory. What does alpha store? Why does the shadow use multiply? And what are the three things to match? Then open the workbook.
