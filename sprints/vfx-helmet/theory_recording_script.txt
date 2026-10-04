@@ -1,0 +1,16 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
+The actor has dots drawn on his face and turns his head. In the finished shot he is wearing a helmet that turns with him. You track the dots, Blender works out how the head is moving in three dimensions, and the helmet follows.
+
+SLIDE 02 — A head is rigid. A face is not.  (save your recording as audio/theory/slide-02.mp3)
+Object tracking needs a rigid object. A skull is rigid. A face is not: cheeks, lips and eyebrows move every time he talks or blinks. So you only track points that are fixed to the bone underneath. Drawn dots on the forehead and the bridge of the nose, the corners of the eyes, the nostrils. A marker on a cheek will ruin the solve.
+
+SLIDE 03 — Shallow shapes need every marker  (save your recording as audio/theory/slide-03.mp3)
+A face is nearly flat compared with a prop that has balls sticking out everywhere. That gives the solver very little depth to work with. So keep at least ten good markers, and choose two keyframes where the head has really turned between them. Then aim for a solve error under one pixel, as always.
+
+SLIDE 04 — Scale from something real  (save your recording as audio/theory/slide-04.mp3)
+A solve has no idea how big anything is. You tell it, by measuring something real in the footage, for example the distance between two dots on the forehead, and typing that distance in. Now a helmet built to real head size fits, and sits at the right distance from the camera.
+
+SLIDE 05 — Before you open Blender  (save your recording as audio/theory/slide-05.mp3)
+Before you open Blender, answer three questions from memory. Which points on a face are safe to track? Why do you need a real head turn between the keyframes? And how do you set the scale? Then open the workbook.
