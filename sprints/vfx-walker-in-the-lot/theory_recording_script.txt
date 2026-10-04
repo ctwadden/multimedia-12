@@ -1,0 +1,22 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
+This is our parking lot, filmed on a drone at head height. In nine seconds a walker crosses the far end of the lot, a squad of troopers runs past the camera, and an X-wing comes over our heads and away over the trees. None of it was there. The camera was moving the whole time, so everything you add has to move with it. That is the skill in this workbook. It is called matchmoving.
+
+SLIDE 02 — The camera moved. Blender has to copy it.  (save your recording as audio/theory/slide-02.mp3)
+If you paste a walker onto moving footage, it slides around like a sticker on a window. To fix that, Blender needs a virtual camera that moves exactly like the real one. You give it clues. A marker follows one fixed spot, like the corner of a painted line. Near spots slide quickly across the frame, far spots slide slowly. That difference is called parallax. From a hundred markers, Blender can work out where the real camera was on every single frame.
+
+SLIDE 03 — Good markers, bad markers  (save your recording as audio/theory/slide-03.mp3)
+A marker only helps if the thing it follows is really fixed to the ground. Painted lines, wheels of parked cars, tree trunks and the lamp post are good. Clouds move. The glare of the sun moves with the lens. Reflections slide. Those are bad, and one bad marker can bend the whole camera path. When you press Solve, Blender gives you one number, the solve error, in pixels. Under one pixel is good. Ours was zero point five eight, after deleting the worst tenth of the markers.
+
+SLIDE 04 — Tell Blender where the ground is and how big a metre is  (save your recording as audio/theory/slide-04.mp3)
+A solved camera is correct, but it floats in space at a random angle and a random size. You have to tell Blender two things. First, where the ground is: pick three markers on the asphalt and press Floor. Second, how big a metre is: pick two markers a known distance apart and press Set Scale. In a parking lot that is easy, because the painted stalls are about two point six metres wide. When we built the demo we guessed the camera height instead. The guess was wrong by forty percent, and the walker came out the size of a house in the wrong place. Measure something real.
+
+SLIDE 05 — Find the sun. Catch the shadows.  (save your recording as audio/theory/slide-05.mp3)
+Before you add a light, read the plate. The shadows of the parked cars fall toward the camera. That means the sun is in front of us, and every object we see is lit from behind. The side facing us is in shade. So your sun lamp goes in front of the camera, high up, pointing back at us, and the fill light stays low. A walker that is bright on the side facing us looks pasted on straight away. The ground is the other half. A shadow catcher is an invisible floor. It does not render, but shadows that land on it do. That puts the walker’s shadow on the real asphalt.
+
+SLIDE 06 — Three matches make it sit in  (save your recording as audio/theory/slide-06.mp3)
+Blender gives you a clean, sharp picture. The drone gave you a soft, grainy, high-contrast one. In After Effects you close that gap with three matches. Black level: compare the darkest part of your walker with the shadow side of the parked car, and bring them together. Softness: blur the render by about one pixel. Grain: add a little noise. Each one is small. Together they are the difference between pasted on and filmed there.
+
+SLIDE 07 — Before you open Blender  (save your recording as audio/theory/slide-07.mp3)
+Before you open Blender, answer three questions from memory. What is parallax, and why does the tracker need it? What two things does Orientation tell Blender? And if the shadows point toward the camera, where is the sun? Then open the workbook and build the demo exactly. The director’s card at the end is where you make it yours.
