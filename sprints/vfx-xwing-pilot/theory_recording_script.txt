@@ -1,0 +1,19 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
+In the finished shot a pilot sits in the cockpit of a fighter, high above the clouds, and the camera rises past her. In the studio there was no fighter and no sky. There was a chair, a green screen and a moving camera. Your job is to copy that camera move into Blender, cut her out of the green, and build the ship around her so that it moves exactly as the real camera did.
+
+SLIDE 02 — Copy the real camera  (save your recording as audio/theory/slide-02.mp3)
+To put a three-D ship into moving footage, Blender needs a camera that moves exactly like the real one. You give it clues. A marker follows one fixed spot through the clip. Spots near the camera slide quickly across the frame, spots far away slide slowly. That difference is parallax. From a few dozen markers Blender can work out where the real camera was on every frame. That is called solving.
+
+SLIDE 03 — One number tells you if it worked  (save your recording as audio/theory/slide-03.mp3)
+When you solve, Blender gives you one number: the solve error, in pixels. Under one pixel is good. If it is higher, delete the worst markers and solve again. Then tell Blender three things: which markers are on the floor, where the seat is, and how big a known distance is. Now the scene is in real metres, and a twelve metre fighter comes in at the right size around a real person.
+
+SLIDE 04 — Cut her out of the green  (save your recording as audio/theory/slide-04.mp3)
+A key makes one colour transparent, here the green. Never judge a key by the pretty picture. Look at the matte, the black and white version. White is kept. Black is removed. Grey is half transparent, and grey where her body should be solid is a hole. Then draw a rough garbage mask round her to throw away light stands and the edge of the screen. The key and the mask multiply: only what both keep survives.
+
+SLIDE 05 — A flat card at the right distance  (save your recording as audio/theory/slide-05.mp3)
+Here is the trick that makes the shot work. Her keyed footage goes on a flat card inside the three-D scene, like a photograph on a stand. The card always faces the camera and always fills the frame. But it sits at the distance she really sat from the camera. So the cockpit edge, which is closer, passes in front of her, and the seat back, which is further, goes behind her. A driver keeps the card at the right distance as the camera moves.
+
+SLIDE 06 — Before you open Blender  (save your recording as audio/theory/slide-06.mp3)
+Before you open Blender, answer three questions from memory. What is parallax? In a matte, what do white, black and grey mean? And why does the card sit at her real distance from the camera? Then open the workbook and build the demo exactly. The director’s card at the end is where you make it your own.
