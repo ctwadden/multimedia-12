@@ -1,0 +1,16 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
+The actor carries a plain prop with white balls on it, and both she and the camera are moving. In the finished shot she carries a detailed blaster. Blender has to follow the prop in three dimensions while the camera moves, and that is exactly what an object solve is for.
+
+SLIDE 02 — A rigid prop keeps its shape  (save your recording as audio/theory/slide-02.mp3)
+Object tracking works because the prop is rigid. It never changes shape, so the distance between any two balls on it stays the same in the real world. From how those balls move in the picture, Blender can work out how the prop turns and tilts in three dimensions. That only works if the balls point in different directions, and if every marker stays on its own ball. If a marker jumps to the ball next door, you have told Blender the prop changed shape, and the result falls apart.
+
+SLIDE 03 — One number tells you if it worked  (save your recording as audio/theory/slide-03.mp3)
+To solve, you choose two keyframes where the prop has clearly turned between them, and press Solve Object Motion. Blender answers with one number, the solve error, in pixels. Under one pixel is the target. If it is higher, use Clean Up to find the worst tracks, fix or delete them, and solve again.
+
+SLIDE 04 — A moving camera means no clean plate  (save your recording as audio/theory/slide-04.mp3)
+An object solve is measured relative to the camera, so it does not matter that the camera moves. What does change is the clean-up. With a moving camera the background is different on every frame, so you cannot build one clean plate. The blaster model hides most of the prop. Small bits that still show are filled by inpainting, which borrows the pixels around them. Large leftovers need a mask drawn by hand.
+
+SLIDE 05 — Before you open Blender  (save your recording as audio/theory/slide-05.mp3)
+Before you open Blender, answer three questions from memory. Why must each marker stay on its own ball? What solve error are you aiming for? And why is there no clean plate in this shot? Then open the workbook.
