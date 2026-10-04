@@ -1,0 +1,16 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
+The footage shows a room with a window, and the window is bright green. You are going to remove the green and put a world outside. The camera is moving, so the new view has to move with it. If it does not, it looks like a poster stuck to the glass.
+
+SLIDE 02 — A flat surface only needs a 2D track  (save your recording as audio/theory/slide-02.mp3)
+In other tutorials you solve a full three-D camera. Here you do not need to. The green screen is flat, so if you follow three marks on it, you know how it slides, how it turns and how it changes size in the frame. That is a two-D track, and it takes a few minutes.
+
+SLIDE 03 — Stabilise, inverted  (save your recording as audio/theory/slide-03.mp3)
+Stabilising a shot means cancelling its movement. The same data used backwards does the opposite: it gives the movement to something else. So you take the stabilise data from the window track, invert it, and apply it to your outside view. Now the view shakes and drifts exactly as the window does.
+
+SLIDE 04 — Far things are soft  (save your recording as audio/theory/slide-04.mp3)
+Key the green to get a matte of the window, and put your view behind the room. Then blur it. The candles in front are close and sharp. The world outside is far away, so it should be softer. That one blur is a depth cue, and it stops the view looking like a sticker.
+
+SLIDE 05 — Before you open Blender  (save your recording as audio/theory/slide-05.mp3)
+Before you open Blender, answer three questions from memory. Why is a two-D track enough here? What does inverting the stabilisation do? And why blur the view? Then open the workbook.
