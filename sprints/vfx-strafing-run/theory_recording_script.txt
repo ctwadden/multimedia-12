@@ -1,0 +1,25 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
+Here is the shot. A squad of troopers holds a rock barricade in a canyon and fires at a fighter far away. For six seconds the fighter just gets closer. Then it strafes them. The barricade blows apart, troopers are thrown, and the fighter roars over the camera. You will build the characters first, then the squad, then the attack, then the fire.
+
+SLIDE 02 — You do not have to model or animate a person  (save your recording as audio/theory/slide-02.mp3)
+Modelling a person takes weeks. Animating one by hand takes longer. Studios reuse characters, and so will you. Sketchfab is a library of 3D models. Turn on the Downloadable filter, and look for a human-shaped character standing with arms out. That pose is called a T-pose, and it is what animation tools expect. Before you download anything, read the licence on the model page. It tells you whether you may use the model, and whether you must credit the artist.
+
+SLIDE 03 — Licences: can I use this?  (save your recording as audio/theory/slide-03.mp3)
+Four things to know. C C zero means do anything, no credit. C C BY means you may use it if you credit the artist. N C means non-commercial: fine for class, not for selling. And one warning. Some uploads are characters pulled out of a commercial game or film. The uploader did not make them and cannot give you permission. For a class exercise that stays in the room it is a grey area. For anything you publish, pick a model the artist made themselves.
+
+SLIDE 04 — Mixamo gives it a skeleton and moves  (save your recording as audio/theory/slide-04.mp3)
+Mixamo is a free Adobe website. You upload your character and it builds a skeleton inside it. That is called rigging. Then you search a library of motion-captured animations and watch your own character perform them. Each animation has sliders. Try them: they change how big or loose the movement is. When you download, the first file should include the character, which Mixamo calls With Skin. Every other animation only needs the movement, so choose Without Skin. That keeps the files small.
+
+SLIDE 05 — Actions are clips. The NLA editor is the edit.  (save your recording as audio/theory/slide-05.mp3)
+In Blender each animation is called an action. Think of an action as a clip. The Nonlinear Animation editor, the N L A, is where you put clips in order, like editing video. Each clip on the timeline is a strip. A strip can repeat, so a seven-frame firing action can fire for five seconds. A strip can blend in, so one movement melts into the next. And if every trooper starts firing on a slightly different frame, the squad looks alive.
+
+SLIDE 06 — Build the wait before the hit  (save your recording as audio/theory/slide-06.mp3)
+The attack is only two seconds long. What makes it land is the six seconds before it. The audience watches the ship get bigger and knows what is coming. That is tension. The camera stands with the squad, at head height, looking where they look. During the hits it stays on them. Only when the ship has passed does it whip up to follow it. If the camera followed the ship the whole time, you would miss the destruction.
+
+SLIDE 07 — A blast is four things at once  (save your recording as audio/theory/slide-07.mp3)
+One explosion is four separate things that happen on the same frame. A flash of orange light. The trooper thrown up and back. Rocks flying on arcs, up, over, and down. And real filmed dirt and fire laid on top in After Effects. You key the first three in Blender with a handful of keyframes each. Then you repeat the recipe for every hit, three frames apart, so the blasts walk across the barricade.
+
+SLIDE 08 — Before you open Blender  (save your recording as audio/theory/slide-08.mp3)
+Before you open Blender, answer three questions from memory. What does Without Skin mean, and when do you choose it? What is a strip? And what are the four parts of a blast? Then open the workbook and build the demo exactly. The director’s card at the end is where you make it your own.
