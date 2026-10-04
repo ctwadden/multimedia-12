@@ -1,7 +1,7 @@
 RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
 
 SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
-This is our parking lot, filmed on a drone at head height. In nine seconds a walker crosses the far end of the lot, a squad of troopers runs past the camera, and an X-wing comes over our heads and away over the trees. None of it was there. The camera was moving the whole time, so everything you add has to move with it. That is the skill in this workbook. It is called matchmoving.
+This is our parking lot, filmed on a drone at head height. In nine seconds an A T A T walker and a smaller escort walk in from the far end of the lot, a squad of troopers runs past the camera, and an X-wing comes over our heads and away over the trees. None of it was there. The camera was moving the whole time, so everything you add has to move with it. That is the skill in this workbook. It is called matchmoving.
 
 SLIDE 02 — The camera moved. Blender has to copy it.  (save your recording as audio/theory/slide-02.mp3)
 If you paste a walker onto moving footage, it slides around like a sticker on a window. To fix that, Blender needs a virtual camera that moves exactly like the real one. You give it clues. A marker follows one fixed spot, like the corner of a painted line. Near spots slide quickly across the frame, far spots slide slowly. That difference is called parallax. From a hundred markers, Blender can work out where the real camera was on every single frame.
