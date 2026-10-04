@@ -1,0 +1,19 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
+By the end of this sprint there will be a shot of you, standing in a world you designed and built. You learn the method on a professional practice plate first: tracking the camera, keying the green, matching the light. Then you film yourself against green and do it again with your own footage.
+
+SLIDE 02 — Parallax gives the camera away  (save your recording as audio/theory/slide-02.mp3)
+When a camera moves, things near it slide across the frame faster than things far away. That is parallax. If you follow fixed points at different depths, Blender can work backwards to the path of the real camera. That is a camera solve, and it gives you one number, the solve error. Under one pixel is good.
+
+SLIDE 03 — Read the matte, not the picture  (save your recording as audio/theory/slide-03.mp3)
+A keyer makes the green transparent. Never judge it by the finished picture. Look at the matte, the black and white map. White is kept, black is removed, and grey is half transparent. Grey inside the person is a hole. Grey outside is a dirty background. A garbage matte is a rough shape you draw to throw away stands, lights and the edge of the screen.
+
+SLIDE 04 — Scale and ground  (save your recording as audio/theory/slide-04.mp3)
+A filmed person is one point seven metres tall, or whatever they really are, and nothing will change that. So your world has to be built in real metres, or doors and chairs will be the wrong size beside them. Then the feet. They have to meet the ground on every frame. And if the person walks toward the camera, their footage has to move toward the camera in the scene as well.
+
+SLIDE 05 — Match the light before you shoot  (save your recording as audio/theory/slide-05.mp3)
+The fastest way to spot a fake is the light. If the person is lit from the left and the world is lit from the right, no amount of keying will save it. So decide the light in your world first. Where is it, how bright, what colour? Then, when you film on the green screen, put your real light in the same place.
+
+SLIDE 06 — Before you open Blender  (save your recording as audio/theory/slide-06.mp3)
+Before you open Blender, answer three questions from memory. What is parallax? In a matte, what do white, black and grey mean? And what must you decide before you film on the green screen? Then open the workbook.
