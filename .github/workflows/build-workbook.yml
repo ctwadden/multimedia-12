@@ -3,11 +3,13 @@ on:
   workflow_dispatch:
     inputs:
       drive_id:
-        description: "Google Drive file ID of the recording (shared 'anyone with the link')"
-        required: true
+        description: "Single video: Google Drive file ID (shared 'anyone with the link'). Leave blank if using drive_ids below."
+        required: false
+        default: ""
       youtube:
-        description: "YouTube video ID or URL (for the embedded player)"
-        required: true
+        description: "Single video: YouTube ID/URL for the embedded player (optional)."
+        required: false
+        default: ""
       lab:
         description: "Lab (pick one)"
         required: true
@@ -43,6 +45,18 @@ on:
           - v7
           - v6
           - classic
+      drive_ids:
+        description: "MULTI: several Drive IDs comma-separated (chunks → one v7 workbook). Leave blank for a single video."
+        required: false
+        default: ""
+      youtube_ids:
+        description: "MULTI: matching YouTube IDs, comma-separated, same order as drive_ids (optional)."
+        required: false
+        default: ""
+      part_labels:
+        description: "MULTI: part labels, pipe-separated e.g. Setup|Shape|Colour|Finish (optional)."
+        required: false
+        default: ""
       dest_path:
         description: "Publish path in this repo (folder/name/index.html)"
         required: true
@@ -83,19 +97,34 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          node tools/make-workbook.mjs \
-            --drive "${{ inputs.drive_id }}" \
-            --youtube "${{ inputs.youtube }}" \
-            --lab "${{ inputs.lab }}" \
-            --course "${{ inputs.course }}" \
-            --standard "${{ inputs.standard }}" \
-            --out "${{ runner.temp }}/companions" \
-            --wburl "https://ctwadden.github.io/multimedia-12/${{ inputs.dest_path }}" \
-            --collector "${{ vars.COLLECTOR_URL }}" \
-            --builds-on "${{ inputs.builds_on }}" \
-            --new "${{ inputs.new_skill }}" \
-            --prepares-for "${{ inputs.prepares_for }}" \
-            --dest "${{ github.workspace }}/${{ inputs.dest_path }}"
+          if [ -n "${{ inputs.drive_ids }}" ]; then
+            echo "Multi-chunk build → one v7 workbook"
+            node tools/make-workbook-multi.mjs \
+              --drives "${{ inputs.drive_ids }}" \
+              --youtubes "${{ inputs.youtube_ids }}" \
+              --labels "${{ inputs.part_labels }}" \
+              --lab "${{ inputs.lab }}" \
+              --course "${{ inputs.course }}" \
+              --out "${{ runner.temp }}/companions" \
+              --wburl "https://ctwadden.github.io/multimedia-12/${{ inputs.dest_path }}" \
+              --collector "${{ vars.COLLECTOR_URL }}" \
+              --dest "${{ github.workspace }}/${{ inputs.dest_path }}"
+          else
+            echo "Single-video build (${{ inputs.standard }})"
+            node tools/make-workbook.mjs \
+              --drive "${{ inputs.drive_id }}" \
+              --youtube "${{ inputs.youtube }}" \
+              --lab "${{ inputs.lab }}" \
+              --course "${{ inputs.course }}" \
+              --standard "${{ inputs.standard }}" \
+              --out "${{ runner.temp }}/companions" \
+              --wburl "https://ctwadden.github.io/multimedia-12/${{ inputs.dest_path }}" \
+              --collector "${{ vars.COLLECTOR_URL }}" \
+              --builds-on "${{ inputs.builds_on }}" \
+              --new "${{ inputs.new_skill }}" \
+              --prepares-for "${{ inputs.prepares_for }}" \
+              --dest "${{ github.workspace }}/${{ inputs.dest_path }}"
+          fi
       - name: Commit and publish
         run: |
           git config user.name "scribeit-bot"
