@@ -1,0 +1,19 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
+This is our hallway, filmed from a drone. In the finished shot a small flying machine travels down it ahead of the camera. Three things make that work. Blender rebuilds the flight of the real camera. Your droid flies through that rebuilt space. And the light from your droid lands on the real floor.
+
+SLIDE 02 — A track needs fixed points  (save your recording as audio/theory/slide-02.mp3)
+A camera track starts with markers. Each marker follows one small point of the picture through the shot. Blender then works out the one camera move that explains how all of those points moved. That only works if the points are fixed in the real world. A corner of a locker is fixed. A reflection on a polished floor is not: it slides as the camera moves, and it tells the solver a lie.
+
+SLIDE 03 — One number, and know your lens  (save your recording as audio/theory/slide-03.mp3)
+When you solve, Blender gives you one number: the solve error. It is the average distance, in pixels, between where the solved points land and where the markers actually are. Aim for under one pixel. To get there, delete the worst tracks and solve again. And if you know the real lens, type it in. When we let Blender guess, it found a lens that gave a low error but was completely wrong.
+
+SLIDE 04 — Footage is flat. Stand-ins give it shape.  (save your recording as audio/theory/slide-04.mp3)
+The footage is only a flat picture. A light in Blender cannot land on a picture. So you build stand-ins: plain flat shapes placed where the real floor and walls are, using the solved points as a guide. Nobody ever sees them. Their job is to catch the droid’s shadow, its light and its reflection, so those can be put onto the real footage.
+
+SLIDE 05 — What it does to the place  (save your recording as audio/theory/slide-05.mp3)
+Look at these two frames. On the left the droid is just pasted on top. On the right its light is on the floor. An object looks pasted on until it changes its surroundings. That is called interactive light. You render each effect as its own picture, called a pass, and then combine them with the footage.
+
+SLIDE 06 — Before you open Blender  (save your recording as audio/theory/slide-06.mp3)
+Before you open Blender, answer three questions from memory. What makes a good track point? What is the solve error? And what are stand-ins for? Then open the workbook.
