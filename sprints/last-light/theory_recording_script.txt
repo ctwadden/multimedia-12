@@ -1,0 +1,22 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
+This is the poster you are going to make. The hero started as a plain picture on an empty background. The city was an ordinary night photograph. Everything dramatic in this poster, the green blast, the glow in the air, the bright edge on his cape, the light on his chest, was added in Photoshop. You will use the class hero, or you can be the hero yourself.
+
+SLIDE 02 — Light needs a reason  (save your recording as audio/theory/slide-02.mp3)
+Film lighting is motivated. That means every highlight has a source the audience can believe: the sun, a lamp, a doorway, a torch. Three rules follow. Highlights face the source. Shadows point away from it. And light fades with distance, which is called fall-off. If your poster breaks one of these rules, people feel that something is wrong even if they cannot say what.
+
+SLIDE 03 — Dark first, then light  (save your recording as audio/theory/slide-03.mp3)
+You cannot paint light onto a picture that is already bright. So the first move is to darken everything, with a Curves adjustment layer, and cool it down with a blue fill. Now there is somewhere for the light to go. Keep the shadows cool and make the light warm. Warm against cool is the contrast that makes an image feel like a film.
+
+SLIDE 04 — The mask is the light  (save your recording as audio/theory/slide-04.mp3)
+Here is the method for the whole poster. You never paint light onto the photograph. You add an adjustment layer that makes everything too bright, then fill its mask with black so the brightness disappears. Then you paint white on the mask with a soft brush, only where the light should land. The mask is the light. If you can read the mask, you know exactly why the picture looks the way it does. And because it is a layer, you can move it, change it, or animate it later.
+
+SLIDE 05 — Make the hero belong  (save your recording as audio/theory/slide-05.mp3)
+A cut-out figure always looks pasted on at first, because it was lit somewhere else. Two moves fix that. First, clip a Curves layer to the figure and darken it until it is as dark as the world around it. Clipping means the adjustment only touches the figure. Second, add a rim light: a thin bright edge, only on the side that faces the light. On a real set a light behind the actor does this job. It separates the hero from the background and proves where the light is coming from.
+
+SLIDE 06 — Air, a second light, and a grade  (save your recording as audio/theory/slide-06.mp3)
+Three finishing ideas. Light is only visible in the air when something catches it, so add glow, rays and haze around the source. If you put a glowing object in the frame, like the light in the hero’s hand, the things next to it have to pick up its light, or it looks like a sticker. And at the very end, a colour grade over everything ties the background, the hero and the effects into one world.
+
+SLIDE 07 — Before you open Photoshop  (save your recording as audio/theory/slide-07.mp3)
+Before you open Photoshop, answer three questions from memory. What does motivated light mean? Why do we say the mask is the light? And which edge of the hero gets the rim? Then open the workbook. In the last lesson your director will ask you to move the light to the other side, and because everything is on layers and masks, you will be able to.
