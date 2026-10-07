@@ -1,0 +1,19 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
+This is the opening shot of Rescue Run. Three fighters cross a mountain lake at dawn, three metres above the water. You will build the lake and the light, fly the formation, and then make the ships touch the water with spray.
+
+SLIDE 02 — Water is a mirror  (save your recording as audio/theory/slide-02.mp3)
+Water is mostly a mirror. Two settings do the work. Low roughness makes the surface reflect. And a bump that moves breaks that reflection up into ripples. Notice that the colour of the water is mostly the colour of the sky. So when you choose a sky, you are choosing the colour of your lake.
+
+SLIDE 03 — Speed needs something close  (save your recording as audio/theory/slide-03.mp3)
+Here is the same flight at the same speed, twice. High above the lake it looks gentle. Three metres above the water it looks fast. Speed only shows against something close, because nearby things cross the frame quickly. So fly low, and put the camera low as well.
+
+SLIDE 04 — One leader, two followers  (save your recording as audio/theory/slide-04.mp3)
+You only animate one ship. The leader gets two keyframes and a straight, steady line. The two wingmen are parented to the leader, so they follow for free. Then you give each wingman a small drift of its own, because three ships locked rigidly together look like one model, not three pilots.
+
+SLIDE 05 — Make them touch the world  (save your recording as audio/theory/slide-05.mp3)
+Last, contact. Each ship gets a strip of foam that fades out behind it, and a particle system that throws up spray. These are small effects. But they are what the eye checks. Without them, the ships are in front of a lake. With them, they are in it.
+
+SLIDE 06 — Before you open Blender  (save your recording as audio/theory/slide-06.mp3)
+Before you open Blender, answer three questions from memory. What two things make water look like water? Why fly low? And what do spray and a wake prove? Then open the workbook.
