@@ -1,0 +1,16 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — Stuck on, or really there?  (save your recording as audio/theory/slide-01.mp3)
+A compositor takes separate pictures and makes them look like one photograph. In this shot you are given real footage of a boy running through a forest, and a finished computer generated dinosaur. Dropped on top, it looks stuck on. You fix that with three things. Match the colour. Ground it with a shadow. And get the depth right.
+
+SLIDE 02 — Blacks and colour first  (save your recording as audio/theory/slide-02.mp3)
+Computer generated pictures usually arrive too clean. Their blacks are pure black, and their colour is neutral. Real footage has slightly lifted blacks and a colour cast. So you match those two things first. Make small changes, and keep the contrast. If you lift the blacks too far, the creature turns into a flat grey shape.
+
+SLIDE 03 — A shadow says “it is standing here”  (save your recording as audio/theory/slide-03.mp3)
+Nothing tells the audience that something is really standing there like a shadow. You make a dark shape from the creature’s own alpha channel. Then you move it down, blur it, and lower its opacity. Use two, one soft and one tight. And mask them so they only fall on the ground.
+
+SLIDE 04 — What is in front of what?  (save your recording as audio/theory/slide-04.mp3)
+The creature is one flat layer, but the forest is deep. A tree, two bushes and the boy are all closer to the camera than the dinosaur. Each of them needs a holdout matte, which is a cut out that hides the creature behind it. And the order can change. The boy is behind a log until he jumps it, and in front of it after he lands.
+
+SLIDE 05 — Before you start  (save your recording as audio/theory/slide-05.mp3)
+Stack, match, ground, hold out. Then check every frame. Before you start, answer three questions from memory. Which two things do you match first? What is a holdout matte? And how do you find depth mistakes? Then open the workbook.
