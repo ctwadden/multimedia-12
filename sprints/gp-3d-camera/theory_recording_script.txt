@@ -1,0 +1,19 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — Why animate 2D in Blender?  (save your recording as audio/theory/slide-01.mp3)
+People ask why you would animate two D drawings in Blender, when there are programs made just for two D. Here is the answer. In Grease Pencil, your drawings are objects in a three D room, in front of a real camera. So you can move the camera and get parallax. You can focus the camera. And you can put a lamp in the room, and it lights your drawings.
+
+SLIDE 02 — Near things move faster  (save your recording as audio/theory/slide-02.mp3)
+When you move, near things cross your view faster than far things. That is parallax, and it is how your eye judges distance. To get it, give each depth its own object. Push the far ones back, and scale them up so the picture still looks right. Then move the camera once. The parallax comes for free.
+
+SLIDE 03 — Dolly goes there. Zoom looks closer.  (save your recording as audio/theory/slide-03.mp3)
+There are three camera moves here. A truck moves the camera sideways. A dolly moves the camera forward, into the scene, and the layers shift against each other. A zoom changes the lens. The picture just gets bigger, and nothing shifts. A dolly feels like going there. A zoom feels like looking closer.
+
+SLIDE 04 — The audience looks at what is sharp  (save your recording as audio/theory/slide-04.mp3)
+A camera cannot keep everything sharp, and the audience looks at whatever is sharp. Turn on depth of field on the camera, with a very low F stop. Then give each drawing a blur effect, with use depth of field ticked, so it obeys the camera. Now keyframe the focus distance, and the sharp area travels from one layer to another. That is called a rack focus.
+
+SLIDE 05 — A lamp that really lights  (save your recording as audio/theory/slide-05.mp3)
+In a flat program, if a character walks under a lamp, you repaint every drawing. Here, you tick lights on the character’s layers, and add a point light where the drawn lamp is. The character brightens as it passes. Add a weak, cool sun as a fill light, so it never goes completely black.
+
+SLIDE 06 — Before you shoot  (save your recording as audio/theory/slide-06.mp3)
+Build the room, then film it. Before you start, answer three questions from memory. What is parallax? Dolly or zoom, which one shifts the layers against each other? And what must each drawing have, before it obeys the camera’s focus? Then open the workbook.
