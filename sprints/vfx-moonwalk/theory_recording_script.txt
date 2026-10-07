@@ -1,0 +1,19 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What you are going to make  (save your recording as audio/theory/slide-01.mp3)
+The astronaut was filmed in a warehouse, in front of a green cloth. In the finished shot he is walking on the moon. Three things happen. The green is removed. A world is built in Blender. And the two are joined so that they look like one photograph.
+
+SLIDE 02 — A key removes one colour  (save your recording as audio/theory/slide-02.mp3)
+A key removes one colour. You tell the Keying node what colour the screen is, and it makes every pixel close to that colour transparent. The best way to judge a key is to look at the matte. The matte is a black and white picture. White is kept. Black is removed. Grey is partly see-through, and grey in the wrong place is how keys go wrong.
+
+SLIDE 03 — Garbage first, edge second  (save your recording as audio/theory/slide-03.mp3)
+A key only removes green. But the plate also has a roof, a lamp and a ladder in it, and none of those are green. So you draw a rough shape around the astronaut, called a garbage mask, and everything outside it is thrown away. It can be loose. It only has to keep the rubbish out and stay clear of the actor. The key does the exact edge.
+
+SLIDE 04 — The light is already decided  (save your recording as audio/theory/slide-04.mp3)
+The light on the actor was decided on the day of the shoot. You cannot change it. So your world has to agree with it. Find the bright edge on the astronaut, and put your sun on that side. And remember where you are. On the moon there is no air, so shadows have sharp edges and the sky is black, even in daylight.
+
+SLIDE 05 — Order is depth  (save your recording as audio/theory/slide-05.mp3)
+The astronaut has to go behind some things and in front of others. So you render your world twice: once as a background, and once with only the rocks that are in front of him. Then you stack three layers. Background, then astronaut, then foreground. Whatever is plugged in last is nearest the camera.
+
+SLIDE 06 — Before you open Blender  (save your recording as audio/theory/slide-06.mp3)
+Before you open Blender, answer three questions from memory. What do white, black and grey mean in a matte? What is a garbage mask for? And how do you decide where the sun goes? Then open the workbook.
