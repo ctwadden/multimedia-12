@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="250" viewBox="0 0 1100 250" role="img" aria-labelledby="title desc">
+  <title id="title">Community Film Night — original five-role teaching palette</title>
+  <desc id="desc">Deep blue dominant, muted aqua supporting, gold accent, cream background, dark ink text. Each swatch gives its exact HEX value.</desc>
+  <g font-family="Arial, sans-serif" font-size="19">
+    <rect x="0" width="220" height="250" fill="#18384F"/>
+    <rect x="220" width="220" height="250" fill="#8CBAB8"/>
+    <rect x="440" width="220" height="250" fill="#F4B860"/>
+    <rect x="660" width="220" height="250" fill="#F6F0E6"/>
+    <rect x="880" width="220" height="250" fill="#17232B"/>
+    <g fill="#F6F0E6"><text x="22" y="170" font-weight="bold">Dominant</text><text x="22" y="203">#18384F</text><text x="902" y="170" font-weight="bold">Text</text><text x="902" y="203">#17232B</text></g>
+    <g fill="#17232B"><text x="242" y="170" font-weight="bold">Supporting</text><text x="242" y="203">#8CBAB8</text><text x="462" y="170" font-weight="bold">Accent</text><text x="462" y="203">#F4B860</text><text x="682" y="170" font-weight="bold">Background</text><text x="682" y="203">#F6F0E6</text></g>
+  </g>
+</svg>

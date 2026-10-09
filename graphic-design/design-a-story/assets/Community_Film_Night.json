@@ -1,0 +1,13 @@
+{
+  "title": "Community Film Night",
+  "status": "Original teaching example; native Photoshop import not yet tested",
+  "model": "8-bit sRGB values",
+  "brand_reference": false,
+  "colours": [
+    {"role": "dominant", "hex": "#18384F", "rgb": [24, 56, 79]},
+    {"role": "supporting", "hex": "#8CBAB8", "rgb": [140, 186, 184]},
+    {"role": "accent", "hex": "#F4B860", "rgb": [244, 184, 96]},
+    {"role": "background", "hex": "#F6F0E6", "rgb": [246, 240, 230]},
+    {"role": "text", "hex": "#17232B", "rgb": [23, 35, 43]}
+  ]
+}
