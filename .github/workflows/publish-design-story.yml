@@ -1,4 +1,4 @@
-name: Publish Design a Story
+name: Publish Design a Showcase v2
 
 on:
   push:
@@ -24,15 +24,15 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
-      - name: Verify and expand the reviewed student package
+      - name: Verify and publish the reviewed v2 student package
         run: python3 .github/scripts/publish-design-story.py
-      - name: Save the student route
+      - name: Save the revised classroom route
         run: |
           git config user.name "ctwadden"
           git config user.email "cwadden@gnspes.ca"
-          git add graphic-design/design-a-story
+          git add graphic-design/design-a-story reviews/design-story-2026-10-09
           if ! git diff --cached --quiet; then
-            git commit -m "Publish MM12 Design a Story browser lessons and student files"
+            git commit -m "Replace MM12 classroom examples and publish Community Arts Showcase v2"
             git push origin HEAD:main
           fi
       - name: Request the existing GitHub Pages build
