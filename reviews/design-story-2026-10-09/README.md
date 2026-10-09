@@ -1,11 +1,7 @@
-# MM12 Sprint 4 — Design a Story
+# MM12 Community Arts Showcase — classroom v2
 
-Three completed visual teaching decks, v1, 9 October 2026.
+Supersedes the first Design a Story release. The classroom examples are IKEA, London Design Festival and original ceramic-cup diagrams.
 
-- Poster Promise: 24 slides — design principles, colour wheel and typography
-- Believable Composite: 16 slides — recoverable layers, masks, adjustments and light
-- Art Director: 16 slides — proposal, mood boards, alternatives, testing and defence
+[Classroom materials](../../graphic-design/design-a-story/classroom-v2/index.html) · [Plan B](../../graphic-design/design-a-story/classroom-v2/plan-b.html)
 
-Download the full Student Package ZIP in downloads and open index.html after extraction for the browser decks, proposal worksheet, planning steps and tool prompts. Matching editable PPTX and full-slide PDFs are in downloads. PROJECT.md and the eight-page project PDF include the three labs, knowledge check and rubric.
-
-Review branch only; live course routes and existing evidence identities are unchanged. Teacher brief and keys are retained privately outside this package. Simulator prompts are complete; runtime apps have not been built. School-version Photoshop cold-run, CSS import, complete artboard route and printer proof remain unverified.
+The downloads contain three revised PPTX/PDF decks, the project, a printable Plan B and the student ZIP. Teacher guidance and assessment keys remain private.
