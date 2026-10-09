@@ -1,0 +1,41 @@
+name: Publish Design a Story
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'reviews/design-story-2026-10-09/downloads/*.zip'
+      - '.github/scripts/publish-design-story.py'
+      - '.github/workflows/publish-design-story.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: publish-mm12-design-story
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Verify and expand the reviewed student package
+        run: python3 .github/scripts/publish-design-story.py
+      - name: Save the student route
+        run: |
+          git config user.name "ctwadden"
+          git config user.email "cwadden@gnspes.ca"
+          git add graphic-design/design-a-story
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish MM12 Design a Story browser lessons and student files"
+            git push origin HEAD:main
+          fi
+      - name: Request the existing GitHub Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"
