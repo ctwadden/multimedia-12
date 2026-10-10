@@ -10,7 +10,7 @@ Print study master: 2550 × 3300 pixels, equivalent to 8.5 × 11 inches at 300 p
 
 Deliver: concise proposal; credited mood board; three different thumbnails; two colour/type treatments; layered PSD and PNG; two real viewer responses; one documented revision; source/AI log; three-decision defence and final reflection.
 
-Deadline: the date agreed with the teacher and recorded in your proposal. Use the teacher-assigned classroom submission route. This package does not submit to a Form or dashboard.
+Deadline: the date agreed with your teacher and recorded in your proposal. Submit through the Design a Story Knowledge + Reflection Form; share production files privately with your teacher and include the folder link.
 
 ## Your one-page proposal
 
@@ -149,3 +149,16 @@ Beginning: Required files are missing or the student cannot locate relevant deci
 Developing: Some files and explanations are usable; delivery checks or reasoning are incomplete.
 Secure: PSD, checked export, plan and source log are usable; the student defends three choices and handles a taught change.
 Extending: A concise evidence-based defence explains trade-offs and independently verified changes; the handoff is clear and reliable.
+
+
+
+
+
+
+## Connected Forms revision 4 - 10 October 2026
+
+Knowledge + Reflection intake: https://docs.google.com/forms/d/e/1FAIpQLSeUkJ-AOivQ1CCj9ometEPVboCCGLUxaOVgfbIZT7w5U7LFyw/viewform
+
+Choose Knowledge check, Design Lab reflection, Proposal and planning, or Final reflection and evidence handoff. School verified email and internet access required. Paste the exported proposal/decision log or a private teacher-accessible school Drive folder link. Press Submit and check confirmation. Downloads and browser drafts alone do not submit. Print-and-write work is handed directly to the teacher.
+
+The existing TES uses project mm12-design-story-v1, version 2026-10-10.1, separate from earlier assessments. Practical achievement requires teacher review. The project descriptor rubric remains proposed; school-device/student-account access checks remain pending; the owner-only synthetic teacher review passed. Original slide artwork, question locators, PSD expectations and draft keys are preserved.
