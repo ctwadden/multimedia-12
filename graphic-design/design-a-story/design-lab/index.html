@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Design Lab — Multimedia 12</title>
+  <link rel="stylesheet" href="studio.css">
+  <script src="core.js" defer></script><script src="studio.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#lesson">Skip to the current study</a>
+<header class="masthead"><a class="wordmark" href="index.html">DESIGN LAB<span>Multimedia 12 / Graphic design</span></a><a class="back" href="https://ctwadden.github.io/multimedia-12/graphic-design/design-a-story/classroom-v2/plan-b.html">Back to the lesson ↗</a></header>
+<main>
+  <section class="intro"><div><p class="eyebrow">A studio for decisions</p><h1>Make the message<br><em>land.</em></h1></div><p class="intro-copy">See what a design choice changes. Predict, try it, compare the result—and defend what belongs in your own work.</p></section>
+  <nav id="studios" class="studios" aria-label="Design studios">
+    <button data-module="composition" aria-pressed="true"><span>01 / Composition</span><strong>Organise attention.</strong><small>Hierarchy · grouping · balance</small></button>
+    <button data-module="colour" aria-pressed="false"><span>02 / Colour</span><strong>Give colour a job.</strong><small>Wheel relationships · roles · readability</small></button>
+    <button data-module="type" aria-pressed="false"><span>03 / Typography</span><strong>Make space matter.</strong><small>Kerning · tracking · leading</small></button>
+  </nav>
+  <div class="route"><nav id="episodes" aria-label="Studies in this studio"></nav><span id="save-status" role="status">Answers stay in this browser.</span></div>
+  <section id="lesson" class="workbench" aria-labelledby="lesson-title" tabindex="-1">
+    <aside class="brief">
+      <p id="lesson-label" class="eyebrow"></p><h2 id="lesson-title"></h2><p id="lesson-description"></p><div id="transfer-context"></div>
+      <details id="reference"><summary>Look at a real design</summary><figure><img id="reference-image" alt=""><figcaption id="reference-credit"></figcaption></figure><p id="reference-question"></p></details>
+      <div class="prediction"><label for="prediction">Before you change it</label><p id="prediction-prompt"></p><textarea id="prediction" rows="2" maxlength="1200" placeholder="One specific prediction is enough."></textarea><button id="unlock" class="primary">Test my prediction</button><p id="prediction-message" role="status"></p></div>
+      <fieldset id="controls" disabled><legend>Make one deliberate change</legend><div id="control-fields"></div></fieldset>
+      <div id="readout" class="readout" aria-live="polite"></div>
+      <details class="concept"><summary>What this demonstrates</summary><div id="concept-notes"></div></details>
+    </aside>
+    <div class="canvas-area">
+      <div class="canvas-toolbar"><p><span class="dot"></span> Original teaching study</p><button id="compare-original" aria-pressed="false">Show starting point</button><label><input id="guides" type="checkbox"> Show relationships</label></div>
+      <div id="visuals" class="visuals"><figure><figcaption>STARTING POINT <span>Same message</span></figcaption><div id="before"></div></figure><figure><figcaption>YOUR STUDY <span id="change-label">Predict first</span></figcaption><div id="after"></div></figure></div>
+      <div id="wheel-area" class="wheel-area" hidden></div>
+      <div id="palette" class="palette" hidden></div>
+      <p id="visual-description" class="visual-description"></p>
+      <div class="explanation"><label for="explanation">Explain the decision</label><p id="explanation-prompt"></p><textarea id="explanation" rows="3" maxlength="2000" placeholder="Point to a visible change. Explain what it does for this brief."></textarea><p id="reflection-note">Your explanation is for teacher review. This lab does not grade design quality.</p></div>
+      <div class="next-row"><button id="previous" class="quiet">Previous study</button><button id="next" class="primary">Next study →</button></div>
+    </div>
+  </section>
+  <section class="handoff"><div><p class="eyebrow">Carry it into production</p><h2>A study is a starting point.</h2><p id="handoff-text"></p><p>Ask a viewer what they understood before explaining your intent. Record their actual response and one revision. Keep your editable Photoshop source.</p></div><div class="export-panel"><h3>Keep your evidence</h3><p>Exports include predictions, settings and explanations. No account or online submission.</p><button id="export-log" class="primary">Download decision log</button><button id="export-svg">Download current study · SVG</button><button id="export-png">Download current study · PNG</button><button id="export-css" hidden>Download palette · CSS</button><button id="export-palette" hidden>Download palette card · SVG</button><button id="print">Print your decision log</button><p id="export-status" role="status"></p></div></section>
+  <footer><div><a href="sources.html">Sources, models and limits</a> · <a id="offline-archive" href="downloads/MM12_Design_Lab_2026-10-09_v1.zip" download>Offline lab ZIP</a><p>Anonymous responses are saved on this device when storage is available. Export before using a shared computer. <button id="clear" class="text-button">Clear this lab’s saved work</button></p></div><p>DESIGN LAB / MM12<br>Teacher-created practice · v1</p></footer>
+</main>
+<div id="print-log" hidden></div>
+<noscript><p>This interactive lab needs JavaScript. Use the <a href="https://ctwadden.github.io/multimedia-12/graphic-design/design-a-story/classroom-v2/plan-b.html">printable Plan B lesson</a> if it is unavailable.</p></noscript>
+</body></html>
