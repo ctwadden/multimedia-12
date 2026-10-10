@@ -191,6 +191,10 @@ window.LearningStudioDrafts = {
      context:"MM12 \u00b7 Make It Matter \u00b7 make-it-matter-v2 \u00b7 mm12-26-s04 \u00b7 local theory practice; slide references are not assessment question IDs",
      questions,controls:document.getElementById('theory-draft-controls'),onRestore:readback});
    document.querySelector('.theory-drafts').append(document.getElementById('draft-status'));
+   const bar=document.querySelector('.bar');
+   const clearBar=()=>document.body.style.paddingBottom=Math.ceil(bar.getBoundingClientRect().height+28)+'px';
+   clearBar();if('ResizeObserver' in window)new ResizeObserver(clearBar).observe(bar);
+   addEventListener('resize',clearBar);
    document.getElementById('theory-response-text').onclick=()=>practice.exportText();readback();
  });
 })();</script></body></html>
