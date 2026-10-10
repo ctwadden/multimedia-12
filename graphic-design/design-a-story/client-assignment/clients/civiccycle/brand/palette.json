@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Charcoal",
+    "hex": "#20333B",
+    "suggested_role": "text"
+  },
+  {
+    "name": "Leaf",
+    "hex": "#486B55",
+    "suggested_role": "dominant"
+  },
+  {
+    "name": "Amber",
+    "hex": "#E4B34F",
+    "suggested_role": "accent"
+  },
+  {
+    "name": "Cream",
+    "hex": "#F1EFE5",
+    "suggested_role": "background"
+  },
+  {
+    "name": "Steel",
+    "hex": "#87999B",
+    "suggested_role": "support"
+  }
+]

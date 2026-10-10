@@ -1,0 +1,58 @@
+[
+  {
+    "id": "client-client",
+    "prompt": "Client choice or equivalent proposed client; audience, viewing encounter and communication problem."
+  },
+  {
+    "id": "client-goal",
+    "prompt": "One observable communication goal and feasible checkpoints. What will a viewer be able to understand or do?"
+  },
+  {
+    "id": "client-references",
+    "prompt": "Two genuine references: maker/date/source, visible form, one sourced contextual fact, one interpretation and the comparison limitation."
+  },
+  {
+    "id": "client-board",
+    "prompt": "Mood-board file and reasons for imagery, colour/value and typography. Distinguish study references from permitted production assets."
+  },
+  {
+    "id": "client-concepts",
+    "prompt": "Three genuinely distinct concepts; selected direction, reason and one rejected option. Link the thumbnails."
+  },
+  {
+    "id": "client-treatments",
+    "prompt": "Two colour/type treatments; exact palette roles, relevant readability comparison and selected trade-off."
+  },
+  {
+    "id": "client-decision-one",
+    "prompt": "Decision 1: intent \u2192 actual control/file evidence \u2192 visible effect \u2192 reason. Record the consequential choice, not every click."
+  },
+  {
+    "id": "client-decision-two",
+    "prompt": "Decision 2: a technical mismatch, likely cause, one recoverable change and the checked result. Link relevant screenshots."
+  },
+  {
+    "id": "client-decision-three",
+    "prompt": "Decision 3: how print and phone priorities differ, and why the arrangement was changed."
+  },
+  {
+    "id": "client-test",
+    "prompt": "Two actual viewers: intended viewing condition, their first reading/message (no names), mismatch with intent and limits of this small test."
+  },
+  {
+    "id": "client-revision",
+    "prompt": "Before/after files, the change made because of actual feedback, its checked effect and one remaining limitation."
+  },
+  {
+    "id": "client-sources",
+    "prompt": "Used asset paths, creator/source/licence, modifications, AI tool/prompt/date and extent of assistance. Include original work too."
+  },
+  {
+    "id": "client-handoff",
+    "prompt": "Editable source/export/planning folder; files reopened and dimensions checked; private teacher sharing and registered Form confirmation."
+  },
+  {
+    "id": "client-revisit",
+    "prompt": "Teacher feedback, criterion, next action and fresh revisit evidence linked to the earlier attempt."
+  }
+]

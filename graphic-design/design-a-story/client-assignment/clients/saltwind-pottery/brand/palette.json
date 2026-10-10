@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Slate",
+    "hex": "#293D44",
+    "suggested_role": "text"
+  },
+  {
+    "name": "Clay",
+    "hex": "#B76448",
+    "suggested_role": "dominant/accent"
+  },
+  {
+    "name": "Chalk",
+    "hex": "#F4EEE5",
+    "suggested_role": "background"
+  },
+  {
+    "name": "Sea glass",
+    "hex": "#A3B8AB",
+    "suggested_role": "support"
+  },
+  {
+    "name": "Kiln",
+    "hex": "#745347",
+    "suggested_role": "secondary"
+  }
+]

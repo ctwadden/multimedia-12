@@ -1,0 +1,7 @@
+:root {
+  --coast-discovery-deep-water: #173F4E; /* text */
+  --coast-discovery-sea-glass: #5D9493; /* dominant */
+  --coast-discovery-sand: #D7BC87; /* accent */
+  --coast-discovery-mist: #EEF1EB; /* background */
+  --coast-discovery-rock: #657477; /* support */
+}

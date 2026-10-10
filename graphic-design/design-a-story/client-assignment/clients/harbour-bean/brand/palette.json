@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Ink",
+    "hex": "#173A35",
+    "suggested_role": "body/text"
+  },
+  {
+    "name": "Dusk",
+    "hex": "#476879",
+    "suggested_role": "support"
+  },
+  {
+    "name": "Lamplight",
+    "hex": "#D7A85B",
+    "suggested_role": "accent"
+  },
+  {
+    "name": "Paper",
+    "hex": "#F3E9D6",
+    "suggested_role": "background"
+  },
+  {
+    "name": "Coffee",
+    "hex": "#705444",
+    "suggested_role": "secondary"
+  }
+]
