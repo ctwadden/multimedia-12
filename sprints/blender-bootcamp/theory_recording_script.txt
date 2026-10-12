@@ -1,25 +1,64 @@
 RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
 
-SLIDE 01 — What you are going to build  (save your recording as audio/theory/slide-01.mp3)
-This is the scene you are going to build from an empty file. A cottage at dusk. Warm windows. A walkway shovelled out of the snow with lanterns beside it, and a car on the drive. Snow falling, smoke curling from the chimney, and the camera pushing slowly in. You build it in layers, one layer each lesson. That is how studios build every shot, so that each layer can be changed without starting again.
+SLIDE 01 — A scene is built in layers  (save your recording as audio/theory/slide-01.mp3)
+The cottage and snowman are our guided example. First make a saved still: model, surface, light and frame it. Then extend the same scene into a four-second shot with snow, smoke and a camera move. The director’s card later changes the communication problem.
 
-SLIDE 02 — Block out first, detail second  (save your recording as audio/theory/slide-02.mp3)
-Everything in Blender sits in three-D space, with a location, a rotation and a scale on three axes: X is red, Y is green, Z is blue and points up. You will type real sizes in metres. The cottage is six metres wide, four and a half deep and three high. Start with big simple shapes. This is called a block-out. If the sizes and the composition are wrong at this stage, no amount of detail will fix the shot later.
+SLIDE 02 — Each editor has a job  (save your recording as audio/theory/slide-02.mp3)
+The 3D Viewport shows the scene. The Outliner lists objects and shows selection. Properties contains settings; the Timeline shows time. A workspace rearranges these editors. Changing a workspace does not create a new scene. Blender sends shortcuts to the editor under your pointer.
 
-SLIDE 03 — Two moves make most models  (save your recording as audio/theory/slide-03.mp3)
-Two moves make most hard-surface models. Inset draws a smaller face inside a face. Extrude pulls a face in or out. Inset the top of the chimney, extrude it down, and you have a hollow chimney. Inset a window, push the middle in, and you have a frame. Modifiers add detail without destroying the simple shape underneath. A Bevel modifier rounds every edge slightly, and you can change the amount or turn it off at any time.
+SLIDE 03 — Look around without moving objects  (save your recording as audio/theory/slide-03.mp3)
+Orbit changes your viewing angle, pan shifts your view and zoom changes its size. These controls do not change an object’s Location. Move, rotate and scale do change the object. Orthographic view removes perspective size changes, helping you line up a row of vertices.
 
-SLIDE 04 — A surface is three pictures  (save your recording as audio/theory/slide-04.mp3)
-A believable surface is usually three pictures working together. The colour map is what it looks like. The roughness map says where it is shiny and where it is dull. The normal map fakes small bumps and grooves. The U V map tells Blender how to wrap those flat pictures around your model. And emission turns a surface into a light: that is how the windows glow.
+SLIDE 04 — Object Mode and Edit Mode  (save your recording as audio/theory/slide-04.mp3)
+A mesh has vertices, edges and faces. Object Mode transforms the complete object. Edit Mode changes the mesh inside it. Choose Vertex, Edge or Face Select before selecting. The orange selection identifies what will change; the active object is the last selected object.
 
-SLIDE 05 — Warm against cool  (save your recording as audio/theory/slide-05.mp3)
-Light decides where people look. The eye goes to the brightest, warmest thing in the frame, so that should be the windows. An emissive window alone looks like a sticker. Put a real light inside the cottage and the glow spills out onto the snow, and now it is believable. Then add a weak blue moon from behind. Warm against cool is the classic winter evening look.
+SLIDE 05 — Dimensions and applied scale  (save your recording as audio/theory/slide-05.mp3)
+Dimensions reports an object’s size. Scale multiplies the size of its underlying mesh. Apply Scale keeps the visible size and resets Scale to one. A bevel measured in metres then behaves predictably. In this project Z is up; typed metre values help the door, car and snowman fit together.
 
-SLIDE 06 — Paint where things happen  (save your recording as audio/theory/slide-06.mp3)
-Real snow is never flat. A Displace modifier pushes the surface up and down using a picture. A cloudy picture gives soft drifts. Then you paint your own picture: black where the snow has been cleared. One band is the walkway to the door. A wider band is the drive under the car. Small grey ovals are footprints. Weight painting is the same idea for the forest. You paint red where trees should grow and blue where they should not, and a particle system plants hundreds of trees only in the red.
+SLIDE 06 — Detail starts with a selected face  (save your recording as audio/theory/slide-06.mp3)
+Inset makes a smaller face inside a face. Extrude extends selected geometry; a negative distance here recesses the centre. A bevel adds a narrow surface at an edge to catch light. Select the intended face or object before applying any of these changes.
 
-SLIDE 07 — Particles, smoke and keyframes  (save your recording as audio/theory/slide-07.mp3)
-Three things bring the scene to life. A particle system makes nine thousand snowflakes from one setting; lower the gravity and add wind and it feels like snow, not rain. Smoke is a simulation. It happens inside a box called the domain, and you bake it, which means Blender calculates it once and saves it. And keyframes. A keyframe stores a value at a moment in time. Key the camera at frame one and again at frame ninety-six, and Blender moves it smoothly between the two.
+SLIDE 07 — A material describes a surface  (save your recording as audio/theory/slide-07.mp3)
+Base Color describes the surface colour. Roughness controls how broad its reflections are. Shade Smooth changes shading across faces; it does not add geometry. Assign Snow, Coal and Carrot to the separate snowman pieces before Join so the joined object keeps their material slots.
 
-SLIDE 08 — Before you open Blender  (save your recording as audio/theory/slide-08.mp3)
-Before you open Blender, answer three questions from memory. What is a block-out? What are the three pictures that make a surface? And in a painted displacement image, what does black do? Then open the workbook and build the demo exactly. In lesson eight the producer changes the brief, and that is where you show what you can do on your own.
+SLIDE 08 — UV coordinates are image addresses  (save your recording as audio/theory/slide-08.mp3)
+A UV map tells Blender which part of a flat image belongs at each point on a mesh. Cube Projection suits our box-like cottage. Mapping changes the coordinates sent to textures. Linking UV to Mapping and Mapping to each image keeps the images aligned when their repeat scale changes.
+
+SLIDE 09 — Image pixels can be colour or data  (save your recording as audio/theory/slide-09.mp3)
+A colour map feeds Base Color and uses sRGB. Roughness and NormalGL maps contain data and use Non-Color. A Normal Map node converts the normal image before it reaches the shader’s Normal input. It changes fine surface shading; it does not change the silhouette.
+
+SLIDE 10 — Visible glow and light spill  (save your recording as audio/theory/slide-10.mp3)
+Emission makes the window surface appear luminous. A separate light illuminates nearby snow. Our closed cottage uses Area lights just outside the windows as a taught approximation of spill. An interior lamp cannot shine through an opaque wall. Cool surroundings and warm local lights guide attention.
+
+SLIDE 11 — Move an assembly through its parent  (save your recording as audio/theory/slide-11.mp3)
+Append copies objects from another blend file. Parenting the car parts to a root Empty lets one transform move the whole car. Object Keep Transform preserves their visible positions while parenting. Packing and reopening checks supported external assets. A smoke cache still needs its folder.
+
+SLIDE 12 — The camera defines the deliverable  (save your recording as audio/theory/slide-12.mp3)
+The viewport is your working view; the camera defines the rendered image. The lens sets the field of view. Compare a wider and a longer lens while maintaining subject size. Thirds guides are visual aids and do not render. Leave room for the later smoke, then disable Camera to View to avoid accidental reframing.
+
+SLIDE 13 — Measure before a larger render  (save your recording as audio/theory/slide-13.mp3)
+Cycles samples light paths. More samples can reduce noise but take longer; denoising reduces remaining noise. AgX maps a wide brightness range to the display. Use a 50 percent test, then measure a representative full-resolution frame. The classroom PC’s time must be measured; a Mac time is not a PC benchmark.
+
+SLIDE 14 — Paint height rather than colour  (save your recording as audio/theory/slide-14.mp3)
+With Midlevel 1, white stays at the original height, black moves down by the displacement strength and grey moves down partway. The mesh needs enough vertices to form those depressions. The unconnected image node identifies the paint target. Save the painted PNG as well as the blend, then reopen to check both.
+
+SLIDE 15 — Weights control where trees appear  (save your recording as audio/theory/slide-15.mp3)
+A vertex group stores a weight at each vertex: blue is zero and red is one. Binding Forest to the particle Density setting controls where trees can originate. It does not paint their material. Instances reuse a source mesh. Removing weight from one area redistributes this system’s fixed tree count elsewhere.
+
+SLIDE 16 — Particles need time to fill the shot  (save your recording as audio/theory/slide-16.mp3)
+The emitter produces particles; the Snowflake object defines their appearance. Lifetime, velocity, gravity and wind determine their movement. Emission starts before frame 1 so snow is already present at the opening. Bake the particle cache and test playback after reopening; a single still cannot prove moving snow.
+
+SLIDE 17 — Smoke belongs inside its domain  (save your recording as audio/theory/slide-17.mp3)
+The flow source adds smoke; the domain is the volume where Blender simulates it. Resolution controls grid detail and memory. Baking stores the calculation on disk. Changed flow, wind or domain settings require freeing the old cache and rebaking. Increasing resolution cannot fix a source outside the domain.
+
+SLIDE 18 — Key the property you intend to change  (save your recording as audio/theory/slide-18.mp3)
+A keyframe stores a value at a frame. Interpolation determines values between keys; Bezier can ease a movement. In the demonstrated keymap, viewport K opens the keying menu. Choose Location for the camera. Hovering over a light’s Power and pressing I keys that property. At 24 fps, 96 frames gives four seconds.
+
+SLIDE 19 — Compare the same frame  (save your recording as audio/theory/slide-19.mp3)
+The compositor processes the render through nodes. Bloom spreads bright light; Color Balance adjusts tonal colour. These effects cannot repair missing geometry or a bad cache. Mute both finishing nodes and render again, then restore them and render the same frame. Keep window colour and snow detail readable.
+
+SLIDE 20 — Rendering and encoding are separate  (save your recording as audio/theory/slide-20.mp3)
+Rendering creates numbered PNG frames. Encoding combines them into a movie. A stopped render keeps completed frames for recovery. Our movie uses an MP4 container with H.264 video at 24 fps. Watch the exported clip and inspect every fifth frame; neither a successful command nor a sample sheet proves all intervening frames are clean.
+
+SLIDE 21 — The director’s card is a new problem  (save your recording as audio/theory/slide-21.mp3)
+Identify the audience and intended feeling, sketch two distinct responses, then choose and defend your own approach. Test one meaningful change, gather audience feedback and preserve a justified revision. Supports may clarify tools or help you explain. They must leave the assessed concept, composition and settings yours.
