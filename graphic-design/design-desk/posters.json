@@ -1,0 +1,26 @@
+[
+  {
+    "id": "last-orchard",
+    "title": "The Last Orchard",
+    "alt": "A sunlit apple tree framed by repeated greenhouse ribs, with a luminous apple and cream serif title below.",
+    "look": "Where does the light direct attention? How does the greenhouse frame the subject?"
+  },
+  {
+    "id": "blue-hour",
+    "title": "Blue Hour",
+    "alt": "A small warm yellow ferry low right on a wide blue sea beneath large quiet sky and widely spaced white title.",
+    "look": "What changes if the ferry fills half the poster? What is the empty sky doing?"
+  },
+  {
+    "id": "frequency",
+    "title": "Frequency",
+    "alt": "A diagonal golden saxophone with repeated indigo and coral photographic panels and large condensed cream title.",
+    "look": "How do repetition, direction and type create a sense of sound or movement?"
+  },
+  {
+    "id": "paper-planets",
+    "title": "Paper Planets",
+    "alt": "A tactile paper explorer and observatory low left, with detailed planets sweeping upward right and dark teal title above.",
+    "look": "How do scale, material and placement connect the small explorer to the larger worlds?"
+  }
+]
