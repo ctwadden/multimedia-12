@@ -1,0 +1,37 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — What makes the illusion convincing?  (save your recording as audio/theory/slide-01.mp3)
+Show the original and ask students what would need to change to communicate an altered character. Gather two ideas and connect them to shape, light-dark value, colour and material. Explain that the finished reference is by the source creator, not work generated for this course.
+
+SLIDE 02 — Give the image one focal job.  (save your recording as audio/theory/slide-02.mp3)
+Explain that a strong composition directs attention. The viewer should not have to inspect every square centimetre. Point to the local bone detail and ask which other effects support it. Students will choose their own audience and style rather than reproduce the creator’s exact face.
+
+SLIDE 03 — A mask answers: where?  (save your recording as audio/theory/slide-03.mp3)
+The photograph supplies information. Its layer mask controls where that information appears. Black on a mask does not paint a black wound: it hides part of the layer. White restores it. Ask students to point to the target thumbnail before predicting what a white brush will do.
+
+SLIDE 04 — Blend If answers: which tones?  (save your recording as audio/theory/slide-04.mp3)
+Distinguish the two rows before touching a triangle. Benny’s skull example splits the dark Underlying Layer control. A black source-photo background is a different problem and may need the dark This Layer control. Do not teach a single copied slider setting as universal.
+
+SLIDE 05 — Clipping answers: which base?  (save your recording as audio/theory/slide-05.mp3)
+Clipping and layer masks are not synonyms. Explain that the clipping relationship limits the correction to the relevant source, while a black adjustment mask can keep that correction hidden until the student reveals it in selected regions. Inspect the source’s clipping arrows.
+
+SLIDE 06 — Light explains the form.  (save your recording as audio/theory/slide-06.mp3)
+Point to the sockets and cheek hollows. Explain that controlled local darkening changes perceived form, while uniform darkening merely changes exposure. Ask where the original key light comes from and how the added material should respond.
+
+SLIDE 07 — A source photo has jobs and distractions.  (save your recording as audio/theory/slide-07.mp3)
+The source food photo is useful because it contains real material transitions. It is not useful as an entire rectangular object pasted on a forehead. Students should justify crop, grain direction, scale and light. The local practice texture is a different photograph and needs different settings.
+
+SLIDE 08 — Colour and value solve different mismatches.  (save your recording as audio/theory/slide-08.mp3)
+Name the observed mismatch first. If a patch is in the wrong place, transform it. If its border shows, inspect the mask. If it is too red, adjust colour. If it is too bright, adjust tone. This diagnosis order prevents piling effects onto the wrong problem.
+
+SLIDE 09 — Keep a revisable finishing pass.  (save your recording as audio/theory/slide-09.mp3)
+Explain the distinction between stamping and flattening. A separate composite can be polished without deleting the source construction. The evidence is the actual reopened layered file, not an export image or a checkbox.
+
+SLIDE 10 — Practice → changed condition → independent choice.  (save your recording as audio/theory/slide-10.mp3)
+Demonstrate once, then reduce procedural help. Ask students to show a skill without reading the steps, diagnose a mismatch and defend a choice. Use product, observation and conversation together; support use remains separate from achievement.
+
+SLIDE 11 — Feedback must change the next version.  (save your recording as audio/theory/slide-11.mp3)
+Feedback should identify what works, what to improve and a concrete next step tied to the taught skill. Ask the student to show the visible change and explain why the revision is stronger. Do not use tutorial completion as a substitute for this evidence.
+
+SLIDE 12 — What you need to know before starting.  (save your recording as audio/theory/slide-12.mp3)
+Ask each student to explain one relationship without reading it. Resolve misunderstandings before they begin the skull reveal. The first practice target is small: align one feature, make a reversible local reveal and explain the selected control.
