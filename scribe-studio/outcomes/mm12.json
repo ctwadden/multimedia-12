@@ -1,0 +1,58 @@
+{
+  "course": "MM12",
+  "courseName": "Multimedia 12",
+  "source": "Nova Scotia Multimedia 12 Outcomes (2015, © 2015/2019)",
+  "bands": ["Beginning", "Developing", "Secure", "Extending"],
+  "unifyingConcepts": [
+    { "id": "A", "text": "create, manipulate, and critically reflect on digital and electronic images suitable for multimedia products" },
+    { "id": "B", "text": "create, manipulate, and critically reflect on digital and electronic time-based images suitable for multimedia products" },
+    { "id": "C", "text": "create, manipulate, and critically reflect on sound products suitable for multimedia products" },
+    { "id": "D", "text": "create, manipulate, and critically reflect on multimedia products as reflective members of a collaborative culture" }
+  ],
+  "modules": [
+    {
+      "id": "1",
+      "title": "Creating and Manipulating Images",
+      "outcomes": [
+        { "code": "1.1", "wording": "apply techniques and procedures needed to manipulate images (including text) in a range of media, including digital and electronic media" },
+        { "code": "1.2", "wording": "demonstrate an understanding of the cultural, historical, and emotional impact of other people's images by examining their form and content" },
+        { "code": "1.3", "wording": "demonstrate an awareness of the procedures involved in the production of images in a range of digital and electronic media" },
+        { "code": "1.4", "wording": "apply principles of art and design to create digital and electronic images" },
+        { "code": "1.5", "wording": "construct digital and electronic images which communicate ideas and concepts" }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Creating and Manipulating Motion Graphics",
+      "outcomes": [
+        { "code": "2.1", "wording": "apply techniques and procedures needed to create motion graphics" },
+        { "code": "2.2", "wording": "demonstrate an understanding of the cultural, historical, and emotional impact of other people's motion graphics by examining their form and content" },
+        { "code": "2.3", "wording": "demonstrate an awareness of the procedures involved in the production of motion graphics in a range of digital and electronic media" },
+        { "code": "2.4", "wording": "apply principles of art and design to create motion graphics" },
+        { "code": "2.5", "wording": "construct motion graphics which communicate ideas and concepts" }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Sound",
+      "outcomes": [
+        { "code": "3.1", "wording": "create and manipulate sound products from a range of sources, including music, narration, and effects" },
+        { "code": "3.2", "wording": "demonstrate an understanding of the cultural, historical, and emotional impact of other people's sound products by examining their form and content; and relationship or potential relationship to other multimedia elements" },
+        { "code": "3.3", "wording": "demonstrate an awareness of the procedures involved in the production and application of sound products in a range of media" },
+        { "code": "3.4", "wording": "apply principles of art and design to create sound products" },
+        { "code": "3.5", "wording": "construct and manipulate sound products which communicate ideas and concepts" }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Collaborative Project and Personal Portfolio",
+      "outcomes": [
+        { "code": "4.1", "wording": "apply skills, principles, techniques, and processes of art and design to communicate ideas and concepts to an identified audience for a specified purpose" },
+        { "code": "4.2", "wording": "demonstrate an understanding of the cultural, historical, and emotional impact of other people's multimedia products by examining their form and content, audience and purpose" },
+        { "code": "4.3", "wording": "collaboratively create a customized multimedia authored project using software program(s) and external sources" },
+        { "code": "4.4", "wording": "independently select, organize and refine a range of multimedia products that illustrate learning throughout the course to create a multimedia-authored personal portfolio" },
+        { "code": "4.5", "wording": "explore various educational and career paths in multimedia-related fields" }
+      ]
+    }
+  ]
+}

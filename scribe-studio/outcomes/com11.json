@@ -1,0 +1,123 @@
+{
+  "course": "COM11",
+  "courseName": "Communications Technology 11",
+  "source": "Nova Scotia Communications Technology 11 and 12 Guide (DRAFT, November 2009)",
+  "bands": ["Beginning", "Developing", "Secure", "Extending"],
+  "note": "The guide covers both Grade 11 and Grade 12. Each outcome is tagged grade \"11\" or \"12\" where the guide states it, or \"11/12\" where unmarked. Module 1 is integrated throughout; Module 2 (Digital Photography) is a mandatory module.",
+  "modules": [
+    {
+      "id": "1",
+      "title": "Fundamentals of Communications Technology",
+      "mandatory": true,
+      "outcomes": [
+        { "code": "1.1", "grade": "11", "wording": "demonstrate an understanding of the history of communication" },
+        { "code": "1.2", "grade": "11", "wording": "investigate their strengths related to career options in communications technology" },
+        { "code": "1.3", "grade": "11", "wording": "generate a professional portfolio representing a collection of work completed throughout the course using the design process" },
+        { "code": "1.4", "grade": "11", "wording": "determine and create solutions to design problems that can persuade or entertain an audience using a variety of electronic communications tools" },
+        { "code": "1.5", "grade": "11", "wording": "demonstrate an understanding of the social and environmental impacts of communications technology" },
+        { "code": "1.6", "grade": "11", "wording": "demonstrate an understanding of life-cycle analysis of modern communications equipment and processes" },
+        { "code": "1.7", "grade": "11", "wording": "demonstrate safe practices when using communications technology tools and equipment" },
+        { "code": "1.8", "grade": "12", "wording": "investigate modern and future forms of communication and predict futuristic career options in communications" },
+        { "code": "1.9", "grade": "12", "wording": "generate a digital professional portfolio representing a collection of advanced work completed throughout the course" },
+        { "code": "1.10", "grade": "12", "wording": "design, create, and transport solutions to design problems that can entertain a variety of target audiences" },
+        { "code": "1.11", "grade": "12", "wording": "examine and analyse solutions to communications technology problems" },
+        { "code": "1.12", "grade": "12", "wording": "create a design improvement to the life-cycle analysis of an electronic communication device" },
+        { "code": "1.13", "grade": "12", "wording": "establish a safe practice policy for one or more communication technology processes within a context" }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Digital Photography",
+      "mandatory": true,
+      "outcomes": [
+        { "code": "2.1", "grade": "11/12", "wording": "demonstrate an understanding of the basic operation and care of a digital camera" },
+        { "code": "2.2", "grade": "11/12", "wording": "practice various photographic techniques and photographic composition using a single lens reflex camera" },
+        { "code": "2.3", "grade": "11/12", "wording": "explore various scene lighting techniques and the effects of it" },
+        { "code": "2.4", "grade": "11/12", "wording": "demonstrate an understanding of image resolution and digital file formats" },
+        { "code": "2.5", "grade": "11/12", "wording": "control light using advanced manual settings of a camera and existing light photography" },
+        { "code": "2.6", "grade": "11/12", "wording": "demonstrate an understanding of photojournalism" },
+        { "code": "2.7", "grade": "11/12", "wording": "demonstrate an understanding of manipulating raw images from cameras that support it" },
+        { "code": "2.8", "grade": "11/12", "wording": "practice a variety of professional applications of photography" }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Technical Design",
+      "outcomes": [
+        { "code": "3.1", "grade": "11/12", "wording": "create three-dimensional designs through digital solid modelling techniques" },
+        { "code": "3.2", "grade": "11/12", "wording": "demonstrate an understanding of orthographic and isometric projection through digital solid modelling" },
+        { "code": "3.3", "grade": "11/12", "wording": "demonstrate an understanding of technical communication language and symbols" },
+        { "code": "3.4", "grade": "11/12", "wording": "demonstrate an understanding of basic plan views and elevation views of an object or structure" },
+        { "code": "3.5", "grade": "11/12", "wording": "use mechanical and technical communication language and symbols to create and illustrate a design" },
+        { "code": "3.6", "grade": "11/12", "wording": "create advanced geometric constructions through digital techniques" }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Graphic Design",
+      "outcomes": [
+        { "code": "4.1", "grade": "11/12", "wording": "demonstrate an understanding of the principles and elements of design" },
+        { "code": "4.2", "grade": "11/12", "wording": "demonstrate effective use of the colour wheel for graphic design" },
+        { "code": "4.3", "grade": "11/12", "wording": "demonstrate an understanding of appropriate uses of typography for graphic design" },
+        { "code": "4.4", "grade": "11/12", "wording": "communicate a message by manipulating images and words using a digital format" },
+        { "code": "4.5", "grade": "11/12", "wording": "use appropriate settings for output of images for web use" },
+        { "code": "4.6", "grade": "11/12", "wording": "design, create, and transport digital images for specific communication purposes" },
+        { "code": "4.7", "grade": "11/12", "wording": "distinguish between vector and raster objects" },
+        { "code": "4.8", "grade": "11/12", "wording": "solve visual communication problems using appropriate elements, colours, typography, and images" }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Web Publishing",
+      "outcomes": [
+        { "code": "5.1", "grade": "11/12", "wording": "plan, design, and create a web interface and navigation system within a website" },
+        { "code": "5.2", "grade": "11/12", "wording": "identify the elements of a web page" },
+        { "code": "5.3", "grade": "11/12", "wording": "identify basic HTML code" },
+        { "code": "5.4", "grade": "11/12", "wording": "create and edit web-appropriate graphics, photographs, and written text" },
+        { "code": "5.5", "grade": "11/12", "wording": "plan, design, create, and publish a website to a network in a school-based Intranet" },
+        { "code": "5.6", "grade": "11/12", "wording": "create and write web-based forms" },
+        { "code": "5.7", "grade": "11/12", "wording": "develop motion graphics and presentations for web use" }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Video Production",
+      "outcomes": [
+        { "code": "6.1", "grade": "11", "wording": "use a digital video camera and tripod safely and appropriately to capture video" },
+        { "code": "6.2", "grade": "11", "wording": "incorporate sound tracks into video" },
+        { "code": "6.3", "grade": "11", "wording": "edit video using a digital format" },
+        { "code": "6.4", "grade": "11", "wording": "compress a video for electronic distribution" },
+        { "code": "6.5", "grade": "12", "wording": "create, edit, and distribute web appropriate video" },
+        { "code": "6.6", "grade": "12", "wording": "capture high-quality sound for a video" },
+        { "code": "6.7", "grade": "12", "wording": "incorporate narration or voice-over into a video" },
+        { "code": "6.8", "grade": "12", "wording": "incorporate dramatic lighting into a video" }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Broadcasting",
+      "outcomes": [
+        { "code": "7.1", "grade": "11", "wording": "practice using different modalities and applications of broadcasting through various roles within a broadcast studio" },
+        { "code": "7.2", "grade": "11", "wording": "identify broadcasting equipment and the various range of broadcast signals" },
+        { "code": "7.3", "grade": "11", "wording": "produce a broadcast for a specific purpose" },
+        { "code": "7.4", "grade": "11", "wording": "practice journalism story form to broadcast a message" },
+        { "code": "7.6", "grade": "12", "wording": "demonstrate an understanding of how satellite technology affects them" },
+        { "code": "7.7", "grade": "12", "wording": "communicate a message through script writing for specific broadcasting applications" },
+        { "code": "7.8", "grade": "12", "wording": "demonstrate an understanding of broadcasting frequencies and bandwidth" },
+        { "code": "7.9", "grade": "12", "wording": "use and operate broadcasting equipment to produce a broadcast or series of broadcasts for a specific purpose" }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Animation",
+      "outcomes": [
+        { "code": "8.1", "grade": "11", "wording": "demonstrate an understanding of storyboarding techniques for animation" },
+        { "code": "8.2", "grade": "11", "wording": "demonstrate an understanding of the fundamentals of sequencing moving digital images" },
+        { "code": "8.3", "grade": "11", "wording": "create an animation that has a purpose and message" },
+        { "code": "8.4", "grade": "12", "wording": "create a storyboard to plan and communicate an animation sequence" },
+        { "code": "8.5", "grade": "12", "wording": "create a two-dimensional (2-D) or three-dimensional (3-D) digital animation that has a purpose and message" },
+        { "code": "8.6", "grade": "12", "wording": "insert sound into a digital animation" }
+      ]
+    }
+  ]
+}

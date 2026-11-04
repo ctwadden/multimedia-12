@@ -1,0 +1,6 @@
+{
+  "name": "scribe-studio",
+  "private": true,
+  "type": "module",
+  "dependencies": { "@google/genai": "^1.35.0" }
+}
