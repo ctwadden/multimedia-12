@@ -1,0 +1,19 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — Give the Caveman a voice  (save your recording as audio/theory/slide-01.mp3)
+Synchronize mouth and gesture changes to the actual recording and preserve the original Caveman identity. Lip sync follows heard sound shapes and phrase emphasis. Gestures support meaning; they do not have to change on every mouth cue.
+
+SLIDE 02 — The idea behind the controls  (save your recording as audio/theory/slide-02.mp3)
+The original four-mouth method is manual Graphic Single Frame selection: closed, round, wide and teeth. It is a simplified stylized bank, not a full phoneme set. The hand images are three separate Graphic definitions changed with Swap Symbol. The previous 105-frame file held one round mouth; it was a mechanism test, not a completed lip-sync performance. A synthetic test WAV is labelled technical reference only.
+
+SLIDE 03 — Place Stream sound and measure the cues  (save your recording as audio/theory/slide-03.mp3)
+Stream sound supports timeline synchronization. Real cues must come from this take, not the old 1/25/49 control test. All words play in the intended order, the clip is not cut off and the cue sheet names actual observed frames. If the start is silent, confirm the sound key is at 2 and that enough frames exist. If scrubbing is unreliable, test playback and inspect the selected frame’s sound settings.
+
+SLIDE 04 — Set manual Single Frame lip-sync keys  (save your recording as audio/theory/slide-04.mp3)
+Single Frame holds the selected internal drawing until the next main-timeline change. The selected object is Mouth_Poses, not Hand_1. Different main-timeline keys show different First values and corresponding visible mouths. If the mouth cycles automatically, choose Single Frame. If all cues show the same pose, check that you inserted main-timeline keys and changed the selected instance at each key.
+
+SLIDE 05 — Repair a cause, then show the difference  (save your recording as audio/theory/slide-05.mp3)
+The repair tests listening and timing, not just control settings. Playback of the corrected phrase agrees with the recording and the cue sheet.
+
+SLIDE 06 — Make the changed condition work  (save your recording as audio/theory/slide-06.mp3)
+Record a more doubtful or more triumphant reading of the same line. Retain the words, remeasure cues, and redesign the gesture and timing. Show one audible cue, its timeline frame and the selected mouth pose; then explain one deliberate hold.

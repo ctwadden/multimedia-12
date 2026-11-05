@@ -1,0 +1,19 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — Build a Caveman you can pose  (save your recording as audio/theory/slide-01.mp3)
+Assemble an articulated character and demonstrate intentional joint movement. A clear silhouette communicates action before details. A joint pivot controls how a body part rotates.
+
+SLIDE 02 — The idea behind the controls  (save your recording as audio/theory/slide-02.mp3)
+A flattened PNG is a picture, not an articulated rig. Fourteen separate Graphic symbols allow posing. The supplied art uses five original component drawings, reused for separate arm and leg symbols. Reusing an image does not mean the symbol definitions are the same. Parenting is optional for this core manual-posing route.
+
+SLIDE 03 — Create fourteen independent Graphic definitions  (save your recording as audio/theory/slide-03.mp3)
+Separate definitions let you revise one part without unintentionally replacing every limb. Fourteen named Graphic definitions and fourteen part layers exist; selecting an arm does not select the whole Caveman. If several pieces edit together, exit symbol editing and check whether you reused one definition. Duplicate and replace the appropriate instance.
+
+SLIDE 04 — Assemble a neutral pose in depth order  (save your recording as audio/theory/slide-04.mp3)
+Layer order creates depth; overlap hides seams. A single action container lets the whole performance be staged later. The neutral character has attached joints, a consistent head size and no floating feet. If a limb disappears, check visibility, layer order and scale before importing another copy. If a dark halo appears, inspect the source edge on a light background.
+
+SLIDE 05 — Repair a cause, then show the difference  (save your recording as audio/theory/slide-05.mp3)
+A useful repair demonstrates the cause of a failure, rather than hiding it behind another part. The same rotation produces an attached joint after your repair.
+
+SLIDE 06 — Make the changed condition work  (save your recording as audio/theory/slide-06.mp3)
+Pose the Caveman carrying the stone close to his chest. Preserve balance, clear hands and a grounded foot. Show a joint pivot, explain why it belongs there, and identify one silhouette improvement.

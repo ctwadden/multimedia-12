@@ -1,0 +1,19 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — Use effects and camera to tell the story  (save your recording as audio/theory/slide-01.mp3)
+Add one controlled effect and one justified camera move that support the Caveman’s action. Effects and camera should direct attention toward the story event. A visible effect is successful only if its timing and meaning fit the action.
+
+SLIDE 02 — The idea behind the controls  (save your recording as audio/theory/slide-02.mp3)
+Classic tweens transform symbol instances. Shape tweens interpolate raw vector shapes. Imported bitmap art and Graphic instances are not raw shapes. The camera belongs to the main Scene timeline for this workflow, not inside the character symbol. Sound and camera settings must be checked in the installed document type and final export.
+
+SLIDE 03 — Build a genuine raw-shape tween  (save your recording as audio/theory/slide-03.mp3)
+This makes the distinction between transforming a symbol and changing a raw shape visible. The selected span is a shape tween and intermediate frames change the contour, not merely the object scale. If the span fails, check that contents are raw vector shapes. Breaking apart a bitmap does not turn it into clean editable vector artwork.
+
+SLIDE 04 — Add a motivated main-Scene camera move  (save your recording as audio/theory/slide-04.mp3)
+The push-in emphasizes the Caveman’s pride after the story goal is achieved. The camera moves only when it has a purpose, and essential information remains visible throughout. If the whole character grows but the background does not, you probably scaled the character instead of the camera. If the camera controls differ, use the static framing fallback and record the gap.
+
+SLIDE 05 — Repair a cause, then show the difference  (save your recording as audio/theory/slide-05.mp3)
+The repair evaluates effects by communication rather than spectacle. The viewer can identify the contact and result after the repair.
+
+SLIDE 06 — Make the changed condition work  (save your recording as audio/theory/slide-06.mp3)
+Make the landing feel heavier using pose, effect and sound. Keep the same jump distance and avoid camera shake as a substitute for impact. Identify the frame that causes the splash/sound, and explain what the camera move helps the viewer notice.

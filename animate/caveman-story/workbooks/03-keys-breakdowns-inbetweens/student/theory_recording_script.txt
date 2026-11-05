@@ -1,0 +1,19 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — Make the Caveman think, then point  (save your recording as audio/theory/slide-01.mp3)
+Build a short acting phrase whose transition is designed rather than left to default interpolation. Keys state the important poses. A breakdown designs how the action travels between them. In-betweens complete that designed transition.
+
+SLIDE 02 — The idea behind the controls  (save your recording as audio/theory/slide-02.mp3)
+A timeline keyframe stores a change; a storytelling key pose is an important idea in the performance. They are not synonyms. Timing is how long an action takes. Spacing is how positions are distributed through that time. A classic tween interpolates transforms; it does not understand anatomy, contact or intention.
+
+SLIDE 03 — Design the breakdown at frame 19  (save your recording as audio/theory/slide-03.mp3)
+A breakdown chooses an arc, body relationship and order of movement. It need not be halfway in space or halfway in time. The hand passes around the face rather than through it, and the viewer can follow the intended route. If the hand cuts through the beard, widen the elbow path or move the breakdown earlier; do not add random frames around a bad route.
+
+SLIDE 04 — Compare timing while preserving the route  (save your recording as audio/theory/slide-04.mp3)
+Changing duration can change intention from quick recognition to careful consideration without changing the spatial route. You distinguish interval duration from inclusive frame count and can explain the acting difference. If a layer ends early, extend it to the new final frame. Do not change the document fps to make one action slower.
+
+SLIDE 05 — Repair a cause, then show the difference  (save your recording as audio/theory/slide-05.mp3)
+The repair tests whether you understand what a breakdown contributes. The repaired route has a visible clearance and retains the character’s joint proportions.
+
+SLIDE 06 — Make the changed condition work  (save your recording as audio/theory/slide-06.mp3)
+The Caveman notices a distant noise before pointing at the stone. Add a head-led change of attention without losing the original story goal. Which drawing is your breakdown, and what does it decide that a mathematical midpoint would miss?

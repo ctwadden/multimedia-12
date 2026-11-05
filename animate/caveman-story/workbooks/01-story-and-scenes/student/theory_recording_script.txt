@@ -1,0 +1,19 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — Make a story the audience can read  (save your recording as audio/theory/slide-01.mp3)
+Build a readable three-Scene animatic before polishing any movement. Staging directs attention. A story beat changes what the character knows, wants or does.
+
+SLIDE 02 — The idea behind the controls  (save your recording as audio/theory/slide-02.mp3)
+A Scene is a main-timeline section in Animate. A shot is one uninterrupted camera view. One Scene may contain several shots. This project begins with one shot per Scene so that story and file structure remain manageable.
+
+SLIDE 03 — Create the film document  (save your recording as audio/theory/slide-03.mp3)
+The document type affects sound and camera workflows. A stable frame rate makes timing calculations meaningful. Doc properties show 1280 × 720 and 24 fps; the file has a saved location. If you created HTML5 Canvas, create the correct document now and import the artwork again. Do not assume that changing publish settings changes document type.
+
+SLIDE 04 — Stage the goal and obstacle  (save your recording as audio/theory/slide-04.mp3)
+The viewer must read the destination and the danger before the jump begins. At a small preview size, the Caveman, gap and goal are distinguishable. His feet can meet the ground plane. Move the goal away from similarly coloured rocks. Enlarge it slightly for readability; do not add explanatory text as the first repair.
+
+SLIDE 05 — Repair a cause, then show the difference  (save your recording as audio/theory/slide-05.mp3)
+Diagnosis connects visual choices to audience understanding. Your evidence identifies a visible problem, one repair and a viewer response after the repair.
+
+SLIDE 06 — Make the changed condition work  (save your recording as audio/theory/slide-06.mp3)
+Move the third stone to a less obvious place. Change staging, gaze or timing so a viewer can still identify the goal without narration. Where does the audience first understand the goal, and which visual choice makes it clear?

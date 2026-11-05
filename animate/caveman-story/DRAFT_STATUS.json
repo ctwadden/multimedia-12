@@ -1,0 +1,69 @@
+{
+  "edition": "Caveman public teacher-review draft v01",
+  "published_scope": "All eight current student workbooks, theory explanations, print PDFs, art/templates and bounded silent walk/jump clips",
+  "authorization": "User: put them all in github - email me the link; current eight workbooks were explicitly described as local drafts immediately beforehand.",
+  "date": "2026-11-05",
+  "site": "https://ctwadden.github.io/multimedia-12/animate/caveman-story/",
+  "repository": "https://github.com/ctwadden/multimedia-12/tree/main/animate/caveman-story",
+  "full_download": "https://github.com/ctwadden/multimedia-12/releases/download/caveman-draft-2026-11-05/Caveman_Draft_Workbooks_and_Assets.zip",
+  "ready_to_teach": false,
+  "shared_school_progress_connected": false,
+  "distinct_limb_art_complete": false,
+  "pdfs": [
+    {
+      "path": "output/pdf/Caveman_Complete_Tutorial_Series.pdf",
+      "pages": 88,
+      "sha256": "7cbe447b51035a76386aa02f45a4278b6ba384e004eeafa3699f348bad1989b2",
+      "source_sha256": "53d324d420470499552475ce4de90e098d4e09181a45ee1aecbfd05a8e6a990b"
+    },
+    {
+      "path": "output/pdf/Caveman_Workbook_01.pdf",
+      "pages": 11,
+      "sha256": "2bafb5315cc438a0c75c85a04d7cce1d4dba7a3aa340cb2a0de9349dbd07ab5e",
+      "source_sha256": "2acaedeefc5652b455431a34ac49b7d19d4ad0bbec2ee68268257e3face9d840"
+    },
+    {
+      "path": "output/pdf/Caveman_Workbook_02.pdf",
+      "pages": 11,
+      "sha256": "65b09aa2a3744ec5f7640c4c9b3b36d34f9b0af1b1efd45bbc412f0d4d3a130a",
+      "source_sha256": "b7f43e5223c9b25fe57218ba116cb8a56f2961ef3d0ae35c3653a13b156a201d"
+    },
+    {
+      "path": "output/pdf/Caveman_Workbook_03.pdf",
+      "pages": 11,
+      "sha256": "b088690fa047dc18a48951a647290a6a2251cfbb010b088ec81572bc5a7713b7",
+      "source_sha256": "e3031e1c0c12de4d1d10c732c7e1b5fc6466025e7c6eb986a23fa5de69146435"
+    },
+    {
+      "path": "output/pdf/Caveman_Workbook_04.pdf",
+      "pages": 11,
+      "sha256": "369544b3877b00e2cd0c336f7a755af93261f012ba6955803a99e93242dd95f6",
+      "source_sha256": "d0bfa1883615ecf55803299611cdc9a25abef885b15fe76cebbebc264dde9d39"
+    },
+    {
+      "path": "output/pdf/Caveman_Workbook_05.pdf",
+      "pages": 11,
+      "sha256": "1cff93a7a54cb72058045338ebe511bcfb1db989fc13c8f75a31d844535b7be1",
+      "source_sha256": "dfd1fedb59ee0377e508c9a9a26b6f02b21c2bedf353bcb967e51e337ee580dc"
+    },
+    {
+      "path": "output/pdf/Caveman_Workbook_06.pdf",
+      "pages": 11,
+      "sha256": "615945b19cb9eb7b59d029d7f132c52f80a7094efccf705b03c791ab0bc1ebc8",
+      "source_sha256": "bd849aa4e4de76363789167cb142e7d0db03b136aa4c542fd052b57f3a6c0cb1"
+    },
+    {
+      "path": "output/pdf/Caveman_Workbook_07.pdf",
+      "pages": 11,
+      "sha256": "cf568c2751892006a692862397d131b2952c2525e63fddca699849d7558f7292",
+      "source_sha256": "e7a9be31f7149e08f8ab5d26c5f6ae54a6fd06541b1e21d9dd377ad131b2f780"
+    },
+    {
+      "path": "output/pdf/Caveman_Workbook_08.pdf",
+      "pages": 11,
+      "sha256": "3dfa4c59ec80a872d1719f01d461e6ca8a74e6eba74b201b517c8d7589b7a40a",
+      "source_sha256": "9e87a2017b1c49b503270307d3a6bc4618b16c46d05d7cf6e220dc109a46512e"
+    }
+  ],
+  "excluded": "Private teacher companion and evidence map, native author commands/checkpoints, failed trials, commercial course source videos/FLAs and author QA."
+}

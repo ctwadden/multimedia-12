@@ -1,0 +1,19 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — Walk to the edge with weight  (save your recording as audio/theory/slide-01.mp3)
+Create a readable walk cycle and stage it without obvious foot sliding. A walk alternates support. The body moves over a planted foot while the other leg swings forward.
+
+SLIDE 02 — The idea behind the controls  (save your recording as audio/theory/slide-02.mp3)
+The eight design poses are contact, down, passing and up, then the opposite leg repeats them. In a 24-frame cycle use poses at 1, 4, 7, 10, 13, 16, 19 and 22. A matching pose at 25 can help construct the seam, but the repeating export/loop contains frames 1–24 so the endpoint is not held twice.
+
+SLIDE 03 — Build down, passing and up  (save your recording as audio/theory/slide-03.mp3)
+The rise and fall comes from support mechanics; it is not a random vertical bob. The swing foot clears the ground and the body height changes are restrained and rhythmic. If knees pop backward, inspect the joint bend direction and add a passing breakdown with a clear knee shape.
+
+SLIDE 04 — Stage the approach in Crossing  (save your recording as audio/theory/slide-04.mp3)
+The inner action supplies articulation; the outer motion supplies travel across the scene. Leg motion and overall travel work together, and the Caveman reaches the bank rather than crossing the gap during the walk. If the inner action freezes, check Graphic Loop and parent timeline length. If it races, inspect the fps and duplicated endpoint.
+
+SLIDE 05 — Repair a cause, then show the difference  (save your recording as audio/theory/slide-05.mp3)
+The repair shows whether you can diagnose the nested motion rather than just polish its appearance. The repaired support point moves less while the body still reaches the intended stop.
+
+SLIDE 06 — Make the changed condition work  (save your recording as audio/theory/slide-06.mp3)
+After retrieving the stone, the Caveman takes a careful departure walk along the far bank before the return-to-cave cut. Adjust stride, balance and hand contact; do not put a third-stone carry before he has acquired it. Point to the supporting foot and show how its world position stays consistent during stance.

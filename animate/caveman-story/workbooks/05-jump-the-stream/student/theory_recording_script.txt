@@ -1,0 +1,19 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — Jump the stream with a designed arc  (save your recording as audio/theory/slide-01.mp3)
+Animate a full jump with readable weight and a controlled landing. The jump is a change in support: grounded preparation, flight, impact and recovery. The pose and spacing must explain each phase.
+
+SLIDE 02 — The idea behind the controls  (save your recording as audio/theory/slide-02.mp3)
+Use a provisional 36-frame action: anticipation at 1 and 9; take-off at 12; apex near 19; first landing near 28; settle by 36. These are authored teaching timings, not cues from the old 105-frame lip-sync test. The root travels along an arc while body parts change pose. Uniform easing over the whole jump does not model these phases.
+
+SLIDE 03 — Build the anticipation as compression  (save your recording as audio/theory/slide-03.mp3)
+Anticipation stores visual energy and makes the direction of the coming action readable. The crouch has bent joints, grounded feet and a clear forward intention. If the soles lift during the crouch, reposition the hips and knees while preserving foot positions. Reduce the crouch if the rig cannot maintain believable proportions.
+
+SLIDE 04 — Space the root along the arc  (save your recording as audio/theory/slide-04.mp3)
+Timing controls flight duration; spacing communicates changing speed. The body also changes shape while following the path. The jump rises and falls smoothly, slows vertically near the top and does not hover accidentally. If the path makes a sharp corner, move the intermediate root point onto a continuous curve. If the landing floats, diagnose a pause or slow descent: reduce an unintended hold, increase downward position spacing toward impact where appropriate, and correct the actual contact pose.
+
+SLIDE 05 — Repair a cause, then show the difference  (save your recording as audio/theory/slide-05.mp3)
+Principles are tools for diagnosing an action, not labels to add after it is finished. The repair shows phase changes and a grounded landing; the explanation cites visible frames.
+
+SLIDE 06 — Make the changed condition work  (save your recording as audio/theory/slide-06.mp3)
+The stream is wider. Keep the character and goal, then revise anticipation, travel, flight timing and landing reach. Do not stretch the entire picture horizontally. Show the take-off, apex and first-contact frames and explain one spacing decision.
