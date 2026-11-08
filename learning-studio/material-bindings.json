@@ -1,0 +1,113 @@
+{
+  "schema": "learning-studio.material-bindings.v1",
+  "course_id": "MM12",
+  "source_revision": "70280e1a40ef175fc8d81ff874dcbd8228058443",
+  "bindings": [
+    {
+      "assignment_key": "MM12:camera-lab-photo-desk-v1:-",
+      "label": "Photo Desk",
+      "course_id": "MM12",
+      "project_id": "camera-lab-photo-desk-v1",
+      "sprint_id": "mm12-26-s03",
+      "task_id": null,
+      "lesson_id": null,
+      "binding_scope": "project",
+      "project_step_ids": [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4",
+        "step-5",
+        "step-6",
+        "step-7",
+        "step-8",
+        "step-9",
+        "step-10",
+        "step-11",
+        "step-12",
+        "step-13",
+        "step-14",
+        "step-15",
+        "step-16"
+      ],
+      "project_step_anchors": {
+        "step-1": "step-1",
+        "step-2": "step-2",
+        "step-3": "step-3",
+        "step-4": "step-4",
+        "step-5": "step-5",
+        "step-6": "step-6",
+        "step-7": "step-7",
+        "step-8": "step-8",
+        "step-9": "step-9",
+        "step-10": "step-10",
+        "step-11": "step-11",
+        "step-12": "step-12",
+        "step-13": "step-13",
+        "step-14": "step-14",
+        "step-15": "step-15",
+        "step-16": "step-16"
+      },
+      "source": {
+        "path": "https://ctwadden.github.io/multimedia-12/learning-studio/assignment-registry.json",
+        "sha256": "dea46e1ceb02081e007b54093639ec489093402c89bf03ba6adf07ff4eff8f4e"
+      }
+    },
+    {
+      "assignment_key": "MM12:mm12-26-s03-bundle:-",
+      "label": "Shot on Purpose",
+      "course_id": "MM12",
+      "project_id": "mm12-26-s03-bundle",
+      "sprint_id": "mm12-26-s03",
+      "task_id": null,
+      "lesson_id": null,
+      "binding_scope": "project",
+      "project_step_ids": [
+        "step-1",
+        "step-2",
+        "step-3",
+        "step-4",
+        "step-5",
+        "step-6",
+        "step-7",
+        "step-8",
+        "step-9",
+        "step-10",
+        "step-11",
+        "step-12",
+        "step-13",
+        "step-14",
+        "step-15",
+        "step-16",
+        "step-17",
+        "step-18",
+        "step-19"
+      ],
+      "project_step_anchors": {
+        "step-1": "step-1",
+        "step-2": "step-2",
+        "step-3": "step-3",
+        "step-4": "step-4",
+        "step-5": "step-5",
+        "step-6": "step-6",
+        "step-7": "step-7",
+        "step-8": "step-8",
+        "step-9": "step-9",
+        "step-10": "step-10",
+        "step-11": "step-11",
+        "step-12": "step-12",
+        "step-13": "step-13",
+        "step-14": "step-14",
+        "step-15": "step-15",
+        "step-16": "step-16",
+        "step-17": "step-17",
+        "step-18": "step-18",
+        "step-19": "step-19"
+      },
+      "source": {
+        "path": "https://ctwadden.github.io/multimedia-12/learning-studio/assignment-registry.json",
+        "sha256": "dea46e1ceb02081e007b54093639ec489093402c89bf03ba6adf07ff4eff8f4e"
+      }
+    }
+  ]
+}

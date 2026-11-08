@@ -1,0 +1,213 @@
+{
+  "schema": "learning-studio.assignment-registry.v1",
+  "course_id": "MM12",
+  "source_revision": "70280e1a40ef175fc8d81ff874dcbd8228058443",
+  "assignments": [
+    {
+      "assignment_key": "MM12:camera-lab-photo-desk-v1:-",
+      "label": "Photo Desk",
+      "course_id": "MM12",
+      "project_id": "camera-lab-photo-desk-v1",
+      "sprint_id": "mm12-26-s03",
+      "task_id": null,
+      "lesson_id": null,
+      "binding_scope": "project",
+      "project_steps": [
+        {
+          "step_id": "step-1",
+          "title": "Guide step 1"
+        },
+        {
+          "step_id": "step-2",
+          "title": "Guide step 2"
+        },
+        {
+          "step_id": "step-3",
+          "title": "Guide step 3"
+        },
+        {
+          "step_id": "step-4",
+          "title": "Guide step 4"
+        },
+        {
+          "step_id": "step-5",
+          "title": "Guide step 5"
+        },
+        {
+          "step_id": "step-6",
+          "title": "Guide step 6"
+        },
+        {
+          "step_id": "step-7",
+          "title": "Guide step 7"
+        },
+        {
+          "step_id": "step-8",
+          "title": "Guide step 8"
+        },
+        {
+          "step_id": "step-9",
+          "title": "Guide step 9"
+        },
+        {
+          "step_id": "step-10",
+          "title": "Guide step 10"
+        },
+        {
+          "step_id": "step-11",
+          "title": "Guide step 11"
+        },
+        {
+          "step_id": "step-12",
+          "title": "Guide step 12"
+        },
+        {
+          "step_id": "step-13",
+          "title": "Guide step 13"
+        },
+        {
+          "step_id": "step-14",
+          "title": "Guide step 14"
+        },
+        {
+          "step_id": "step-15",
+          "title": "Guide step 15"
+        },
+        {
+          "step_id": "step-16",
+          "title": "Guide step 16"
+        }
+      ]
+    },
+    {
+      "assignment_key": "MM12:mm12-26-s03-bundle:-",
+      "label": "Shot on Purpose",
+      "course_id": "MM12",
+      "project_id": "mm12-26-s03-bundle",
+      "sprint_id": "mm12-26-s03",
+      "task_id": null,
+      "lesson_id": null,
+      "binding_scope": "project",
+      "project_steps": [
+        {
+          "step_id": "step-1",
+          "title": "Guide step 1"
+        },
+        {
+          "step_id": "step-2",
+          "title": "Guide step 2"
+        },
+        {
+          "step_id": "step-3",
+          "title": "Guide step 3"
+        },
+        {
+          "step_id": "step-4",
+          "title": "Guide step 4"
+        },
+        {
+          "step_id": "step-5",
+          "title": "Guide step 5"
+        },
+        {
+          "step_id": "step-6",
+          "title": "Guide step 6"
+        },
+        {
+          "step_id": "step-7",
+          "title": "Guide step 7"
+        },
+        {
+          "step_id": "step-8",
+          "title": "Guide step 8"
+        },
+        {
+          "step_id": "step-9",
+          "title": "Guide step 9"
+        },
+        {
+          "step_id": "step-10",
+          "title": "Guide step 10"
+        },
+        {
+          "step_id": "step-11",
+          "title": "Guide step 11"
+        },
+        {
+          "step_id": "step-12",
+          "title": "Guide step 12"
+        },
+        {
+          "step_id": "step-13",
+          "title": "Guide step 13"
+        },
+        {
+          "step_id": "step-14",
+          "title": "Guide step 14"
+        },
+        {
+          "step_id": "step-15",
+          "title": "Guide step 15"
+        },
+        {
+          "step_id": "step-16",
+          "title": "Guide step 16"
+        },
+        {
+          "step_id": "step-17",
+          "title": "Guide step 17"
+        },
+        {
+          "step_id": "step-18",
+          "title": "Guide step 18"
+        },
+        {
+          "step_id": "step-19",
+          "title": "Guide step 19"
+        }
+      ]
+    }
+  ],
+  "held_contexts": [
+    {
+      "assignment_key": "MM12:PS-TRUCK-AD:-",
+      "label": "Truck Ad",
+      "reason": "Historical reference or no approved registered step map; no replacement/current-source identity inferred."
+    },
+    {
+      "assignment_key": "MM12:mm12-blender-bootcamp-v2:-",
+      "label": "Blender Bootcamp v2: Winter Cottage",
+      "reason": "Historical reference or no approved registered step map; no replacement/current-source identity inferred."
+    },
+    {
+      "assignment_key": "MM12:mm12-2d-animation-studio-v1:-",
+      "label": "2D Animation Studio",
+      "reason": "Historical reference or no approved registered step map; no replacement/current-source identity inferred."
+    },
+    {
+      "assignment_key": "MM12:mm12-into-the-world-v1:-",
+      "label": "Into the World",
+      "reason": "Historical reference or no approved registered step map; no replacement/current-source identity inferred."
+    },
+    {
+      "assignment_key": "MM12:mm12-vfx-shot-library-v1:-",
+      "label": "VFX Shot Library",
+      "reason": "Historical reference or no approved registered step map; no replacement/current-source identity inferred."
+    },
+    {
+      "assignment_key": "MM12:mm12-design-story-v1:-",
+      "label": "Design a Story — client assignment",
+      "reason": "Historical reference or no approved registered step map; no replacement/current-source identity inferred."
+    },
+    {
+      "assignment_key": "MM12:local-mm12-cold-delivery-v1:-",
+      "label": "Cold Delivery — LOCAL PROPOSED current-source animation profile",
+      "reason": "Historical reference or no approved registered step map; no replacement/current-source identity inferred."
+    },
+    {
+      "assignment_key": "MM12:local-mm12-animation-reference-v1:-",
+      "label": "Cold Delivery unit — LOCAL PROPOSED other-creator emotional-impact analysis",
+      "reason": "Historical reference or no approved registered step map; no replacement/current-source identity inferred."
+    }
+  ]
+}
