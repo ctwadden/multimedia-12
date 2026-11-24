@@ -1,0 +1,19 @@
+RECORDING SCRIPT: read each slide in your own voice, one MP3 per slide.
+
+SLIDE 01 — Where does the camera move?  (save your recording as audio/tracked-theory/slide-01.mp3)
+This wide plate preserves the room edges the cropped rider shot loses. Select a floor detail and a distant door corner. The performer is free to move independently. The solver assumes that each tracked feature represents one fixed point throughout the sequence.
+
+SLIDE 02 — A corner has two edges  (save your recording as audio/tracked-theory/slide-02.mp3)
+The small pattern is what Blender looks for. The larger box is where Blender searches. Test several frames before trusting a track. A long set of markers can still be wrong if the patch drifted off its intended feature.
+
+SLIDE 03 — Plant a box at the seat  (save your recording as audio/tracked-theory/slide-03.mp3)
+A solve error averages the data used to fit the camera. The test at the seat asks a different question: does the reconstruction predict points the solve never saw? If those points slip, a beautiful cockpit will slip too.
+
+SLIDE 04 — The seat is the model’s reference  (save your recording as audio/tracked-theory/slide-04.mp3)
+Look for something you could only see by moving around a real object: the far rail or one separated wing. Judge the performer at the seat first. Only then decide which shapes must cover the lap.
+
+SLIDE 05 — Choose which side of the rider gets the weather  (save your recording as audio/tracked-theory/slide-05.mp3)
+Clouds vary softly across a broad part of the image. The flakes are small moving pieces close to the viewer. Independent passes make them easy to diagnose. Compare the same frame with one effect off rather than comparing four things at once.
+
+SLIDE 06 — Change the weather, keep the contact  (save your recording as audio/tracked-theory/slide-06.mp3)
+Watch the transition between frames. Compare your first and last check while following the same seat point. Make a weather change you can describe in terms of depth, speed and visibility. Show the frame where it is most convincing.
